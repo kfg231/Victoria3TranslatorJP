@@ -14,7 +14,12 @@ from typing import Any, Dict, List, Optional
 
 from . import logger as log_setup
 from .cache_manager import TranslationCache
-from .deepseek_client import DeepSeekClient, DEFAULT_BASE_URL, OPENROUTER_BASE_URL
+from .deepseek_client import (
+    DeepSeekClient,
+    DEFAULT_BASE_URL,
+    OPENROUTER_BASE_URL,
+    normalize_model_name,
+)
 from .language_config import LANGUAGES, list_display_names
 from .openrouter_client import (
     fetch_available_models,
@@ -279,7 +284,8 @@ class TranslatorApp:
         )
         self.btn_search_model.grid(row=3, column=2, padx=8, pady=4)
 
-        # Thinking mode
+        # Thinking / Reasoning effort
+        # DeepSeek direct: simple on/off checkbox
         self.var_thinking = tk.BooleanVar(
             value=bool(self.settings.get("enable_thinking", False))
         )
@@ -289,6 +295,28 @@ class TranslatorApp:
             variable=self.var_thinking,
         )
         self.cb_thinking.grid(row=3, column=3, columnspan=2, sticky="w", padx=8, pady=4)
+
+        # OpenRouter: reasoning effort level selector
+        self.frm_reasoning = ttk.Frame(frm_api)
+        self.frm_reasoning.grid(row=4, column=0, columnspan=5, sticky="w", padx=8, pady=4)
+
+        ttk.Label(self.frm_reasoning, text="推論レベル:").pack(side="left")
+        self.var_reasoning_effort = tk.StringVar(
+            value=self.settings.get("reasoning_effort", "none")
+        )
+        self.cb_reasoning_effort = ttk.Combobox(
+            self.frm_reasoning,
+            textvariable=self.var_reasoning_effort,
+            values=["none", "low", "medium", "high"],
+            state="readonly",
+            width=10,
+        )
+        self.cb_reasoning_effort.pack(side="left", padx=4)
+        ttk.Label(
+            self.frm_reasoning,
+            text="none=思考なし(高速/低コスト)  high=深い推論(高品質/遅い)",
+            font=("TkDefaultFont", 8),
+        ).pack(side="left", padx=4)
 
         # Apply provider-dependent visibility
         self._apply_provider_ui()
@@ -413,12 +441,34 @@ class TranslatorApp:
             frm_opts, from_=0, to=999, textvariable=self.var_retries, width=6
         ).grid(row=2, column=4, sticky="w", padx=8, pady=4)
 
+        ttk.Label(frm_opts, text="エラー処理:").grid(row=3, column=0, sticky="w", padx=8, pady=4)
+        self.var_error_policy = tk.StringVar(
+            value=self.settings.get("error_policy", "retry")
+        )
+        error_policy_combo = ttk.Combobox(
+            frm_opts,
+            textvariable=self.var_error_policy,
+            values=["retry", "stop", "ignore"],
+            state="readonly",
+            width=10,
+        )
+        error_policy_combo.grid(row=3, column=1, sticky="w", padx=8, pady=4)
+        ttk.Label(frm_opts, text="(429以外)", font=("TkDefaultFont", 8)).grid(
+            row=3, column=2, sticky="w", padx=8, pady=4
+        )
+
+        ttk.Label(frm_opts, text="エラーリトライ:").grid(row=3, column=3, sticky="w", padx=8, pady=4)
+        self.var_error_retries = tk.IntVar(value=int(self.settings.get("error_retries", 1)))
+        ttk.Spinbox(
+            frm_opts, from_=0, to=999, textvariable=self.var_error_retries, width=6
+        ).grid(row=3, column=4, sticky="w", padx=8, pady=4)
+
         self.var_smart_skip = tk.BooleanVar(
             value=bool(self.settings.get("smart_skip_translated", False))
         )
         ttk.Checkbutton(
             frm_opts, text="未翻訳箇所のみ抽出 (混合ファイル対応)", variable=self.var_smart_skip
-        ).grid(row=3, column=0, columnspan=5, sticky="w", padx=8, pady=4)
+        ).grid(row=4, column=0, columnspan=5, sticky="w", padx=8, pady=4)
 
         frm_opts.columnconfigure(1, weight=1)
 
@@ -482,14 +532,29 @@ class TranslatorApp:
     def _apply_provider_ui(self) -> None:
         """Show/hide widgets depending on selected provider."""
         is_deepseek = self.var_provider.get() == "deepseek"
+        current_model = self.var_model.get().strip()
 
         # Show deepseek model combobox for DeepSeek, model search button for OpenRouter
         if is_deepseek:
+            normalized_model = normalize_model_name(current_model, DEFAULT_BASE_URL)
+            if normalized_model and normalized_model != current_model:
+                logger.warning(
+                    "Normalized UI model for DeepSeek direct API: %s -> %s",
+                    current_model,
+                    normalized_model,
+                )
+                self.var_model.set(normalized_model)
             self.cb_model.configure(values=DEEPSEEK_MODELS, state="readonly")
             self.btn_search_model.configure(state="disabled")
+            # DeepSeek: show thinking checkbox, hide reasoning effort
+            self.cb_thinking.grid()
+            self.frm_reasoning.grid_remove()
         else:
             self.cb_model.configure(values=[], state="normal")
             self.btn_search_model.configure(state="normal")
+            # OpenRouter: hide thinking checkbox, show reasoning effort
+            self.cb_thinking.grid_remove()
+            self.frm_reasoning.grid()
 
     def _on_provider_change(self, event: Optional[object] = None) -> None:
         self._apply_provider_ui()
@@ -615,6 +680,28 @@ class TranslatorApp:
             messagebox.showerror("エラー", "モデルを選択してください")
             return None
 
+        base_url = OPENROUTER_BASE_URL if provider == "openrouter" else DEFAULT_BASE_URL
+        normalized_model = normalize_model_name(model, base_url)
+        if normalized_model != model:
+            logger.warning(
+                "Normalized model before translation: %s -> %s",
+                model,
+                normalized_model,
+            )
+            self.var_model.set(normalized_model)
+            model = normalized_model
+
+        batch_size = int(self.var_batch_size.get())
+        initial_max_workers = int(self.var_workers.get())
+        if batch_size <= 1 and initial_max_workers > 32:
+            logger.warning(
+                "Current settings are extremely aggressive (batch_size=%d, workers=%d). "
+                "This is often slower in practice and tends to amplify API errors. "
+                "Recommended starting point: batch_size 10-40, workers 4-16.",
+                batch_size,
+                initial_max_workers,
+            )
+
         return {
             "provider": provider,
             "api_key": api_key,
@@ -626,10 +713,13 @@ class TranslatorApp:
             "mod_context": self.var_mod_context.get().strip(),
             "model": model,
             "enable_thinking": bool(self.var_thinking.get()),
-            "batch_size": int(self.var_batch_size.get()),
-            "initial_max_workers": int(self.var_workers.get()),
+            "reasoning_effort": self.var_reasoning_effort.get(),
+            "batch_size": batch_size,
+            "initial_max_workers": initial_max_workers,
             "max_retries": int(self.var_retries.get()),
+            "error_retries": int(self.var_error_retries.get()),
             "rate_limit_policy": self.var_rate_limit_policy.get(),
+            "error_policy": self.var_error_policy.get(),
             "smart_skip_translated": bool(self.var_smart_skip.get()),
         }
 
@@ -651,10 +741,13 @@ class TranslatorApp:
                 "mod_context": cfg["mod_context"],
                 "model": cfg["model"],
                 "enable_thinking": cfg["enable_thinking"],
+                "reasoning_effort": cfg["reasoning_effort"],
                 "batch_size": cfg["batch_size"],
                 "max_workers": cfg["initial_max_workers"],
                 "max_retries": cfg["max_retries"],
+                "error_retries": cfg["error_retries"],
                 "rate_limit_policy": cfg["rate_limit_policy"],
+                "error_policy": cfg["error_policy"],
                 "smart_skip_translated": cfg["smart_skip_translated"],
             }
         )
@@ -690,13 +783,15 @@ class TranslatorApp:
                     0, lambda: self.var_progress_text.set(f"{pct:5.1f}% — {msg}")
                 )
 
+            reasoning_effort = cfg.get("reasoning_effort", "none")
             logger.info(
-                "翻訳開始: provider=%s, %s -> %s, model=%s, thinking=%s",
+                "翻訳開始: provider=%s, %s -> %s, model=%s, thinking=%s, reasoning_effort=%s",
                 cfg["provider"],
                 cfg["source_lang_key"],
                 cfg["target_lang_key"],
                 cfg["model"],
                 cfg["enable_thinking"],
+                reasoning_effort,
             )
 
             # Determine base_url based on provider
@@ -706,6 +801,17 @@ class TranslatorApp:
                 base_url = DEFAULT_BASE_URL
             enable_thinking = cfg["enable_thinking"]
 
+            model = cfg["model"]
+            # OpenRouter: if reasoning_effort is not 'none', use the
+            # reasoning parameter (handled in deepseek_client._call).
+            # Also support legacy :thinking suffix for backwards compat.
+            if cfg["provider"] == "openrouter":
+                if reasoning_effort != "none" and not model.endswith(":thinking"):
+                    # Some models need :thinking suffix to enable reasoning
+                    pass  # reasoning is controlled via API param, not suffix
+                elif cfg["enable_thinking"] and not model.endswith(":thinking"):
+                    model = model + ":thinking"
+
             result: TranslationResult = translate_mod(
                 source_lang_key=cfg["source_lang_key"],
                 target_lang_key=cfg["target_lang_key"],
@@ -714,17 +820,20 @@ class TranslatorApp:
                 output_name=cfg["output_name"],
                 api_key=cfg["api_key"],
                 mod_context=cfg["mod_context"],
-                model=cfg["model"],
+                model=model,
                 enable_thinking=enable_thinking,
                 base_url=base_url,
                 batch_size=cfg["batch_size"],
                 initial_max_workers=cfg["initial_max_workers"],
                 max_retries=cfg["max_retries"],
+                error_retries=cfg["error_retries"],
                 rate_limit_policy=cfg["rate_limit_policy"],
+                error_policy=cfg["error_policy"],
                 cache=self.cache,
                 progress_cb=progress_cb,
                 stop_flag=self.stop_flag,
                 smart_skip_translated=cfg["smart_skip_translated"],
+                reasoning_effort=reasoning_effort,
             )
             was_cancelled = self.stop_flag.is_set()
             prefix = "キャンセル" if was_cancelled else "完了"

@@ -4,15 +4,18 @@
   "source_dir": "C:\\Users\\vvvad\\Downloads\\seikabutsu\\Victoria3TranslatorJP-main\\localization",
   "output_dir": "C:\\Users\\vvvad\\Downloads\\seikabutsu\\Victoria3TranslatorJP-main\\output",
   "mod_context": "politics party,politics mod,XXneseは、XX人の、ではなく、XXの、と訳してください",
-  "model": "deepseek/deepseek-v4-flash",
+  "model": "deepseek-v4-flash",
   "enable_thinking": false,
-  "batch_size": 15,
-  "max_workers": 250,
+  "batch_size": 10,
+  "max_workers": 500,
   "rate_limit_policy": "retry",
   "max_retries": 4,
   "smart_skip_translated": false,
   "output_name": "betterpolitics",
   "api_key_deepseek": "sk-c77a01eb6f0f4bc388b5f64e56d5d321",
-  "api_key_openrouter": "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",
-  "provider": "openrouter"
+  "api_key_openrouter": "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",
+  "provider": "deepseek",
+  "reasoning_effort": "low",
+  "error_policy": "retry",
+  "error_retries": 10
 }
