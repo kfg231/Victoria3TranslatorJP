@@ -1,0 +1,1057 @@
+﻿l_japanese:
+
+from_monarchist_leanings: "君主制への傾倒"
+from_july_monarchy: "七月王政"
+
+modifier_landowners_assisting_labour: "労働者との同盟"
+modifier_landowners_assisting_labour_enactment: "貴族階級の支持"
+modifier_guilds_abolition_benefit: "弱体化したギルド制度"
+modifier_guilds_abolished_mobility: "自由労働市場"
+modifier_tolerated_union_crackdown: "廃止された労働法"
+modifier_tolerated_union_crackdown_ig: "黙認された組合潰し"
+modifier_punished_union_crackdown: "労働法の維持"
+modifier_punished_union_crackdown_ig: "組合潰しへの処罰"
+modifier_conditions_of_the_working_class: "鼓舞する文学"
+modifier_conditions_of_the_working_class_ig: "連座による面目失墜"
+modifier_nationwide_strikes: "全国的なストライキの波"
+modifier_strikes_stall: "ストライキ行動"
+modifier_artisans_uprising: "職人の蜂起"
+modifier_repressed_artisans_riots: "鎮圧された職人の蜂起"
+modifier_accepted_favorable_report: "好意的な報告書の採用"
+modifier_accepted_favorable_report_cons: "$modifier_accepted_favorable_report$"
+modifier_accepted_hostile_report: "敵対的な報告書の採用"
+modifier_accepted_hostile_report_tus: "$modifier_accepted_hostile_report$"
+modifier_favorable_trade_union_report: "労働組合に関する好意的報告書"
+modifier_hostile_trade_union_report: "労働組合に関する敵対的報告書"
+modifier_preempetive_strikes_ig: "反組合法の無視"
+modifier_slow_and_boring: "反組合法の維持"
+modifier_preempetive_strikes: "自発的組織化"
+modifier_anti_union_propaganda: "反組合プロパガンダ"
+modifier_anti_union_propaganda_ig: "反組合プロパガンダへの対抗"
+
+labour_associations_events.1.t: "組合不在"
+labour_associations_events.1.d: "[SCOPE.sLaw('current_law_scope').GetName]の下で強化される労働者団体に脅威を感じ、[SCOPE.gsInterestGroup('industrialists_ig').GetName]は組合化された労働力の危険性に関する数多くの報告書を公表した。"
+labour_associations_events.1.f: "#bold 組合生活は私に向いているか？#!\n\n• 賃金から差し引かれる組合費\n• 賃金、福利厚生、労働規則に関する保証なし\n• 個人交渉の機会なし\n\n#italic あなたの会社が仕事を提供し賃金を支払う——組合は過去にも未来にも決してそうしない！#!"
+labour_associations_events.1.a: "彼らは恐怖しているに違いない。"
+labour_associations_events.1.b: "誰もが自らの利益を追求する権利を持つ。"
+
+labour_associations_events.2.t: "先制ストライキ"
+labour_associations_events.2.d: "政府が[SCOPE.sLaw('current_law_scope').GetName]を確立しようとする努力のニュースは労働者階級のコミュニティに急速に広まった。[SCOPE.gsInterestGroup('industrialists_ig').GetName]は、違法な組合活動の対応する増加について不満を言い始めている。"
+labour_associations_events.2.f: "政府がその構想を発表した瞬間、ポスターが現れ始めた。夜警が犯人を捕まえようとする無駄な努力は実を結ばず、会社は被害の拡大防止に追い込まれた。毎晩、壁は貼り紙で覆われ——そして朝には、会社が前夜の努力をゴミ箱に詰め込んだ。\n\nちょうど次の週、ごみ収集員たちは自分たちの新しい組合を発表した。"
+labour_associations_events.2.a: "これらの苦情を無視するよう裁判所に命じよ。"
+labour_associations_events.2.b: "現行法は有効のままである。"
+
+labour_associations_events.3.t: "労働組合委員会"
+labour_associations_events.3.d: "労働者団体からの請願を受け、[SCOPE.GetRootScope.GetCountry.GetCustom('country_legislature_name')]は[SCOPE.sLaw('current_law_scope').GetName]に関する委員会を設置した。委員会は政府に2つの報告書を提出した——[SCOPE.gsInterestGroup('opposed_ig').GetName]によって書かれた多数派報告書と、[SCOPE.gsInterestGroup('unions_ig').GetName]に同情的な少数派報告書である。"
+labour_associations_events.3.f: "「実際のところ、現状の法律は一方的で不当なものである。労働者がその目的を推進するためのほぼすべての結社は取引制限の陰謀と見なされ、したがって刑事罰の対象となった一方で、雇用主によるまったく同様の行為は、陰謀の罪を伴わないとして法律の注意を逃れたからだ。しかし実際には、何千人もの労働者を雇う雇用主は、それ自体が一つの結社であった。」" #- Henry Bruce, on the 1871 Trade Unions Act
+labour_associations_events.3.a: "少数派報告書を採用せよ。"
+labour_associations_events.3.b: "多数派報告書の方が説得力がある。"
+
+labour_associations_events.4.t: "衰退する産業"
+labour_associations_events.4.d: "政府の[GetLawType('law_guild_system').GetName]への攻撃は、生計が脅かされていると感じる人々の間で暴動を引き起こした。[SCOPE.sState('relevant_state').GetName]では、暴動を起こした職人と熟練労働者が機械を破壊し、請負業者を脅迫している。"
+labour_associations_events.4.f: "飢餓状態で私たちが請願した\n神への呪いを、それは無駄だった；\n私たちは無駄に望み、無駄に待った、\n彼はただ私たちの悲しい運命をあざ笑い嘲った——\n私たちは織っている、織っているのだ！" #- Die armen Weber, Heinrich Heine
+labour_associations_events.4.a: "自由に競争できないなら、別の仕事を見つければよい。"
+labour_associations_events.4.b: "財産を守るため軍隊を投入せよ。"
+
+labour_associations_events.5.t: "最後の抵抗"
+labour_associations_events.5.d: "政府が[SCOPE.sLaw('current_law_scope').GetName]を制定しようとする努力は、[SCOPE.gsInterestGroup('trade_unions_ig').GetName]からのほぼ全面的な反対に直面している。組合指導部は、政府に譲歩させるためにゼネストを呼びかけている。"
+labour_associations_events.5.f: "組合員たちは大挙して集まっていた。[SCOPE.GetRootScope.GetCountry.GetCustom('country_legislature_name')]から1マイル以内のすべての街灯柱は赤い吹き流しで飾られ、徒歩での移動は絶望的な努力だった。数人の政府議員は、人の波に立ち向かうより、オフィスで寝ることを選んだ。他の者たち、野党の急進派は、それに加わることを選んだ。彼らは建物をぐるりと取り囲む警察官の列によって帰路を断たれていた。\n\n今や双方は包囲状態と見なしていた。デモ参加者は自分たちの間でパンと水を配るために実に印象的な物流システムを構築し、一方で議員たちは[SCOPE.GetRootScope.GetCountry.GetCustom('country_legislature_name')]の食堂とワインセラーを利用した。\n\n「あとどれくらい？」と若手議員が尋ねた。彼の同僚はもはや答えるエネルギーを振り絞れなかった。"
+labour_associations_events.5.a: "彼らの反応がこの法案を正当化する。"
+labour_associations_events.5.b: "交渉を申し出よ。"
+labour_associations_events.5.c: "彼らの通信手段を遮断せよ。"
+
+labour_associations_events.6.t: "耐え難い紛争"
+labour_associations_events.6.d: "産業労働者が日常的にさらされている恐ろしい状況を詳述した本が一夜にして成功を収めた。この本の成功は[SCOPE.sLaw('current_law_scope').GetName]への国民の関心を高め、[SCOPE.gsInterestGroup('industrialists_ig').GetName]の面目を失わせている。"
+labour_associations_events.6.f: "「このように社会秩序は、労働者にとって家族生活をほとんど不可能にする。快適さもなく不潔な家、単なる夜間の避難所にやっと足りる程度で、家具も乏しく、雨漏りがしたり暖かくないことも多く、人間であふれかえった部屋に満ちる汚れた空気の下では、家庭の安らぎなどありえない。夫は一日中働き、おそらく妻も年長の子供たちも、それぞれ別の場所で働いている。彼らは夜と朝にしか会わず、皆が絶え間ない酒の誘惑にさらされている。そんな状況下でどんな家族生活が可能だろうか？」" #- Friedrich Engels, The Condition of the Working Class in England
+labour_associations_events.6.a: "労働者は自らを主張できるべきだ。"
+labour_associations_events.6.b: "我々は所有者をこれ以上動揺させてはならない。"
+
+labour_associations_events.7.t: "法の条文"
+labour_associations_events.7.d: "組織化された労働に対する政府の転換に勢いづき、[SCOPE.gsInterestGroup('relevant_bourgeois_ig').GetName]は自らの工場内で労働組合を先制的に取り締まり始めた。[SCOPE.gsInterestGroup('unions_ig').GetName]は、古い法律がまだ有効な間に、対応を要求している。"
+labour_associations_events.7.f: "それはばかげていた。書記官も、彼の上司たちも、そして彼の前に立つ組合代表もおそらくそれを知っていた。判事に到達する前に法律の書物から消えてしまうような法律に依存した土壇場の請願。\n\nそれでも、それは完璧だった。それを即座に却下することを許すような明らかな誤りが何もなかった。彼の唯一の選択肢は、それを誰か他の人の受信箱に詰まらせることだった。彼の口元は楽しみのない微笑みへと引き締まった。\n\n「ありがとうございます、ご主人。省から郵便でご連絡いたします。」"
+labour_associations_events.7.a: "彼らはもはや何の立場も持たない。"
+labour_associations_events.7.b: "我々は現行の立法を維持しなければならない。"
+
+labour_associations_events.8.t: "労働の自由市場"
+labour_associations_events.8.d: "政府が[GetLawType('law_guild_system').GetName]を解体する措置を講じるにつれ、勢いづいた[GetPopType('laborers').GetName]と[GetPopType('machinists').GetName]は、以前は排除されていた分野に進出し始めている。"
+labour_associations_events.8.f: "「俺、行くよ。前に言おうと思ってたんだ。[SCOPE.sState('relevant_state').GetCityHubName]の工場で仕事を見つけた。輸送費と寝床のためのローンを申し出てくれて…」\n\n彼は言葉を途切れさせ、順番に友人の顔を見た。\n\n「ありがとう。全部ありがとう。手紙を書くよ、誰かに書いてもらうよ。本当に…本当に良かった。またいつか会おう。約束する。」"
+labour_associations_events.8.a: "我々の努力は十分に報われている。"
+labour_associations_events.8.b: "自由への大いなる勝利。"
+
+labour_associations_events.9.t: "隠された動機"
+labour_associations_events.9.d: "都市の経済的ライバルを不利にする機会を感じて、[SCOPE.gsInterestGroup('landowners_ig').GetName]の著名なメンバーが[SCOPE.sLaw('current_law_scope').GetName]の制定を支持する姿勢を示している。"
+labour_associations_events.9.f: "「組合は混乱の代理人だ——しかし、肝心なのは、彼らが最大の敵意を我々の直接の競争相手に向けることだ。彼らは上司に譲歩を要求し、その譲歩は[SCOPE.sState('relevant_state').GetCityHubName]の大富豪たちの懐を深くえぐる。この損失を補うため、彼らは価格を上げざるを得なくなり、我々の製品を非常に有利な立場に置くことになる。」\n\n「では、我々自身の民衆はどうか？ 農民組合を恐れる必要があるか？」\n\n「彼らは清浄な空気を吸い、首筋に太陽を感じることができる。多くの者が自分の土地を持っている。彼らに組合が必要なのか？」」"
+labour_associations_events.9.a: "「完全に実行可能な取り決めだ。」"
+labour_associations_events.9.b: "「このような申し出には警戒しなければならない。」"
+
+# Legislature names
+legislature_congress: "「議会」"
+legislature_parliament: "「国会」"
+legislature_national_assembly: "「国民議会」"
+legislature_duma: "「ドゥーマ」"
+legislature_diet: "「議会（帝国議会）」"
+legislature_reichsrat: "「帝国参議院」"
+legislature_landtag: "「邦議会」"
+legislature_federal_diet: "「連邦議会」"
+legislature_grand_council: "「大評議会」"
+legislature_advisory_council: "「諮問評議会」"
+legislature_riksdag: "「リクスダーゲン」"
+legislature_storting: "「ストーティング」"
+legislature_folketing: "「フォルケティング」"
+legislature_althing: "「アルシング」"
+legislature_board_of_directors: "「取締役会」"
+legislature_congress_of_soviets: "「ソビエト大会」"
+legislature_congress_of_councils: "「評議会大会」"
+
+# 1848
+red_winter_loc: "「冬」"
+red_spring_loc: "「春」"
+red_summer_loc: "「夏」"
+red_autumn_loc: "「秋」"
+
+je_red_summer: "「赤い[SCOPE.GetRootScope.GetCountry.GetCustom('country_red_season_name')]」"
+je_red_summer_reason: "「#b $je_springtime_of_the_peoples$#!の革命の高まりにより、[ROOT.GetCountry.GetName]に新しい自由主義政府が権力を掌握した。しかし、権力を得ることと、それを維持することは同じではない。自由主義政府は、新しい議会秩序を廃止しようとする#b 保守勢力#!と、さらに包括的な第二の革命を脅かす#b 急進派#!の両方から脅威にさらされている。\n\n#b 反動#!\n自由主義政府がその支配を確固たるものにするまで、旧秩序の復讐心に燃える残党から脅威にさらされる。#b 反動の進展#!が#v 100#!に達すると、革命政府は#b 権力から追放#!され、保守的な秩序が再確立される。」"
+if_failed_through_counter_revolution_tt: "「#b 反動の進展#!が#v 100#!に達した場合：」"
+if_failed_through_civil_war_tt: "「[concept_civil_war]が勃発した場合：」"
+
+liberals_in_government_tt: "「#tooltippable;tooltip:[GetPlayer.GetTooltipTag],red_summer_liberal_ideologies_list_tt 革命的な#! [Concept('concept_politician', '$concept_politicians$')]が現在[concept_in_government]」"
+liberals_out_of_government_tt: "「@warning! #b 反動#!が#r 急速に進展#!する可能性がある。#tooltippable;tooltip:[GetPlayer.GetTooltipTag],red_summer_liberal_ideologies_list_tt 革命的な#! [Concept('concept_politician', '$concept_politicians$')]は#bold 現在[concept_in_government]ではない#!。」"
+
+peoples_springtime.9.t: "「[SCOPE.sCountry('relevant_country').GetAdjectiveNoFormatting]革命」"
+peoples_springtime.9.d: "「ヨーロッパ中に広がる革命の波に触発され、[SCOPE.sState('relevant_state').GetCityHubName]の革命家たちが[SCOPE.sCharacter('ruler_scope').GetPrimaryRoleTitle]に要求を突きつけるために集結した。彼らは[GetLawType('law_universal_suffrage').GetName]、民主的な憲法、そして[GetLawType('law_national_guard').GetName]の設立を要求している。」"
+peoples_springtime.9.f: "「群衆は今や[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]の住居に向かって溢れんばかりで、石のような表情をした兵士たちの薄い壁によってのみ押しとどめられていた。侮辱と路上の瓦礫が銃剣と大砲の列に向かって飛び、馬の尾を激しく揺らした。商業地区では、行進に加わらないことを選んだ小売店主たちが店の戸を板で閉ざしていた。即席の戦列のさらに後方では、労働者たちが街門を打ち破るために街灯柱を引き抜いていた。壊れた配管が通りに不気味な半ば明かりを投げかけていた。」"
+peoples_springtime.9.a: "「内戦のリスクは冒せない。」"
+peoples_springtime.9.b: "「選挙権で妥協し、これを成し遂げよ。」"
+peoples_springtime.9.c: "「直ちに軍隊を投入せよ。」"
+
+had_springtime_revolution_tt: "「[ROOT.GetCountry.GetNameNoFlag]は民主的な憲法を制定することを余儀なくされた」"
+
+peoples_springtime.10.t: "「赤い[SCOPE.GetRootScope.GetCountry.GetCustom('country_red_season_name_dynamic')]」"
+peoples_springtime.10.d: "「ヨーロッパでの革命の高まりにより、[ROOT.GetCountry.GetName]に自由主義政府が権力を掌握した。この脆弱な自由主義秩序は、その成果を覆そうとする保守勢力と、新たな革命を脅かす急進派の両方から脅威にさらされている。」"
+peoples_springtime.10.f:1 "「私は首都で、仕事がなく飢えに苦しみながらも、空虚な理論と夢想に満ちた希望で頭がいっぱいの、連隊を組んだ武装労働者十万人を見出した。私は社会が二つに分断されているのを見た：何も持たない者たちは共通の貪欲さで結ばれ、何かを持つ者たちは共通の恐怖で結ばれていた。この二つの大きな階層の間には絆も共感もなかった。いたるところで、避けられず差し迫った闘争の考えが目前にあるように思われた。」\n\n—アレクシ・ド・トクヴィル、#italic 『アレクシ・ド・トクヴィルの回想録』#!」" #- Alexis de Tocqueville
+peoples_springtime.10.a: "「憲法万歳！」"
+peoples_springtime.10.b: "「この茶番は終わらせなければならない。」"
+red_summer_counter_revolution_bonus_tt: "「#bold 反動#!は毎月#variable 1#!ずつ#bold 進展#!し、#b 保守派#!の勝利の可能性を高める」"
+red_summer_tt: "「[ROOT.GetCountry.GetName|v]のジャーナルに#variable 赤い[SCOPE.GetRootScope.GetCountry.GetCustom('country_red_season_name_dynamic')]#!を追加する」"
+
+red_summer_liberal_victory_tt: "「#b [GetIdeology('ideology_liberal').GetName]の勝利#!で完了するには：」"
+red_summer_radical_victory_tt: "「#b [GetIdeology('ideology_radical').GetName]の勝利#!で完了するには：」"
+red_summer_complete_tt: "「#b 進捗#!が#v 100%#!に達した！」"
+red_summer_fail_tt: "「#b 反動#!が#v 100%#!に達した！」"
+
+je_springtime_of_the_peoples_complete_header: "「#title 以下の場合、#b 革命派#!の勝利となる：#!\n」"
+je_springtime_of_the_peoples_on_complete_header: "「#title #b 革命派#!の勝利時：#!\n$EFFECT$」"
+je_springtime_of_the_peoples_fail_header: "「#title 以下の場合、#b 保守派#!の勝利となる：#!\n」"
+je_springtime_of_the_peoples_on_fail_header: "「#title #b 保守派#!の勝利時：#!\n$EFFECT$」"
+
+on_liberal_victory_tt: "「#b [GetIdeology('ideology_liberal').GetName]の勝利#!時：\n• イベント #v $peoples_springtime.71.t$#!を発生させる」"
+on_radical_victory_tt: "「#b [GetIdeology('ideology_radical').GetName]の勝利#!時：\n• イベント #v $peoples_springtime.7.t$#!を発生させる」"
+
+interest_group_in_government: "「[concept_interest_group]が[concept_in_government]」"
+interest_group_in_opposition: "「[concept_interest_group]が[concept_in_opposition]」"
+
+je_king_in_parliament_advance_50_tt: "「#v $je_king_in_parliament$#!の[concept_journal_entry]の#b 進捗バー#!が#v 50#!進む」"
+je_king_in_parliament_advance_25_tt: "「#v $je_king_in_parliament$#!の[concept_journal_entry]の#b 進捗バー#!が#v 25#!進む」"
+
+red_summer_progress_bar: "「赤い夏」"
+red_summer_progress_bar_desc: "「進捗: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)」"
+
+red_summer_counter_revolution_progress_bar: "「反動」"
+red_summer_counter_revolution_progress_bar_desc: "「反動: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)」"
+
+no_radical_agitators_or_politicians_tt: "「[ROOT.GetCountry.GetAdjectiveNoFlag]の[concept_leader]または[concept_agitator]で、[GetIdeology('ideology_radical').GetName]の[concept_ideology]を持つ者はいない」"
+
+red_summer_legitimacy_tt: "「[concept_legitimacy]」"
+red_summer_liberal_movements_tt: "「[GetIdeology('ideology_liberal_movement').GetName]および[GetIdeology('ideology_modernizer').GetName]の[Concept('concept_political_movement','$concept_political_movements_short$')]の[Concept('concept_political_movement_support', '$concept_political_movement_support_short$')]」"
+red_summer_intelligentsia_tt: "「[GetInterestGroupVariant('ig_intelligentsia',GetPlayer).GetName]の[concept_clout]」"
+red_summer_marginal_landowners_tt: "「[concept_marginalized]な[GetInterestGroupVariant('ig_landowners',GetPlayer).GetName]」"
+red_summer_marginal_armed_forces_tt: "「[concept_marginalized]な[GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetName]」"
+red_summer_unpopular_monarch_tt: "「[GetLawType('law_monarchy').GetName]の下での不人気な[concept_ruler]」"
+red_summer_monarchy_tt: "「[GetLawType('law_monarchy').GetName]の[concept_law]」"
+red_summer_landowners_tt: "[GetInterestGroupVariant('ig_landowners',GetPlayer).GetName]の[concept_clout]"
+red_summer_armed_forces_tt: "[GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetName]の[concept_clout]"
+red_summer_no_liberal_igs_in_government_tt: "#tooltippable;tooltip:[GetPlayer.GetTooltipTag],liberal_ideologies_list_tt 自由主義#!、#tooltippable;tooltip:[GetPlayer.GetTooltipTag],progressive_ideologies_list_tt 進歩主義#!、または#tooltippable;tooltip:[GetPlayer.GetTooltipTag],socialist_ideologies_list_tt 社会主義#!の[Concept('concept_interest_group', '$concept_interest_groups$')]が[concept_in_government]にいない"
+red_summer_active_insurrection_tt: "#tooltippable;tooltip:[GetPlayer.GetTooltipTag],liberal_movements_list_tt 自由主義#!または#tooltippable;tooltip:[GetPlayer.GetTooltipTag],socialist_movements_list_tt 社会主義#!の[Concept('concept_insurrection', '$concept_insurrectionary$')][Concept('concept_political_movement','$concept_political_movements$')]"
+red_summer_conservative_insurrection_tt: "#tooltippable;tooltip:[GetPlayer.GetTooltipTag],conservative_movements_list_tt 保守主義#!の[Concept('concept_insurrection', '$concept_insurrectionary$')][Concept('concept_political_movement','$concept_political_movements$')]"
+red_summer_subject_rebellion_tt: "反乱中の[Concept('concept_subject', '$concept_subjects$')]"
+red_summer_events_and_effects_tt: "イベントおよびその他の効果"
+
+movement_is_liberal_tt: "[concept_political_movement]は#tooltippable;tooltip:[GetPlayer.GetTooltipTag],liberal_movements_list_tt 自由主義#!に分類される"
+movement_is_socialist_tt: "[concept_political_movement]は#tooltippable;tooltip:[GetPlayer.GetTooltipTag],socialist_movements_list_tt 社会主義#!に分類される"
+movement_is_conservative_tt: "[concept_political_movement]は#tooltippable;tooltip:[GetPlayer.GetTooltipTag],conservative_movements_list_tt 保守主義#!に分類される"
+
+liberal_movements_list_tt: "#bold 自由主義#!の[Concept('concept_political_movement','$concept_political_movements$')]には以下が含まれる:\n• $movement_liberal$\n• $movement_radical$\n• $movement_anti_slavery$\n• $movement_positivist$\n• $movement_labor$\n• $movement_feminist$\n• $movement_german_national$\n• $movement_italian_national$\n• $movement_yugoslav_national$\n• $movement_india_pan_national$\n• $movement_utilitarian$\n• $movement_modernizer$"
+socialist_movements_list_tt: "#bold 社会主義#!の[Concept('concept_political_movement','$concept_political_movements$')]には以下が含まれる:\n• $movement_socialist$\n• $movement_nihilist$\n• $movement_communist$\n• $movement_anarchist$"
+conservative_movements_list_tt: "#bold 保守主義#!の[Concept('concept_political_movement','$concept_political_movements$')]には以下が含まれる:\n• $movement_royalist_constitutional$\n• $movement_royalist_absolutist$\n• $movement_orleanist$\n• $movement_legitimist$\n• $movement_bonapartist$\n• $movement_reactionary$\n• $movement_corporatist$\n• $movement_fascist$\n• $movement_pro_slavery$\n• $movement_religious_majority$\n• $movement_cultural_majority$"
+
+has_liberal_ideology_tt: "#tooltippable;tooltip:[GetPlayer.GetTooltipTag],liberal_ideologies_list_tt 自由主義#!の[concept_ideology]をいずれか所持している"
+has_progressive_ideology_tt: "#tooltippable;tooltip:[GetPlayer.GetTooltipTag],progressive_ideologies_list_tt 進歩主義#!の[concept_ideology]をいずれか所持している"
+has_socialist_ideology_tt: "#tooltippable;tooltip:[GetPlayer.GetTooltipTag],socialist_ideologies_list_tt 社会主義#!の[concept_ideology]をいずれか所持している"
+
+red_summer_liberal_ideologies_list_tt: "該当する[Concept('concept_ideology','$concept_ideologies$')]には以下が含まれる:\n• [GetIdeology('ideology_liberal').GetName]\n• [GetIdeology('ideology_republican_leader').GetName]\n• [GetIdeology('ideology_radical').GetName]\n• [GetIdeology('ideology_reformer').GetName]\n• [GetIdeology('ideology_abolitionist').GetName]\n• [GetIdeology('ideology_market_liberal').GetName]\n• [GetIdeology('ideology_nihilist').GetName]\n• [GetIdeology('ideology_radical').GetName]\n• [GetIdeology('ideology_feminist').GetName]\n• [GetIdeology('ideology_social_democrat').GetName]\n• [GetIdeology('ideology_humanitarian').GetName]\n• [GetIdeology('ideology_humanitarian_royalist').GetName]\n• [GetIdeology('ideology_communist').GetName]\n• [GetIdeology('ideology_vanguardist').GetName]\n• [GetIdeology('ideology_anarchist').GetName]\n• [GetIdeology('ideology_utopian').GetName]"
+
+socialist_ideologies_list_tt: "#bold 社会主義#!の[Concept('concept_ideology','$concept_ideologies$')]には以下が含まれる:\n• [GetIdeology('ideology_communist').GetName]\n• [GetIdeology('ideology_vanguardist').GetName]\n• [GetIdeology('ideology_anarchist').GetName]\n• [GetIdeology('ideology_nihilist').GetName]\n• [GetIdeology('ideology_utopian').GetName]"
+liberal_ideologies_list_tt: "#bold 自由主義#!の[Concept('concept_ideology','$concept_ideologies$')]には以下が含まれる:\n• [GetIdeology('ideology_republican_leader').GetName]\n• [GetIdeology('ideology_radical').GetName]\n• [GetIdeology('ideology_reformer').GetName]\n• [GetIdeology('ideology_abolitionist').GetName]\n• [GetIdeology('ideology_market_liberal').GetName]"
+progressive_ideologies_list_tt: "#bold 進歩主義#!の[Concept('concept_ideology','$concept_ideologies$')]には以下が含まれる:\n• [GetIdeology('ideology_nihilist').GetName]\n• [GetIdeology('ideology_radical').GetName]\n• [GetIdeology('ideology_feminist').GetName]\n• [GetIdeology('ideology_social_democrat').GetName]\n• [GetIdeology('ideology_humanitarian').GetName]\n• [GetIdeology('ideology_humanitarian_royalist').GetName]"
+no_monarchists_in_government_tt: "#b いかなる#! [Concept('concept_interest_group','$concept_interest_groups$')]も[concept_in_government]におらず、[GetLawType('law_monarchy').GetName]の制定を支持していない"
+
+peoples_springtime.71.t: "平和、自由、そして調和"
+peoples_springtime.71.d: "[ROOT.GetCountry.GetName]の自由主義政府は、絶対主義の復活と社会革命という二重の脅威を見事に乗り越えた。革命的な激動の時代は平和的に終わりを迎えた。"
+peoples_springtime.71.f:1 "自由である術ほど驚異に満ちたものはない。しかし、自由への徒弟時代ほど困難なものもない。"\n\n—アレクシ・ド・トクヴィル、#italic アメリカのデモクラシー#!" #- Alexis de Tocqueville
+peoples_springtime.71.a: "自由の時代が[ROOT.GetCountry.GetNameNoFormatting]に訪れる。"
+peoples_springtime.71.b: "[SCOPE.sCulture('primary_culture_scope').GetName]の人々は自由を勝ち取った。"
+
+modifier_age_of_liberty: "自由の時代"
+
+modifier_red_summer: "革命的な混乱"
+
+king_in_parliament_tt: "この[concept_country]のジャーナルに#b 議会における王#!を追加する"
+je_king_in_parliament: "議会における[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]"
+je_king_in_parliament_reason: "[ROOT.GetCountry.GetName]における絶対主義支配の終焉は、[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]と[SCOPE.GetRootScope.GetCountry.GetCustom('country_legislature_name')]の間の権力の均衡という問題を解決していない。新たな議会秩序を確固たるものとするためには、[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]の意思よりも人民の意思が上位にあることを確立しなければならない。"
+je_king_in_parliament_goal: "以下の条件が合計#v 10#!年間真でなければならない:"
+je_king_in_parliament_complete_tt: "[GetIdeology('ideology_absolutist_movement').GetName]の[Concept('concept_political_movement','$concept_political_movements$')]は[GetIdeology('ideology_royalist_movement').GetName]の$concept_political_movements_short$に置き換えられる"
+
+autocracy.4.t: "責任政府"
+autocracy.4.d: "[ROOT.GetCountry.GetAdjectiveNoFlag]議会秩序の安定により、王党派は絶対主義復活の望みを捨てた。立憲君主制が新たな現状として確立された。"
+autocracy.4.f: "議会は、政府に生命と運動を与える至高かつ絶対的な権力である。それは我々の平和の親、信仰の擁護者、財産の基盤として、政府のあらゆる様々な手続きを指揮し、推進する。そして、この偉大な源泉、すなわち事象の原動力を構成するものが強さと美しさを持つならば、それから派生するあらゆる行為と成果もまた、相応の比率と類似性を示すであろう。" #- the 1st Earl of Shaftesbury
+autocracy.4.a: "[SCOPE.GetRootScope.GetCountry.GetCustom('country_legislature_name')]に乾杯!"
+autocracy.4.b: "[SCOPE.GetRootScope.GetCountry.GetCustom('GetDivinity')]が[SCOPE.sCharacter('ruler_scope').GetPrimaryRoleTitle]をお救いくださいますように!"
+
+modifier_constitutional_monarch: "敬愛される象徴"
+modifier_constitutional_monarch_movement_support: "敬愛される君主"
+modifier_constitutional_order: "立憲秩序"
+
+je_balkan_national_awakenings: "国民覚醒"
+je_balkan_national_awakenings_reason: "[ROOT.GetCountry.GetName]は国民国家への第一歩を踏み出したが、依然として農民の国である。我々の人口の多くは、国民的同胞愛というよりも、村や氏族のレンズを通して世界を見続けている。我々は国民の間で文化的な[concept_fervor]を育み、[SCOPE.sCulture('primary_culture_scope').GetName]の人々から統一された国家を構築しなければならない。\n\n[SCOPE.sCulture('primary_culture_scope').GetName]文化の[concept_fervor]は以下の条件によって影響を受ける:\n• [SCOPE.sCulture('primary_culture_scope').GetName]の[Concept('concept_pop', '$concept_pops$')]の平均[concept_literacy]\n• [SCOPE.sCulture('primary_culture_scope').GetName]の[GetPopType('academics').GetName]の数\n• #b $nationalism$#!と#b $pan-nationalism$#!を研究している[SCOPE.sCulture('primary_culture_scope').GetName]国家\n• [SCOPE.sCulture('primary_culture_scope').GetName]ポップの平均[concept_acceptance]\n• 独立またはかつて独立していた[SCOPE.sCulture('primary_culture_scope').GetName]国家"
+
+claims_on_all_homelands_tt: "[ROOT.GetCountry.GetName]は、すべての[SCOPE.sCulture('primary_culture_scope').GetName]の[Concept('concept_homeland','$concept_homelands$')]に対する[Concept('concept_claim', '$concept_claims$')]を獲得する"
+
+has_formed_yugoslavia_tt: "#v $YUG$#!を形成している"
+
+national_awakening.1.t: "[SCOPE.sCulture('primary_culture_scope').GetNameNoFormatting]復興"
+national_awakening.1.d: "[ROOT.GetCountry.GetAdjective]国家が国民的熱狂を育むための努力は、文化的ルネサンスをもたらした。[SCOPE.sState('rural_state').GetName]の最も遠隔の村々でさえ、我々の市民は今や[SCOPE.sCulture('primary_culture_scope').GetName]国民の一員としての自らの立場を理解している。"
+national_awakening.1.f: "国勢調査員は小屋の扉が開くのを見つめた。それは彼がこれまで訪れた中で最も遠隔の村で、馬が二頭と一本の曲がりくねった道があるだけの場所だった。男が戸口に立ち、真鍮のボタンを見てきびきびと敬礼した。\n\n「お名前は？」\n\n「[SCOPE.sCharacter('relevant_character').GetFullNameNoFormatting]です」と戸口の男は答えた。\n\n「どちらのご出身ですか？」\n\n「私は[SCOPE.sCulture('primary_culture_scope').GetNameNoFormatting]人です、旦那様。父もその父もそうでしたから」"
+national_awakening.1.a: "[SCOPE.sCulture('primary_culture_scope').GetNameNoFormatting]人民万歳!"
+national_awakening.1.b: "偉大な国家には偉大な軍隊がふさわしい。"
+
+modifier_fervour_military_bonus: "民族主義的熱狂"
+modifier_fervour_military_bonus_ig: "掻き立てられた民族主義的熱狂"
+
+2TAB: ""
+
+national_awakening.2.t: "村の学校教育"
+national_awakening.2.d: "政府の給与を受け取っている[GetPopType('academics').GetName]が、[SCOPE.sState('relevant_state').GetName]の田園地帯に村の学校を設立した。これらの村の学校は識字率を向上させ、農民の間で[SCOPE.sCulture('relevant_culture').GetName]の国民的アイデンティティの感覚を育むことを目指している。"
+national_awakening.2.f: "「我が国は不運でした」と教師は語り始めた。「まだ完全には統一されていません。この地では、我々の民は外国人に依存しています」\n\n彼女は壁の地図、黒く塗られたいくつかの地域を指し示した。\n\n「これらの州では外国人が支配しており、我々の兄弟にとっては非常に困難なのです…」" #- Patterned off of a fourth-grade textbook for Serbian students by Protić and Stojanović
+national_awakening.2.a: "素晴らしい取り組みだ。"
+national_awakening.2.b: "追加資金を提供する。"
+
+national_awakening.3.t: "国民叙事詩"
+national_awakening.3.d: "最近発表された伝統的な[SCOPE.sCulture('relevant_culture').GetName]の詩と歌の編纂集が、識字率が高まりつつある[ROOT.GetCountry.GetName]の国民を魅了している。[SCOPE.GetRootScope.GetCountry.GetCustom('country_national_epic_name')]のよく読まれた写本が、今や[ROOT.GetCountry.GetCapital.GetCityHubName]のすべての本棚に見つけられるだろう。"
+national_awakening.3.f: "印刷所はかつてないほど忙しかった。温かい紙を運ぶ労働者たちが、革張りに糊付けされる作業場へとせわしなく動き回っていた。奥では、巨大な印刷機がページを次々と生み出し、それぞれが優雅な組紐模様と花の画像で飾られていた。この50部の束は[ROOT.GetCountry.GetCapital.GetCityHubName]へ、これは[ROOT.GetCountry.GetCapital.GetFarmHubName]へ向かうものだった。個人や書店からの注文書が同様にカウンターの上に積み上げられ、元帳への記入を待っていた。\n\n正面から叫び声が響いた。そこから制服を着た男がちょうど立ち去ったところだった。「省からの注文だ - 金曜日までに200部欲しいそうだ！」"
+national_awakening.3.a: "我が国を一つに結びつける作品。"
+national_awakening.3.b: "我が国の傑出した人々に乾杯!"
+
+national_awakening.4.t: "口語訳で"
+national_awakening.4.d: "著名な学者[SCOPE.sCharacter('intelligentsia_leader').GetFullName]が新約聖書を[SCOPE.sCulture('relevant_culture').GetName]語に翻訳した。[SCOPE.sCulture('relevant_culture').GetNameNoFormatting]語で書かれた作品の増大するコーパスは、聖職者や知識人の間でのこの言語の威信を高めるきっかけとなった。"
+national_awakening.4.f:1 "「私は#italic プリンキピア#!の[SCOPE.sCulture('relevant_culture').GetNameNoFormatting]語版を注文しました。同僚の一人は同じ言語での完全な聖書を求めています。もし我々が毎年一つずつ価値ある作品を翻訳し、それぞれの翻訳を他の者を教える学生が行うならば、今世紀末までにかなりのコーパスができるでしょう。それどころか、供給者が需要を認識すれば、はるかに多くのものができるでしょう。」\n\n「確かに野心的な試みだ。部署全体を変えられると思うか？」\n\n「私は、我々の言語が他の者が学びたいと思う言語となる未来を"
+national_awakening.4.a: ""
+national_awakening.4.b: ""
+
+national_awakening.5.t: ""
+national_awakening.5.d: ""
+national_awakening.5.f: "[SCOPE.sCulture('relevant_culture').GetNameNoFormatting]民族の擬人像が前景に立ち、ローブをまとい[ROOT.GetCountry.GetAdjectiveNoFormatting]の旗を掲げていた。彼女の足首からは、不名誉な過去の影へと続く壊れた鎖が垂れ下がっている。背景には、[ROOT.GetCountry.GetNameNoFormatting]にしか見られない美しさが広がり、それは国民の色に輝く昇る太陽の光に照らされていた。\n\nそれは誰もが理解できるが、再現できる者はほとんどいないメッセージを帯びていた。暗い過去から、輝かしい新たな春が。抑圧から、自由が。"
+national_awakening.5.a: "パリの傑作を凌駕する作品に。"
+national_awakening.5.b: "これを我が国の最新の象徴としよう。"
+
+national_awakening.6.t: "民間伝承"
+national_awakening.6.d: "共通の国民的アイデンティティの探求は、[SCOPE.gsInterestGroup('intelligentsia_ig').GetName]の関心を田園地帯に向けさせた。[SCOPE.gsInterestGroup('rural_folk_ig').GetName]の伝統を研究することは、外国支配に汚されていない原初の[SCOPE.sCulture('relevant_culture').GetNameNoFormatting]文化を垣間見ることとして広く認識されている。"
+national_awakening.6.f: "「アレクサンドロス大王は最初の[SCOPE.sCulture('relevant_culture').GetNameNoFormatting]だったと言われている。彼の帝国が分裂した時、彼の将軍たちが最初の[SCOPE.sCulture('relevant_culture').GetNameNoFormatting]王国を築いたと」\n\n「そうなのか？」\n\n「人々がそう言っていることか、それが真実かということか？」\n\n「後者だ」\n\n「違いはないだろう？ 十分な人々がそう言えば、我々がそれを真実にするのだから」"
+national_awakening.6.a: "かくして国家の種は育つ。"
+national_awakening.6.b: "我々は真の国から学ぶべきことが多い。"
+
+national_awakening.7.t: "一つの国家、一つの国民"
+national_awakening.7.d: "国家が[SCOPE.sCulture('primary_culture').GetName]としての共通のアイデンティティによって国民を定義しようとする努力は、その[SCOPE.sCulture('minority_culture').GetName]人口の間に警戒感を駆り立てている。多くの[SCOPE.sCulture('minority_culture').GetNameNoFormatting]人々は、自分たちが支配的文化へ同化を強制されることを恐れている。"
+national_awakening.7.f: "「もし彼が卒業を望むなら、[SCOPE.sCulture('primary_culture').GetNameNoFormatting]語を学び、[SCOPE.sCulture('primary_culture').GetNameNoFormatting]語で書かれた試験に合格しなければならない。現時点では特別な配慮はできない」\n\n女性は[SCOPE.sCulture('minority_culture').GetNameNoFormatting]語で返答した。彼女の息子は申し訳なさそうな表情で、彼女の発言を役人の言語で伝えた。\n\n「では、[SCOPE.sCulture('minority_culture').GetNameNoFormatting]語を学ぶことはどうなのですか？ ここには我々のような者が大勢いますし、家ではそれを話します。[SCOPE.sCulture('minority_culture').GetNameNoFormatting]語の授業がなければ、家を出れば忘れてしまい、家族とのつながりをすべて失ってしまいます」\n\n「ご婦人、私の助言は、[SCOPE.sCulture('primary_culture').GetNameNoFormatting]語を学ぶことです。あなたは[ROOT.GetCountry.GetAdjectiveNoFormatting]の市民でしょう？」"
+national_awakening.7.a: "彼らは、確かに[SCOPE.sCulture('primary_culture').GetCustom('getPluralDemonym')]にならなければならない。"
+national_awakening.7.b: "彼らが恐れることは何もない。"
+
+modifier_national_awakening_village_schooling: "村落学校教育"
+modifier_national_awakening_teaching_expenses: "教育経費"
+modifier_national_awakening_luminaries: "国民的詩人顕彰"
+modifier_national_awakening_national_epic_prestige: "国民叙事詩"
+modifier_national_awakening_national_epic: "国民叙事詩"
+modifier_national_awakening_tech_spread: "口語訳"
+modifier_national_awakening_domestic_works: "口語出版"
+modifier_national_awakening_romantic_nationalism_prestige: "ロマン主義的ナショナリズム"
+modifier_national_awakening_romantic_nationalism_throughput: "国家的象徴"
+modifier_national_awakening_roots_of_the_nation: "民間の誉れ"
+modifier_national_awakening_folklore: "民間伝承研究"
+modifier_national_awakening_intense_assimilation_programs: "国民的同化政策"
+modifier_national_awakening_lessened_assimilation: "同化政策の拒否"
+
+support_separatism_nationalist_propaganda: "国境を越えた民族主義的宣伝"
+
+bosnian_epic_loc: "ハサナギニツァ"
+montenegrin_epic_loc: "山の花冠"
+serbian_epic_loc: "コソボの戦い"
+croatian_epic_loc: "ユディタ"
+hungarian_epic_loc: "シゲトの危機"
+romanian_epic_loc: "ミオリツァ"
+slovene_epic_loc: "サヴィツァ川の洗礼"
+bulgarian_epic_loc: "忘却の叙事詩"
+greek_epic_loc: "オデュッセイア"
+albanian_epic_loc: "アルバニアの蜜蜂"
+national_epic_loc: "国民叙事詩"
+
+shelved_too_soon_ago_tt: "我々は#b最近この提案を棚上げしてはいない#!"
+
+je_danubian_federation: "連邦的解決策"
+je_danubian_federation_reason: "[ROOT.GetCountry.GetName]の無数の民族間の摩擦は、長らく帝国の統合に対する脅威であった。様々な民族の権利を擁護する者たちは、長年にわたり帝国の様々な形態の連邦化を求めてきた。近年、彼らは王朝を維持するという名目の下での急進的改革に関心を持つ[SCOPE.gsInterestGroup('armed_forces_ig').GetName]のメンバーと接触するようになった。これらの提案の中で最新のものである提案中の#b$dyn_c_usga$#!は、古い王室領を廃止し、民族の境界線に沿って描かれた一連の自治国家に置き換えるものである。\n\nこの提案は、提案された歴史的ハンガリーの分割に反対する[GetCulture('hungarian').GetName]の政治家たちや、非ドイツ人国家内で少数派となる可能性が高い[GetCulture('south_german').GetName]人口からの反対に直面している。"
+
+austria_federation.1.t: "[SelectLocalization(SCOPE.sCharacter('relevant_character').IsValid, SCOPE.sCharacter('relevant_character').GetLastName, '連邦')]提案"
+austria_federation.1.d: "民族権利の擁護者である[SCOPE.sCulture('relevant_character').GetName]の[SCOPE.sCharacter('relevant_character').GetFullName]は、帝国を多民族連邦国家へ再編成する提案を提示した。[SCOPE.sCharacter('relevant_character').GetHerHis|U]の提案は、[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]の志を同じくする関係者の間で人気を博している。"
+austria_federation.1.d_mil: "[SCOPE.sCharacter('relevant_character').GetInterestGroup.GetName]内で影響力のある人物である[SCOPE.sCharacter('relevant_character').GetFullName]は、帝国を連邦化することで[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]の権威を回復する提案を提示した。[SCOPE.sCharacter('relevant_character').GetHerHis|U]の提案は、宮廷内の志を同じくするメンバーの間で人気を博している。"
+austria_federation.1.f: "「この観点からすれば、それは[ROOT.GetCountry.GetNameNoFormatting]の「没落」の問題ではなく、再編成、再生の問題である。この帝国を心から気にかけるすべての人々が、暗い憧れの中にあっても、正しい前進の道を完全に自覚できさえすればよいのだ。第一に、独立した民族国家だけが存在する権利を持つというのは真実ではない。しばしば、そして正当にも引用される例である$SWI$は、混合民族的国家の典型であり、その存在権を否定しようとする合理的な者は誰もいないだろう。実際、我々の帝国において、歴史的過程は、新たに目覚めた必要性に対応する、国民と国家の関係の近代的形式を求めて、ただもがいているのである。」\n\n— アウレル・ポポヴィチ、#italic『大オーストリア合衆国』#!"
+austria_federation.1.a: "これこそが[ROOT.GetCountry.GetNameNoFormatting]に必要な改革だ。"
+austria_federation.1.b: "我々は今、これを管理できるとは期待できない。"
+modifier_endorse_popovici_proposal: "承認された提案"
+modifier_shelve_popovici_proposal: "棚上げされた提案"
+
+austria_federation.2.t: "もう一つの道"
+austria_federation.2.d: "[ROOT.GetCountry.GetName]の宣言は、国民国家という支配的なモデルに対する確固たる代替案として、非民族的連合を確立した。他者が共通の血統から正統性を引き出すところで、我々は王朝と我々の諸民族の多様性から力を引き出すだろう。"
+austria_federation.2.f: "「喜びよ、神の輝く火花よ、\nエリュシオンの娘よ、\n熱狂の炎と共に、女神よ、\n我らは汝の聖域に近づく！\n汝の魔力は、厳格な慣習が\n引き離した者たちを再び結びつける。\nすべての人々は兄弟となるだろう、\n汝の守護の翼の下で。」\n\n— フリードリヒ・シラー、「歓喜に寄せて」"
+austria_federation.2.a: "帝国はそのすべての民族を結びつける。"
+austria_federation.2.b: "人民の皇帝に万歳を三唱せよ！"
+
+austria_federation.3.t: "ボヘミア問題"
+austria_federation.3.desc: "何百年もの間、かつてのボヘミア王冠領の土地には、[SCOPE.sCulture('czech_culture').GetName]と[GetCulture('south_german').GetName]の両人口が居住してきた。連邦内に[GetCulture('czech').GetNameNoFormatting]国家を設立するならば、ボヘミアおよびモラヴィアのドイツ人問題を解決しなければならない。"
+austria_federation.3.f: "「なぜ地図はあんな風に見えるんだ？ 変な形だろ？」\n\n「ボヘミア人が百年前くらいに彼らを招き入れたんだ。当時は、ドイツ人かチェコ人かは問題じゃなかった。神と王の下では皆平等だった。私に言わせれば、両方ともプロテスタントを非難すべきだよ」"
+austria_federation.3.a: "ボヘミアおよびモラヴィアのドイツ人には、彼ら自身の国家を持たせなければならない。"
+austria_federation.3.b: "ボヘミアは統一され、ドイツ人は平等な市民として扱われる。"
+austria_federation.3.c: "ドイツ人が自治を得られるなら、チェコ人はスロバキアを得られる。"
+austria_federation.3.d: "チェコスロバキアは、いかなる留保もなく統一される。"
+
+austria_federation.4.t: "スロバキアの運命"
+austria_federation.4.desc: "[SCOPE.sCulture('slovak_culture').GetName]の人々が居住する土地は、長らくハンガリーと密接に絡み合ってきた。[SelectLocalization(SCOPE.sState('slovakia_state').IsValid, SCOPE.sState('slovakia_state').GetName, 'STATE_SLOVAKIA')]をハンガリーから分離する考えにふけることは、[GetCulture('hungarian').GetName]の民族主義者を確実に怒らせるだろうが、他の西スラヴ諸民族との我々の計画の信頼性を確保するかもしれない。"
+austria_federation.4.f: "「それはハンガリーの首都だった。この件については本当に慎重に進めるべきだ」\n\n「そして、スロバキア人はそれがハンガリーの首都になることを望んだのか？ なぜ彼らはハンガリーのために奪われなければならないのか？ 我々はその地域に住む人々の意見、そして彼らだけの意見を考慮すべきだ。私は現実政治にはうんざりしている」"
+austria_federation.4.a: "[SCOPE.sCulture('slovak_culture').GetName]国家を組織する。"
+austria_federation.4.b: "[SCOPE.sCulture('slovak_culture').GetName]国家の設立を、ジプサー・ドイツ人の自治を条件とする。"
+austria_federation.4.c: "スロバキアはハンガリーの一部として保持される。"
+austria_federation.4.d: "チェコ人とスロバキア人の共有国家を承認する。"
+
+austria_federation.5.t: "ガリツィアの将来"
+austria_federation.5.desc: "ガリツィア地方は、ポーランド分割からの[ROOT.GetCountry.GetNameNoFlag]の戦利品を表している。この地域は伝統的に[SCOPE.sCulture('polish_culture').GetName]の貴族によって支配されてきたが、その東部の多くは[GetCulture('ukrainian').GetName]が多数を占めている。[SCOPE.sCulture('polish_culture').GetNameNoFormatting]の支持を確保するためには、有利な分割を手配しなければならない。"
+austria_federation.5.f: "「どう思う？どこに線を引くべきか？」\n\n「ルテニア人はポーランド人よりも要求が低い。東西をきれいに分離すれば彼らは喜ぶが、当然より多くを期待するポーランド人は怒るだろう。レンベルクをポーランド人に渡せば、ルテニア人は他の譲歩と引き換えに我々に従うかもしれない。君の任務を羨ましくは思わないが、十分に実行可能だろう。」」"
+austria_federation.5.a: "「[GetCulture('polish').GetName]国家を西ガリツィアに限定する。」"
+austria_federation.5.b: "「ガリツィアを分割し、ルヴフを[GetCulture('polish').GetName]の権威下に置く。」"
+austria_federation.5.c: "「ガリツィア全域を[GetCulture('polish').GetName]国家として保持する。」"
+
+austria_federation.6.t: "「ハンガリー分割」"
+austria_federation.6.desc: "「ハンガリーの伝統的国境には、多くの相当な規模の非[SCOPE.sCulture('hungarian_culture').GetName]地域が含まれている。我々は、[SCOPE.sCulture('hungarian_culture').GetName]民族を宥めるか、ハンガリーを分割して連邦構想に対する[SCOPE.sCulture('hungarian_culture').GetNameNoFormatting]の反発を招くかの選択を迫られている。」"
+austria_federation.6.desc_dual: "「[SCOPE.sCulture('hungarian_culture').GetName]国家は長らく我が帝国の対等な半分を成し、非常に多様な領土を実質的に無制限に統治してきた。我々は、[SCOPE.sCountry('hungary_scope').GetNameNoFlag]を宥めるか、その諸民族に独自の国家を与えて[SCOPE.sCulture('hungarian_culture').GetNameNoFormatting]の反動を招くかの選択を迫られている。」"
+austria_federation.6.f: "「この計画は実行不可能ではないかと常々心配している。ハンガリー人が反乱を起こさないか？」\n\n「ある中国の将軍が雨で遅れ、副官に遅刻の罰を尋ねた。『死罪です』と彼は答えた。そして反乱の罰はどうかと尋ねると、もちろん同じだった。そしてそうして王朝は滅んだ。我々がハンガリー人を抱える状況は全く同じだ。彼らが些細な譲歩で反乱するなら、最大限の要求を突きつけない理由があろうか？」」"
+austria_federation.6.a: "「連邦内に歴史的ハンガリーを維持する。」"
+austria_federation.6.b: "「[GetCulture('hungarian').GetCustom('getPluralDemonym')]はスロバキアのみを放棄せよ。」"
+austria_federation.6.c: "「クロアチアとトランシルヴァニアをハンガリーから分割する。」"
+austria_federation.6.d: "「ハンガリーをハンガリー人が多数派の地域に縮小する。」"
+
+austria_federation.7.t: "「スロベニア人の土地」"
+austria_federation.7.desc: "「主に[SCOPE.sState('slovenia_scope').GetName]地方に集中する[SCOPE.sCulture('slovene_culture').GetName]民族は、我が帝国の南スラヴ系諸民族の一つである。[SCOPE.sCulture('slovene_culture').GetName]国家を多くの南スラヴ国家の一つとするか、他の類似した民族と連合させるかを考慮しなければならない。」"
+austria_federation.7.desc_istria: "「我が帝国南部の[SelectLocalization(SCOPE.sState('istria_scope').IsValid, SCOPE.sState('istria_scope').GetName, 'STATE_ISTRIA')]に対する[SCOPE.sCulture('slovene_culture').GetName]の主張は、[GetCulture('croat').GetName]と[GetCulture('north_italian').GetName]両民族の主張と衝突している。さらに、[SCOPE.sCulture('slovene_culture').GetName]国家を多くの南スラヴ国家の一つとするか、他の類似した民族と連合させるかの問題が存在する。」"
+austria_federation.7.f: "「さて、海岸を見ると、南部は主にクロアチア人、北部はイタリア人だ。スロベニア人の部分はその中間あたりにある。少々ややこしいが、昼食前に解きほぐせるだろう。システィアーナは十分な港ではないか？」」"
+austria_federation.7.a: "「スロベニア国家は海にまで及ぶ。」"
+austria_federation.7.b1: "「[SelectLocalization(SCOPE.sState('istria_scope').IsValid, SCOPE.sState('istria_scope').GetName, 'STATE_ISTRIA')]に対するクロアチアとイタリアの主張を優先する。」"
+austria_federation.7.b2: "「[SCOPE.sState('slovenia_scope').GetName]にスロベニア国家を創設する。」"
+austria_federation.7.c: "「我が帝国には既に十分なスラヴ系国家がある。」"
+austria_federation.7.d: "「ドイツ人とイタリア人の土地を除いた、スロベニア・クロアチア連合を認める。」"
+austria_federation.7.e: "「連邦内の全南スラヴ人のための国家を支持する。」"
+
+austria_federation.8.t: "「三王国」"
+austria_federation.8.desc: "「[SCOPE.sCulture('croat_culture').GetName]民族が居住する王室領は、ヴェネツィアの旧領土を獲得して以来、[ROOT.GetCountry.GetNameNoFlag]と[GetCulture('hungarian').GetName]の管轄に分割されてきた。[SCOPE.sCulture('croat_culture').GetCustom('getPluralDemonym')]を満足させたいなら、全ての[SCOPE.sCulture('croat_culture').GetNameNoFormatting]民族を[SCOPE.sCulture('croat_culture').GetNameNoFormatting]国家の下に統一しなければならない。」"
+austria_federation.8.desc_triune: "「[SelectLocalization(SCOPE.sCountry('croatia_scope').IsValid, SCOPE.sCountry('croatia_scope').GetName, 'CRO')]の設立は、[SCOPE.sCulture('croat_culture').GetName]民族が単一の政体の下に統一されるという長年の要求を満たした。我々は今、[SCOPE.sCulture('croat_culture').GetName]国家を多くの南スラヴ国家の一つとするか、他の類似した民族と連合させるかを考慮しなければならない。」"
+austria_federation.8.f: "「南スラヴ人の問題は、潰瘍を引き起こすほど困難だった。ハンガリーは[ROOT.GetCountry.GetCapital.GetCityHubName]にとって長らく目の上の瘤であり、測量士は別の強力な行政体を提案するのを躊躇うほどだった。しかし、強力で揺るぎない忠誠を誓うイリュリアの可能性…もしかすると。もし全てが完璧に進めば、もしかすると。」"
+austria_federation.8.a: "「クロアチア国家を[ROOT.GetCountry.GetAdjective]クロアチアに限定する。」"
+austria_federation.8.b: "「連邦内に既存の三王国を維持する。」"
+austria_federation.8.c: "「三王国の下にクロアチアの土地を統一する。」"
+austria_federation.8.d: "「スロベニアとクロアチアの土地の間の連合を組織する。」"
+austria_federation.8.e: "「連邦内の全南スラヴ人のための国家を支持する。」"
+
+austria_federation.9.t: "「森の向こう」"
+austria_federation.9.desc: "「[SCOPE.sCulture('romanian_culture').GetName]が居住する王室領は、我が帝国で最も多様な地域の一つである。いかなる[SCOPE.sCulture('romanian_culture').GetNameNoFormatting]領土の設立も、[GetCulture('hungarian').GetName]民族主義者を警戒させずにはおかないだろう。また、地域全体に散らばる[GetCulture('south_german').GetName]人の集団は自治を心配している。」"
+austria_federation.9.f: "「ここには少なくとも三つの自治体が必要だ。おそらくそれ以上。これらのドイツ人は一体どこから来たのだ？」\n\n「我々が彼らをここに定住させたのだ——ごく最近、前回のトルコとの戦争の後だ。彼らは最後の最後で我々を悩ませに戻ってきたようだ。」」"
+austria_federation.9.a: "「ルーマニア国家にバナトとトランシルヴァニア全域を与える。」"
+austria_federation.9.b: "「ルーマニア国家にセーケイ地方を除く全てを与える。」"
+austria_federation.9.c: "「トランシルヴァニアはルーマニア人のものだが、バナトはドイツ人のものだ。」"
+austria_federation.9.d: "「ルーマニア国家をトランシルヴァニア南部に縮小する。」"
+austria_federation.9.e: "「トランシルヴァニア全域は取り返しのつかないほどハンガリーのものだ。」"
+
+austria_federation.10.t: "「西部辺境」"
+austria_federation.10.desc: "「イタリア半島を席巻する民族主義の潮流は、既に我々のイタリア領土の多くを奪い取った。残る[SCOPE.sCulture('north_italian_culture').GetName]住民の支持を確保するには、イタリア人、[GetCulture('slovene').GetName]、[GetCulture('south_german').GetName]の領土間の未解決の対立を解決しなければならない。」"
+austria_federation.10.desc_lomven: "「[SCOPE.sCulture('north_italian_culture').GetName]民族は、イタリア王室領の人口と経済力により、帝国で最も影響力のある民族の一つである。連邦化への彼らの支持を確保するには、イタリア人、[GetCulture('slovene').GetName]、[GetCulture('south_german').GetName]の領土間の未解決の対立を解決しなければならない。」"
+austria_federation.10.f: "「海軍から手紙をもらった。徴兵数の名の下に、イタリア人に寛大であるようにと頼まれている。」\n\n「驚かないね。彼らはかなりイタリア的な組織だ。」\n\n「パレルモからも手紙をもらった。そちらは…まあ、ここでは繰り返さないが。」\n\n「言いたくはないが、そちらの方がさらにイタリア的だ。」」"
+austria_federation.10.a: "「トレントとトリエステは共にイタリアのものとする。」"
+austria_federation.10.b: "「トレントはイタリアのものとするが、トリエステはスラヴのものだ。」"
+austria_federation.10.c: "「トリエステだけで十分である。」"
+austria_federation.10.d: "「ロンバルド＝ヴェネト王国で十分な代表権がある。」"
+austria_federation.10.e: "「これほど小さな人口では独自の国家を認めるに値しない。」"
+
+austria_federation.11.t: "「辺境地帯」"
+austria_federation.11.desc: "「[SelectLocalization(SCOPE.sState('east_galicia_state').IsValid, SCOPE.sState('east_galicia_state').GetName, 'STATE_EAST_GALICIA')]の[SCOPE.sCulture('ukrainian_culture').GetName]人口は、ポーランド・リトアニア共和国時代以来、[GetCulture('polish').GetName]エリートによって支配されてきた。[SelectLocalization(SCOPE.sState('east_galicia_state').IsValid, SCOPE.sState('east_galicia_state').GetCityHubName, 'HUB_NAME_STATE_EAST_GALICIA_city_polish')]市の主に[GetCulture('polish').GetNameNoFormatting]の住民は、[GetCulture('polish').GetNameNoFormatting]国家の下での自治を要求している。これを受け入れれば[GetCulture('polish').GetCustom('getPluralDemonym')]は宥まるが、[SCOPE.sCulture('ukrainian_culture').GetNameNoFormatting]国家は重要な経済的原動力を失うことになる。」"
+austria_federation.11.f: "「ガリツィア？あそこには特異な力学がある。貴族たちは[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]を嫌っているが、農民たちは[ROOT.GetCountry.GetRuler.GetHerHim]を崇拝している。前回、貴族たち——ほとんどがポーランド人だ——が反乱を企てた時、農民たちは彼らの館を襲撃し、絞首刑にした。我々は反乱を企てた者たちを保護するために軍隊を送らざるを得なかった。私に言わせれば、その時点でルテニア人は国家を得る資格を得たと言える。」」"
+austria_federation.11.a: "「ウクライナ国家に東ガリツィア全域を与える。」"
+austria_federation.11.b: "「東ガリツィアにウクライナ国家を創設し、ルヴフをポーランドの権威下に置く。」"
+austria_federation.11.c: "「ポーランド領ルヴフと引き換えに、ウクライナ人にブコヴィナを提供する。」"
+austria_federation.11.d: "「ガリツィア全域はポーランドの領土である。」"
+
+austria_federation.12.t: "「[SelectLocalization(SCOPE.sState('vojvodina_state').IsValid, SCOPE.sState('vojvodina_state').GetName, 'STATE_DELVIDEK_serbian')]のセルビア人」"
+austria_federation.12.desc: "「[SCOPE.sState('vojvodina_state').GetName]州は長らく[SCOPE.sCulture('serb_culture').GetName]文化の中心地として機能してきた。この地域の[SCOPE.sCulture('serb_culture').GetNameNoFormatting]人口は、首都を[SCOPE.sState('vojvodina_state').GetCityHubName]とする[SCOPE.sCulture('serb_culture').GetNameNoFormatting]国家の形成を要求している。この提案は、地元の[GetCulture('hungarian').GetName]と[GetCulture('south_german').GetName]コミュニティから反対を受けている。」"
+austria_federation.12.f: "「提案を発表する時は、ハンガリー人だけがそれをウーイヴィデークと呼ぶことを忘れるな。他の皆はノヴィ・サドと呼んでいる。我々にとってはノイザッツだ。」\n\n測量士はその名前を消した。「かなりごちゃごちゃした地域だな？」\n\n「君が知る以上にね。あの街はかつてセルビアのアテネと呼ばれた——もし我々が彼らに有利な決定をすれば、再びそうなるかもしれない。」」"
+austria_federation.12.a: "「[SCOPE.sState('vojvodina_state').GetNameNoFormatting]をハンガリーから分割し、セルビア国家とする。」"
+austria_federation.12.b: "「[SCOPE.sState('vojvodina_state').GetNameNoFormatting]はハンガリー内に留まらなければならない。」"
+austria_federation.12.c: "「連邦内の全南スラヴ人のための国家を支持する。」"
+
+croats_are_fine_tt: "「#b 三王国#!が設立されたため: #indent_newline:3 \n• [GetCulture('croat').GetName]は将来の[Concept('concept_integrated_culture','$concept_integrated_culture_process$')]から[Concept('concept_disqualified_culture','$concept_disqualified_culture_short$')]に#b ならない#!#!」"
+because_hungarian_anger_is_low_tt: "「#b ハンガリー#!の[concept_liberty_desire]または[Concept('concept_radical', '$concept_radicalism$')]が低いため: #indent_newline:3 \n• [GetCulture('hungarian').GetName]は将来の[Concept('concept_integrated_culture','$concept_integrated_culture_process$')]から[Concept('concept_disqualified_culture','$concept_disqualified_culture_short$')]に#b ならない#!#!」"
+because_hungarian_anger_is_high_tt: "「#b ハンガリー#!の[concept_liberty_desire]または[Concept('concept_radical', '$concept_radicalism$')]が高いため: #indent_newline:3 \n• [GetCulture('hungarian').GetName]は将来の[Concept('concept_integrated_culture','$concept_integrated_culture_process$')]から[Concept('concept_disqualified_culture','$concept_disqualified_culture_short$')]になる#!#!\n• [GetPlayer.MakeScope.ScriptValue('small_radicals')|-=1%]の[GetCulture('hungarian').GetName]の[Concept('concept_pop', '$concept_pops$')]が[ROOT.GetCountry.GetNameNoFlag]およびその非[GetCulture('hungarian').GetName]の[concept_personal_union]と[concept_crown_land]の[Concept('concept_subject', '$concept_subjects$')]において、より[concept_radical]になる#!#!」"
+because_lombardy_venetia_tt: "「[ROOT.GetCountry.GetName]が#b ロンバルディア#!または#b ヴェネト#!を保持しているため: #indent_newline:3 \n• [GetCulture('north_italian').GetName]は[Concept('concept_integrated_culture','$concept_integrated_culture_short$')]に成功し、[ROOT.GetCountry.GetNameNoFlag]の[Concept('concept_primary_cultures','$concept_primary_culture$')]になる#!#!」"
+
+promised_slovakia_to_hungary_tt: "「#b スロバキア#!が既に#b ハンガリー#!に約束されているため、この選択肢の効果は#r 悪化する#!#!」"
+promised_bukovina_to_romania_tt: "「#b ブコヴィナ#!が既に#b トランシルヴァニア#!に約束されているため: #indent_newline:3 \n• [GetCulture('romanian').GetName]は将来の[Concept('concept_integrated_culture','$concept_integrated_culture_process$')]から[Concept('concept_disqualified_culture','$con"
+
+danubian_tradition_traits_tt: ""
+
+danubian_federation_button_cooldown_tt: ""
+
+not_already_used_this_interaction_tt: ""
+
+capital_is_in_danubian_states_tt: "[concept_capital_state]は[GetStrategicRegion('region_danubia').GetName]、[GetStrategicRegion('region_balkans').GetName]、[GetStrategicRegion('region_poland').GetName]、または[GetStrategicRegion('region_south_germany').GetName]の[concept_strategic_region]内にある"
+
+modifier_greater_austria: "ドナウ連合"
+modifier_greater_austria_character: "全民族の皇帝"
+
+je_danubian_federation_czech_button: "[GetCulture('czech').GetName]の懸念に対処する"
+je_danubian_federation_czech_button_desc: "かつての#bボヘミア王冠領#!が#bボヘミア#!、#bモラヴィア#!、#bシレジア#!の王冠領に分割されたことは、[GetCulture('czech').GetName]民族主義者にとって長年の不満の種であった。さらに、[GetCulture('czech').GetNameNoFormatting]地域内に大きな[GetCulture('south_german').GetName]少数民族が存在することは、継続的な民族間緊張の源となっている。この地域を連邦に統合するためには、[GetCulture('south_german').GetNameNoFormatting]少数民族を疎外することなく、ボヘミアを再統一する解決策を考案しなければならない。"
+je_danubian_federation_czech_button_integrate_tt: "このイベントを通じて、以下の[Concept('concept_culture', '$concept_cultures$')]が[Concept('concept_integrated_culture','$concept_integrated_culture_short$')]となる可能性がある:\n• [GetCulture('czech').GetName]\n• [GetCulture('slovak').GetName]"
+je_danubian_federation_czech_button_disqualify_tt: "このイベントを通じて、以下の[Concept('concept_culture', '$concept_cultures$')]が[Concept('concept_disqualified_culture','$concept_disqualified_culture_short$')]となる可能性がある:\n• [GetCulture('hungarian').GetName]"
+je_danubian_federation_slovak_button_integrate_tt: "このイベントを通じて、以下の[Concept('concept_culture', '$concept_cultures$')]が[Concept('concept_integrated_culture','$concept_integrated_culture_short$')]となる可能性がある:\n• [GetCulture('slovak').GetName]\n• [GetCulture('czech').GetName]"
+je_danubian_federation_slovak_button_disqualify_tt: "$je_danubian_federation_czech_button_disqualify_tt$"
+je_danubian_federation_polish_button_integrate_tt: "このイベントを通じて、以下の[Concept('concept_culture', '$concept_cultures$')]が[Concept('concept_integrated_culture','$concept_integrated_culture_short$')]となる可能性がある:\n• [GetCulture('polish').GetName]"
+je_danubian_federation_polish_button_disqualify_tt: "このイベントを通じて、以下の[Concept('concept_culture', '$concept_cultures$')]が[Concept('concept_disqualified_culture','$concept_disqualified_culture_short$')]となる可能性がある:\n• [GetCulture('ukrainian').GetName]"
+je_danubian_federation_hungarian_button_integrate_tt: "このイベントを通じて、以下の[Concept('concept_culture', '$concept_cultures$')]が[Concept('concept_integrated_culture','$concept_integrated_culture_short$')]となる可能性がある:\n• [GetCulture('hungarian').GetName]\n• [GetCulture('szekely').GetName]"
+je_danubian_federation_hungarian_button_disqualify_tt: "このイベントを通じて、以下の[Concept('concept_culture', '$concept_cultures$')]が[Concept('concept_disqualified_culture','$concept_disqualified_culture_short$')]となる可能性がある:\n• [GetCulture('slovak').GetName]\n• [GetCulture('romanian').GetName]\n• [GetCulture('serb').GetName]\n• [GetCulture('croat').GetName]"
+je_danubian_federation_slovene_button_integrate_tt: "このイベントを通じて、以下の[Concept('concept_culture', '$concept_cultures$')]が[Concept('concept_integrated_culture','$concept_integrated_culture_short$')]となる可能性がある:\n• [GetCulture('slovene').GetName]\n• [GetCulture('croat').GetName]\n• [GetCulture('serb').GetName]"
+je_danubian_federation_slovene_button_disqualify_tt: "このイベントを通じて、以下の[Concept('concept_culture', '$concept_cultures$')]が[Concept('concept_disqualified_culture','$concept_disqualified_culture_short$')]となる可能性がある:\n• [GetCulture('north_italian').GetName]\n• [GetCulture('hungarian').GetName]"
+je_danubian_federation_croat_button_integrate_tt: "このイベントを通じて、以下の[Concept('concept_culture', '$concept_cultures$')]が[Concept('concept_integrated_culture','$concept_integrated_culture_short$')]となる可能性がある:\n• [GetCulture('slovene').GetName]\n• [GetCulture('croat').GetName]\n• [GetCulture('serb').GetName]"
+je_danubian_federation_croat_button_disqualify_tt: "このイベントを通じて、以下の[Concept('concept_culture', '$concept_cultures$')]が[Concept('concept_disqualified_culture','$concept_disqualified_culture_short$')]となる可能性がある:\n• [GetCulture('hungarian').GetName]"
+je_danubian_federation_romanian_button_integrate_tt: "このイベントを通じて、以下の[Concept('concept_culture', '$concept_cultures$')]が[Concept('concept_integrated_culture','$concept_integrated_culture_short$')]となる可能性がある:\n• [GetCulture('romanian').GetName]\n• [GetCulture('szekely').GetName]"
+je_danubian_federation_romanian_button_disqualify_tt: "このイベントを通じて、以下の[Concept('concept_culture', '$concept_cultures$')]が[Concept('concept_disqualified_culture','$concept_disqualified_culture_short$')]となる可能性がある:\n• [GetCulture('szekely').GetName]\n• [GetCulture('hungarian').GetName]"
+je_danubian_federation_north_italian_button_integrate_tt: "このイベントを通じて、以下の[Concept('concept_culture', '$concept_cultures$')]が[Concept('concept_integrated_culture','$concept_integrated_culture_short$')]となる可能性がある:\n• [GetCulture('north_italian').GetName]"
+je_danubian_federation_ukrainian_button_integrate_tt: "このイベントを通じて、以下の[Concept('concept_culture', '$concept_cultures$')]が[Concept('concept_integrated_culture','$concept_integrated_culture_short$')]となる可能性がある:\n• [GetCulture('ukrainian').GetName]\n• [GetCulture('polish').GetName]"
+je_danubian_federation_ukrainian_button_disqualify_tt: "このイベントを通じて、以下の[Concept('concept_culture', '$concept_cultures$')]が[Concept('concept_disqualified_culture','$concept_disqualified_culture_short$')]となる可能性がある:\n• [GetCulture('polish').GetName]\n• [GetCulture('romanian').GetName]"
+je_danubian_federation_serb_button_integrate_tt: "このイベントを通じて、以下の[Concept('concept_culture', '$concept_cultures$')]が[Concept('concept_integrated_culture','$concept_integrated_culture_short$')]となる可能性がある:\n• [GetCulture('serb').GetName]\n• [GetCulture('croat').GetName]\n• [GetCulture('slovene').GetName]"
+je_danubian_federation_serb_button_disqualify_tt: "このイベントを通じて、以下の[Concept('concept_culture', '$concept_cultures$')]が[Concept('concept_disqualified_culture','$concept_disqualified_culture_short$')]となる可能性がある:\n• [GetCulture('hungarian').GetName]"
+
+je_danubian_federation_slovak_button: "[GetCulture('slovak').GetName]の懸念に対処する"
+je_danubian_federation_slovak_button_desc: "[GetCulture('slovak').GetName]の人々が住む土地は長い間#b$HUN_ADJ$#!王冠の下に組織され、その結果、民族アイデンティティの成長を妨げる激しいマジャル化政策にさらされてきた。これに加え、[GetCulture('czech').GetName]と[GetCulture('slovak').GetNameNoFormatting]の民族主義者は歴史的に緊密な関係を維持しており、一部からは[GetCulture('czech').GetNameNoFormatting]-[GetCulture('slovak').GetNameNoFormatting]共同体の設立が提唱されている。[GetCulture('slovak').GetCustom('getPluralDemonym')]を連邦に統合するためには、この地域を#bハンガリー#!から分割し、未解決の[GetCulture('czech').GetNameNoFormatting]-[GetCulture('slovak').GetNameNoFormatting]連合の問題に対する解決策を考案する必要がある。"
+
+je_danubian_federation_polish_button: "[GetCulture('polish').GetName]の懸念に対処する"
+je_danubian_federation_polish_button_desc: "#bガリツィア#!地域には、[GetCulture('polish').GetCustom('getPluralDemonym')]と[GetCulture('ukrainian').GetCustom('getPluralDemonym')]の二つの民族が住んでいる。この地域は長い間農業の後進地域として特徴づけられてきたが、二つの民族間の大きな争いの場でもあった。#bガリツィア#!西部は[GetCulture('polish').GetName]が多数派であるが、東部は[GetCulture('ukrainian').GetName]が多数派であり、伝統的に[GetCulture('polish').GetNameNoFormatting]の支配階級が存在する。[GetCulture('polish').GetNameNoFormatting]の土地を統合するためには、#bガリツィア#!を分割するかどうか、そして東部の[GetCulture('polish').GetNameNoFormatting]飛び地をどのように確保するかを決定しなければならない。"
+
+je_danubian_federation_hungarian_button: "[GetCulture('hungarian').GetName]の懸念に対処する"
+je_danubian_federation_hungarian_button_desc: "[GetCulture('hungarian').GetName]の人々は長い間、帝国内で高い地位を享受し、歴史的な#b$HUN$#!全体が単一の広大な王冠領として組織されてきた。伝統的な[GetCulture('hungarian').GetNameNoFormatting]の土地には、スラヴ系、ゲルマン系、ルーマニア系の多くの民族が含まれており、それらはすべて民族主義的な[GetCulture('hungarian').GetNameNoFormatting]行政によるマジャル化政策にさらされてきた。#bハンガリー#!を統合するためには、その歴史的な土地を様々な民族の間でどのように分割するか、あるいは少数民族を犠牲にしてそのまま維持するかを決定しなければならない。"
+
+je_danubian_federation_slovene_button: "[GetCulture('slovene').GetName]の懸念に対処する"
+je_danubian_federation_slovene_button_desc: "[GetCulture('slovene').GetName]の人々が住む土地は、[ROOT.GetCountry.GetNameNoFlag]の経済的中心地に近く、#b沿海地方#!、#bカルニオラ#!、#bシュタイアーマルク#!の王冠領内にある。一部の[GetCulture('slovene').GetNameNoFormatting]民族主義者は、長い間、南スラヴ統一のより広範な運動と結びついており、[GetCulture('slovene').GetCustom('getPluralDemonym')]、[GetCulture('croat').GetCustom('getPluralDemonym')]、[GetCulture('serb').GetCustom('getPluralDemonym')]の土地を含む自治体を求めてきた。この地域を統合するためには、既存の三つの王冠領から[GetCulture('slovene').GetNameNoFormatting]国家を画定するとともに、統一南スラヴ国家の可能性という問題に答えなければならない。"
+
+je_danubian_federation_croat_button: "[GetCulture('croat').GetName]の懸念に対処する"
+je_danubian_federation_croat_button_desc: "[GetCulture('croat').GetName]の土地は長い間分割されてきた――まず#b$STATE_CROATIA$#!、#b$STATE_SLAVONIA$#!、#b$STATE_DALMATIA$#!の三つの王冠領に分かれ、その後#b$AUS_ADJ$#!と#b$HUN_ADJ$#!の行政区画に分割された。[SCOPE.GetRootScope.GetCountry.GetCustom('triune_kingdom_exists_or_not')] さらに、[GetCulture('croat').GetNameNoFormatting]民族主義運動は長い間「イリュリア主義」と結びついており、これは[GetCulture('slovene').GetCustom('getPluralDemonym')]、[GetCulture('croat').GetCustom('getPluralDemonym')]、[GetCulture('serb').GetCustom('getPluralDemonym')]を単一国家の下に統一したいという傾向である。クロアチアを連邦に統合するためには、[SCOPE.GetRootScope.GetCountry.GetCustom('triune_kingdom_exists_or_not_goal')]"
+TRIUNE_KINGDOM_NOT_EXISTS: "三つの伝統的な[GetCulture('croat').GetNameNoFormatting]の土地すべてからなる「三重王国」の設立は、[GetCulture('croat').GetNameNoFormatting]民族主義者の長年の目標であった。"
+TRIUNE_KINGDOM_EXISTS: "三つの伝統的な[GetCulture('croat').GetNameNoFormatting]の土地すべてからなる「三重王国」が最近設立されたことで、[GetCulture('croat').GetNameNoFormatting]民族主義者は満足し、今では自国の拡大を望んでいる。"
+TRIUNE_KINGDOM_NOT_EXISTS_GOAL: "「三重王国」を実現する解決策を考案し、南スラヴ統一の問題について結論を出す。"
+TRIUNE_KINGDOM_EXISTS_GOAL: "「三重王国」を維持することを約束し、南スラヴ統一の問題について結論を出す。"
+
+je_danubian_federation_romanian_button: "[GetCulture('romanian').GetName]の懸念に対処する"
+je_danubian_federation_romanian_button_desc: "[GetCulture('romanian').GetName]の土地は、非常に多様な地域である#bバナト#!、数多くの[GetCulture('south_german').GetName]飛び地、そして#bセーケイ地方#!という大きな[GetCulture('hungarian').GetName]飛び地を含む、帝国で最も複雑な地域の一つである。[GetCulture('romanian').GetNameNoFormatting]と[GetCulture('hungarian').GetNameNoFormatting]の民族主義者間の領土分割をめぐる激しい争いや、この地域に存在する無数の他の少数民族をめぐる争いが存在する。[SCOPE.GetRootScope.GetCountry.GetCustom('danubian_principalities_exists_or_not')] この地域を連邦に統合するためには、将来の[GetCulture('romanian').GetNameNoFormatting]国家の国境問題を解決し、#bバナト#!とこの地域の[GetCulture('south_german').GetNameNoFormatting]および[GetCulture('hungarian').GetNameNoFormatting]飛び地の地位を明確にしなければならない。"
+ROMANIA_EXISTS: "これらの争いに加えて、この地域を他の[GetCulture('romanian').GetNameNoFormatting]国家と統一しようとする動きが存在する。"
+ROMANIA_NOT_EXISTS: ""
+
+je_danubian_federation_north_italian_button: "[GetCulture('north_italian').GetName]の懸念に対処する"
+je_danubian_federation_north_italian_button_desc: "[GetCulture('north_italian').GetName]の王冠領は長い間、帝国で最も繁栄した地域の一つであり、[ROOT.GetCountry.GetAdjectiveNoFlag]の貿易と航海技術の大半を提供してきた。これらの土地はまた、一貫して手に負えないことが証明されており、イタリア民族主義者は[SCOPE.GetRootScope.GetCountry.GetCustom('italy_or_italian_states')]との統一を強く求めている。[GetCulture('north_italian').GetNameNoFormatting]の土地を連邦に統合するためには、統一主義的感情を鎮圧し、[GetCulture('south_german').GetName]および[GetCulture('slovene').GetName]地域内の[GetCulture('north_italian').GetNameNoFormatting]少数民族の問題を、[GetCulture('north_italian').GetNameNoFormatting]民族主義者に満足のいく形で解決しなければならない。"
+
+ITALY_EXISTS: "#bイタリア#!"
+ITALY_NOT_EXISTS: "他のイタリア諸国"
+
+disqualify_culture_tt: "[SCOPE.sCulture('relevant_culture_scope').GetName]は、将来の[Concept('concept_integrated_culture','$concept_integrated_culture_process$')]から[Concept('concept_disqualified_culture','$concept_disqualified_culture_short$')]となる"
+
+extra_culture_anger_tt: "この選択は、[SCOPE.sCulture('relevant_culture_scope').GetName]の[concept_culture]に対する#b以前の約束#!を裏切ることになるため:"
+extra_culture_anger_separatism_tt: "$extra_culture_anger_tt$ #indent_newline:3 \n• すべての[SCOPE.sCulture('relevant_culture_scope').GetName]の[Concept('concept_subject', '$concept_subjects$')]が#v [GetPlayer.MakeScope.ScriptValue('annex_subject_max_liberty_desire_change')]#!の[concept_liberty_desire]を獲得する\n•  すべての[SCOPE.sCulture('relevant_culture_scope').GetName]の[Concept('concept_subject', '$concept_subjects$')]との[concept_relations]が大幅に#r悪化する#!"
+extra_culture_anger_radicals_tt: "$extra_culture_anger_tt$ #indent_newline:3 \n• [GetPlayer.MakeScope.ScriptValue('large_radicals')|-=1%]の[SCOPE.sCulture('relevant_culture_scope').GetName]の[Concept('concept_pop', '$concept_pops$')]がより[concept_radical]になる#!"
+
+je_danubian_federation_ukrainian_button: "[GetCulture('ukrainian').GetName]の懸念に対処する"
+je_danubian_federation_ukrainian_button_desc: ""
+
+je_danubian_federation_serb_button: ""
+je_danubian_federation_serb_button_desc: ""
+
+no_active_secession_movement_tt: ""
+not_enemy_of_any_country_with_culture_tt: ""
+
+has_integrated_5_danubian_cultures_tt: ""
+has_integrated_5_danubian_cultures_aus_tt: ""
+has_disqualified_however_many_danubian_cultures_tt: ""
+has_disqualified_however_many_danubian_cultures_aus_tt: ""
+has_no_way_to_integrate_5_danubian_cultures_tt: ""
+has_no_way_to_integrate_5_danubian_cultures_aus_tt: ""
+danubian_federation_final_act_tt: ""
+danubian_federation_final_act_aus_tt: ""
+je_danubian_federation_enact_the_federation: ""
+je_danubian_federation_enact_the_federation_desc: ""
+
+all_culture_states_integrated_tt: ""
+lose_integrated_cultures_tt: ""
+already_integrated_tt: ""
+culture_disqualified_tt: ""
+
+all_primary_cultures_integrated_tt: "全ての[concept_primary_cultures]が[Concept('concept_integrated_culture','$concept_integrated_culture_short$')]に成功した"
+
+federalization_signed_tt: "#b 連邦化法#!が[ROOT.GetCountry.GetAdjectiveNoFlag]議会で法制化される"
+
+federalization_was_signed_tt: "#b 連邦化法#!が[ROOT.GetCountry.GetAdjectiveNoFlag]議会で法制化された"
+
+aus_revisit_federation_proposal: "連邦制解決案を再検討する"
+aus_revisit_federation_proposal_desc: "帝国を多民族連邦国家へ再編成する様々な提案が、長年にわたり浮上しては消えてきた。連邦化への関心が再燃した今、これらの提案が公式な国家政策として採用される可能性がある。"
+
+shelve_proposal_for_now_tt: "#b $je_danubian_federation$#! [concept_journal_entry]は一旦棚上げされる。このジャーナルエントリーは後で$DECISIONS$メニューから#b 再検討#!できる"
+
+aus_organise_trialism: "三元主義宣言を発する"
+aus_organise_trialism_desc: "常に反乱を起こす#v $HUN$#!が我が帝国内で有する影響力の度合いは、警戒すべきものとなっている。忠実で対等な南スラブ王国を創設することで、$HUN_ADJ$の力を削ぎ、バルカン半島へのさらなる拡大への道を開くことができる。"
+
+dp_enforce_trialist_manifesto: "三元主義宣言を強制する"
+
+austria_trialism.1.t_display_tt: "[THIS.GetCountry.GetName]はイベント#v [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstName]が三元主義宣言を発する#!を発生させる"
+
+modifier_trialism_rebuked: "三元主義の拒否"
+
+successful_integration_tt: "[SCOPE.sCulture('relevant_culture_scope').GetName]は[Concept('concept_integrated_culture','$concept_integrated_culture_short$')]に成功し、[ROOT.GetCountry.GetNameNoFlag]の[Concept('concept_primary_cultures','$concept_primary_culture$')]となる"
+
+small_radicals_in_subjects_and_country_tt: "[ROOT.GetCountry.GetNameNoFlag]およびその非[SCOPE.sCulture('relevant_culture_scope').GetName]の[concept_personal_union]と[concept_crown_land] [Concept('concept_subject', '$concept_subjects$')]における[SCOPE.sCulture('relevant_culture_scope').GetName] [Concept('concept_pop', '$concept_pops$')]の[GetPlayer.MakeScope.ScriptValue('small_radicals')|-=1%]がより[concept_radical]になる"
+medium_radicals_in_subjects_and_country_tt: "[ROOT.GetCountry.GetNameNoFlag]およびその非[SCOPE.sCulture('relevant_culture_scope').GetName]の[concept_personal_union]と[concept_crown_land] [Concept('concept_subject', '$concept_subjects$')]における[SCOPE.sCulture('relevant_culture_scope').GetName] [Concept('concept_pop', '$concept_pops$')]の[GetPlayer.MakeScope.ScriptValue('medium_radicals')|-=1%]がより[concept_radical]になる"
+large_radicals_in_subjects_and_country_tt: "[ROOT.GetCountry.GetNameNoFlag]およびその非[SCOPE.sCulture('relevant_culture_scope').GetName]の[concept_personal_union]と[concept_crown_land] [Concept('concept_subject', '$concept_subjects$')]における[SCOPE.sCulture('relevant_culture_scope').GetName] [Concept('concept_pop', '$concept_pops$')]の[GetPlayer.MakeScope.ScriptValue('large_radicals')|-=1%]がより[concept_radical]になる"
+very_large_radicals_in_subjects_and_country_tt: "[ROOT.GetCountry.GetNameNoFlag]およびその非[SCOPE.sCulture('relevant_culture_scope').GetName]の[concept_personal_union]と[concept_crown_land] [Concept('concept_subject', '$concept_subjects$')]における[SCOPE.sCulture('relevant_culture_scope').GetName] [Concept('concept_pop', '$concept_pops$')]の[GetPlayer.MakeScope.ScriptValue('very_large_radicals')|-=1%]がより[concept_radical]になる"
+
+small_loyalists_in_subjects_and_country_tt: "[ROOT.GetCountry.GetNameNoFlag]およびその非[SCOPE.sCulture('relevant_culture_scope').GetName]の[concept_personal_union]と[concept_crown_land] [Concept('concept_subject', '$concept_subjects$')]における[SCOPE.sCulture('relevant_culture_scope').GetName] [Concept('concept_pop', '$concept_pops$')]の[GetPlayer.MakeScope.ScriptValue('small_radicals')|+=1%]がより[concept_loyalist]になる"
+medium_loyalists_in_subjects_and_country_tt: "[ROOT.GetCountry.GetNameNoFlag]およびその非[SCOPE.sCulture('relevant_culture_scope').GetName]の[concept_personal_union]と[concept_crown_land] [Concept('concept_subject', '$concept_subjects$')]における[SCOPE.sCulture('relevant_culture_scope').GetName] [Concept('concept_pop', '$concept_pops$')]の[GetPlayer.MakeScope.ScriptValue('medium_radicals')|+=1%]がより[concept_loyalist]になる"
+large_loyalists_in_subjects_and_country_tt: "[ROOT.GetCountry.GetNameNoFlag]およびその非[SCOPE.sCulture('relevant_culture_scope').GetName]の[concept_personal_union]と[concept_crown_land] [Concept('concept_subject', '$concept_subjects$')]における[SCOPE.sCulture('relevant_culture_scope').GetName] [Concept('concept_pop', '$concept_pops$')]の[GetPlayer.MakeScope.ScriptValue('large_radicals')|+=1%]がより[concept_loyalist]になる"
+very_large_loyalists_in_subjects_and_country_tt: "[ROOT.GetCountry.GetNameNoFlag]およびその非[SCOPE.sCulture('relevant_culture_scope').GetName]の[concept_personal_union]と[concept_crown_land] [Concept('concept_subject', '$concept_subjects$')]における[SCOPE.sCulture('relevant_culture_scope').GetName] [Concept('concept_pop', '$concept_pops$')]の[GetPlayer.MakeScope.ScriptValue('very_large_radicals')|+=1%]がより[concept_loyalist]になる"
+
+austria_trialism.1.t: "[SCOPE.sCountry('austria_scope').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('austria_scope').GetRuler.GetFirstName]が三元主義宣言を発する"
+austria_trialism.1.d: "[SCOPE.sCountry('austria_scope').GetCapital.GetCityHubName]の[SCOPE.sCountry('austria_scope').GetRuler.GetPrimaryRoleTitle]が、[GetCulture('croat').GetName]王国の設立を支持する宣言を発した。この王国を設立することは、[ROOT.GetCountry.GetAdjectiveNoFlag]王室領の一体性を損ない、帝国内での我々の相対的地位を低下させることになる。"
+austria_trialism.1.f: "使者が議会議長のドアを激しく叩き、秘書が現れるまで止まらなかった。彼は片手に書類の束を握りしめ、もう一方の手をドア枠に置いてバランスを取っていた。息を切らしながら、ようやく最初の言葉を発した。\n\n「今知らせを受けました。[SCOPE.sCountry('austria_scope').GetRuler.GetCustom('getEmpressEmperor')]が——」\n\n「[SCOPE.sCountry('austria_scope').GetRuler.GetCustom('getQueenKing')]のことでございますか？」\n\n「ああ、そうです。[SCOPE.sCountry('austria_scope').GetRuler.GetCustom('getQueenKing')]は我々を解体しようとしています。」"
+austria_trialism.1.a: "[ROOT.GetCountry.GetNameNoFlag]へのこの侮辱に拒否権を行使する。"
+austria_trialism.1.b: "我々の過ちが報われるように。宣言に署名する。"
+possible_dp_with_austria_scope_tt: "#r#b [SCOPE.sCountry('austria_scope').GetName]に対する[concept_diplomatic_play]を引き起こす可能性あり#!#!"
+
+austria_trialism.2.t: "[SCOPE.sCountry('hungary_scope').GetName]が三元主義宣言を拒否"
+austria_trialism.2.d: "[SCOPE.sCountry('hungary_scope').GetName]政府は、[GetCulture('croat').GetName]民族に対等な君主国を約束する[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]の宣言に拒否権を行使した。[SCOPE.sCountry('hungary_scope').GetNameNoFormatting]の拒否は、帝国両地域の南スラブ系住民の間に不満を引き起こした。"
+austria_trialism.2.f: "大きなため息が[SCOPE.GetRootScope.GetCountry.GetCustom('country_legislature_name')]を包んだ。彼らに楽観的な理由はなかった——しかし、どういうわけか、それはとても近いものに思えた。一瞬、彼らは希望を持つことを許したが、それは確固たる修正を迫られるだけだった。\n\nもちろん解決策はあったが、その瞬間、誰も口に出す勇気のないものだった。夕方になり、彼らの思考が幻滅から復讐へと向かった時、初めてそのようなことが表現できた。[SCOPE.sCountry('hungary_scope').GetNameNoFormatting]には拒否権があるが、[ROOT.GetCountry.GetNameNoFormatting]には重砲がある。彼らは再び希望を抱く勇気があるだろうか？"
+austria_trialism.2.a: "我々は合理的にできることは全て行った。"
+austria_trialism.2.b: "その条件を強制するため軍隊を動員する。"
+
+austria_trialism.3.t: "三重王国"
+austria_trialism.3.d_peace: "[SCOPE.sCountry('hungary_scope').GetName]による[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]の宣言批准により、帝国の[GetCulture('croat').GetName]地域から対等な[SCOPE.sCountry('croatia_scope').GetName]王国が組織された。二重君主国は三重君主国となった。"
+austria_trialism.3.d_war: "[SCOPE.sCountry('hungary_scope').GetName]が軍事力によって屈服させられたことにより、帝国の[GetCulture('croat').GetName]地域から対等な[SCOPE.sCountry('croatia_scope').GetName]王国が組織された。二重君主国は三重君主国となった。"
+austria_trialism.3.f: "「新聞が宣言の言葉を捉えた時」と官吏は語り始めた。「[SCOPE.sCountry('croatia_scope').GetCapital.GetCityHubName]では二つのパレードがありました。一つは二重君主国の終焉を祝うため、もう一つは三重君主国の到来を告げるためです。どんなメッセージよりも明確だと思います。」\n\n「あなたは最初のパレードに居合わせたと言いました。制御不能になることを心配したことはありませんか？」\n\n「考えましたよ、認めざるを得ません。そんなことは悲しいほどよくあることです。しかし彼らはハンガリー人を指弾できました。彼らの抑圧者となる代わりに、我々は自らを彼らの英雄にしたのです。」"
+austria_trialism.3.a: "[SCOPE.sCountry('croatia_scope').GetNameNoFlag]を歴史的な[GetCulture('croat').GetName]の土地に限定する。"
+austria_trialism.3.b: "[GetCulture('slovene').GetName]の土地の一部をその管理下に置く。"
+austria_trialism.3.c: "[SCOPE.sCountry('croatia_scope').GetNameNoFlag]は全ての南スラブ人のための王国とする。"
+
+aus_hun_civil_war_warning_tt: "#r どちらも譲歩しなければ、帝国の両地域間で戦争が勃発する。#!"
+
+change_tag_to_KUK_monarchy_tt: "[ROOT.GetCountry.GetName]は#v $dyn_c_usga$#!に再編成される"
+change_tag_to_KUK_republic_tt: "[ROOT.GetCountry.GetName]は#v $KUK$#!に再編成される"
+
+# Technocracy
+
+je_technocracy: "新たな機械"
+je_technocracy_reason: "[ROOT.GetCountry.GetName]における[GetLawType('law_technocracy').GetName]の確立は、有能で秩序正しく豊かな社会の実現に向けた大きな一歩を表している。しかし、[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]と[SCOPE.GetRootScope.GetCountry.GetCustom('country_legislature_name')]が存在するだけでは、旧秩序の過ちと非効率性を消し去るには不十分である。社会変革を実現するためにはまだ多くの作業が残っており、大衆は我々の計画に懐疑的である。\n\n新体制を確固たるものにするためには、我々の議題を完了し、$law_technocracy$が彼らが望む平和と豊かさの時代を実現することを示さなければならない。"
+
+je_technocracy_progress_bar: "新たな機械"
+je_technocracy_progress_bar_desc: "進捗: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('technocracy_upper_bound')])"
+je_technocracy_complete_tt: "#variable $je_technocracy_progress_bar$#!進捗バーが#variable 100%#!に到達した"
+
+technocracy.4.t: "科学による改善"
+technocracy.4.d: "[ROOT.GetCountry.GetName]は、[GetIdeology('ideology_technocratic').GetName]統治下で、国内の安定と一貫した改善の期間を経験した。以前は懐疑的だった社会の層が広く[GetLawType('law_technocracy').GetName]を理想的な統治形態として受け入れるようになった。"
+technocracy.4.f: "「テクノクラシーにおいて、我々は科学が希少性の経済を豊かさの経済に置き換えるのを見る。\nテクノクラシーにおいて、我々は機能的な有能さが奇怪で浪費的な無能さに取って代わり、事実が推測に取って代わり、秩序が無秩序に取って代わり、産業計画が産業の混沌に取って代わるのを見る。\nテクノクラシーは、人間の知性にふさわしい文明を築こうとする科学の試みである。」\n\n— ハワード・スコット、「テクノクラシー：科学対混沌」"
+technocracy.4.a: "新世界がこれほど近づいたことはない。"
+technocracy.4.b: "我々の手法は社会のあらゆる側面に及ばなければならない。"
+
+technocracy_no_supporting_igs_tt: "[Concept('concept_interest_group', '$concept_interest_groups$')]が[concept_in_government]で[GetLawType('law_technocracy').GetName]を支持していない"
+technocracy_economy_laws_tt: "$lawgroup_economic_system$法が[GetLawType('law_interventionism').GetName]でも[GetLawType('law_command_economy').GetName]でもない" # TODO PRCAL-35135 make this state capitalism
+technocracy_legitimacy_tt: "高い[concept_legitimacy]"
+technocracy_command_economy_tt: "[GetLawType('law_command_economy').GetName] [concept_law]"
+technocracy_state_capitalism_tt: "[GetLawType('law_interventionism').GetName] [concept_law]" # TODO PRCAL-35135 make this state capitalism
+technocracy_insurrection_tt: "醸成中の[concept_insurrection]"
+technocracy_loyalists_tt: "[Concept('concept_loyalist','$concept_loyalists$')]の数"
+
+event_effects_technocracy.4_tt: "可能性のある#b イベント#!効果:\n• [SCOPE.gsInterestGroup('intelligentsia_ig').GetName]は[GetIdeology('ideology_republican').GetName]または[GetIdeology('ideology_constitutionalist').GetName] [concept_ideology]を失い、[GetIdeology('ideology_technocratic').GetName] $concept_ideology$を獲得する\n• 以下のいずれかを選択:\n$TAB$• [ROOT.GetCountry.GetNameNoFormatting]は#tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_technocracy_brave_new_world_tt $modifier_technocracy_brave_new_world$#!を獲得する\n$TAB$• [ROOT.GetCountry.GetNameNoFormatting]は#tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_technocracy_scientific_management_tt $modifier_technocracy_scientific_management$#!を獲得する"
+
+no_revolution_tt: "[ROOT.GetCountry.GetNameNoFlag]には#b 反乱の#! [Concept('concept_insurrection', '$concept_insurrectionary$')] [Concept('concept_political_movement', '$concept_political_movements$')]が存在しない"
+
+modifier_technocracy_brave_new_world: "すばらしい新世界"
+modifier_technocracy_scientific_management: "管理の時代"
+
+modifier_technocracy_brave_new_world_tt: "[GetStaticModifier('modifier_technocracy_brave_new_world').GetName|v]\n[GetStaticModifier('modifier_technocracy_brave_new_world').GetDesc]"
+modifier_technocracy_scientific_management_tt: "[GetStaticModifier('modifier_technocracy_scientific_management').GetName|v]\n[GetStaticModifier('modifier_technocracy_scientific_management').GetDesc]"
+
+dual_monarchy_cannot_form_germany_tt: "@warning! #b 二重君主国#!が存続する間、[ROOT.GetCountry.GetNameNoFlag]は#v $GER$#!を形成できない"
+no_dual_or_triple_monarchy_tt: "[ROOT.GetCountry.GetNameNoFlag]は$gov_dual_monarchy$または$gov_triple_monarchy$ [concept_government_type]を#b 有していない#"
+
+austria_germany.1.t: "七千万人の帝国"
+austria_germany.1.d: "かつての#b オーストリア帝国#!全体を[ROOT.Get"
+austria_germany.1.d1: ""
+austria_germany.1.f: ""
+austria_germany.1.a: "非ドイツ地域を従属国として解放する。"
+austria_germany.1.b: "非ドイツ地域に独立を認める。"
+austria_germany.1.c: "七千万計画の道を歩み続ける。"
+
+austria_germany_warning_2_tt: "#r 覇権的大ドイツ国家の樹立は、他の列強の警戒を招くだろう#!"
+austria_germany_warning_tt: "#r 分割されていない大ドイツ国家の樹立は、他の列強の警戒を招くだろう#!"
+
+release_relevant_culture_states_as_puppets_tt: "我々の[SCOPE.sCulture('relevant_culture_scope').GetNameNoFormatting]の[concept_homeland]である[Concept('concept_state', '$concept_states$')]に、[SCOPE.sCulture('relevant_culture_scope').GetName]の[concept_puppet]が組織される。"
+
+release_relevant_culture_states_tt: "我々の[SCOPE.sCulture('relevant_culture_scope').GetNameNoFormatting]の[concept_homeland]である[Concept('concept_state', '$concept_states$')]に、独立した[SCOPE.sCulture('relevant_culture_scope').GetName]の[concept_country]が解放される。"
+transfer_relevant_culture_states_to_hungary_tt: "我々の[SCOPE.sCulture('relevant_culture_scope').GetNameNoFormatting]の[concept_homeland]である[Concept('concept_state', '$concept_states$')]は、[SCOPE.sCountry('hungary_scope').GetName]に譲渡される。"
+transfer_relevant_culture_states_to_croatia_tt: "我々の[SCOPE.sCulture('relevant_culture_scope').GetNameNoFormatting]の[concept_homeland]である[Concept('concept_state', '$concept_states$')]は、[SCOPE.sCountry('croatia_scope').GetName]に譲渡される。"
+transfer_relevant_culture_states_to_lombardia_tt: "我々の[SCOPE.sCulture('relevant_culture_scope').GetNameNoFormatting]の[concept_homeland]である[Concept('concept_state', '$concept_states$')]は、[SCOPE.sCountry('lombardy_scope').GetName]に譲渡される。"
+transfer_relevant_culture_states_to_galicia_tt: "我々の[SCOPE.sCulture('relevant_culture_scope').GetNameNoFormatting]の[concept_homeland]である[Concept('concept_state', '$concept_states$')]は、[SCOPE.sCountry('galicia_scope').GetName]に譲渡される。"
+
+hungry_forties_triggered_tt: "[concept_georegion_europe]内の少なくとも#v 10#!の[concept_state]が、$disease_outbreak$の[concept_harvest_condition]状態にある。"
+
+je_the_hungry_forties: "飢えた[SCOPE.GetRootScope.GetCountry.GetCustom('getDecadeName')|U]"
+je_the_hungry_forties_reason: "作物の疫病の波が[concept_georegion_europe]を襲い、不作と食糧不足を引き起こしている。この疫病は特にジャガイモに対して致命的で、腐敗して悪臭を放つ食べられないペースト状に急速に変質させる。\n\n#b ヨーロッパジャガイモ疫病#!:\nこの[concept_journal_entry]が有効な間、ヨーロッパの[concept_state]で$disease_outbreak$の[concept_harvest_condition]が発生する確率が大幅に上昇する。"
+
+modifier_springtime_kick_out_of_insurrection: "バリケードを離れて"
+modifier_revolutionary_cabinet: "革命内閣"
+
+decade_thirties: "三十年代"
+decade_forties: "四十年代"
+decade_fifties: "五十年代"
+decade_sixties: "六十年代"
+decade_seventies: "七十年代"
+decade_eighties: "八十年代"
+decade_nineties: "九十年代"
+decade_centennial: "世紀末"
+decade_tens: "一十年代"
+decade_twenties: "二十年代"
+decade_new_age: "新時代"
+
+hungry_forties.1.t: "飢えた[SCOPE.GetRootScope.GetCountry.GetCustom('getDecadeName')|U]"
+hungry_forties.1.d: "[SCOPE.sState('relevant_state').GetName]で発生した作物病害が、ヨーロッパ大陸の広範囲に広がり始めている。不作が迫る中、飢饉への懸念が渦巻き始めた。"
+hungry_forties.1.f: "医師は器具でジャガイモを突き、同僚が見えるように身をかがめた。器具の鈍い先端は、変色した部分に1センチメートル沈み込んでいた。\n\n「残念ながら、疫病です。畑の他の塊茎を検査しても、おそらく同じ結果になるでしょう。現状では、特別な措置を推奨します。」"
+hungry_forties.1.a: "災厄だ！"
+hungry_forties.1.b: "外国産穀物購入のための基金を設立する。"
+
+hungry_forties.2.t: "平穏な時代"
+hungry_forties.2.d: "「飢えた[SCOPE.GetRootScope.GetCountry.GetCustom('getDecadeName')]」を通じてヨーロッパ大陸を襲った作物病害の波は収まった。疫病に冒された畑は、影響を受けた品種のジャガイモを二度と育てられないかもしれないが、他の作物は完全に回復すると見込まれている。"
+hungry_forties.2.f: "「聞いたか？新しい種類のジャガイモの種を売っているそうだ。疫病にかからないって言うんだが。」\n\n塀の向こう側にもたれかかる男は眉を上げた。「そろそろだな。遅すぎたくらいだ。冬を乗り切るために、子供たちに干し草を食べさせなきゃならなかった。」\n\n「君はまだましだ。道を下った家族は子供を失った。本当に、遅すぎたんだ。」"
+hungry_forties.2.a: "ありがたい。"
+hungry_forties.2.b: "本当に終わったと言えるのか？"
+
+modifier_european_potato_famine: "ヨーロッパジャガイモ飢饉"
+modifier_european_potato_famine_relief: "ヨーロッパジャガイモ飢饉"
+modifier_european_potato_famine_relief_costs: "ジャガイモ飢饉救済"
+modifier_hungry_forties_over: "農業の回復"
+modifier_hungry_forties_continued_imports: "輸入水準の上昇"
+
+modifier_ferdinand_the_good: "善良帝フェルディナント"
+
+je_metternich: "メッテルニヒの時代"
+je_metternich_reason: "#b ナポレオン戦争#!の余波により、[ROOT.GetCountry.GetName]はヨーロッパにおける主要な保守勢力としての地位を確立した。ナポレオン後の秩序の主要な設計者である[SCOPE.sCharacter('metternich_scope').GetFullName]は、激動の年1821年以来、[ROOT.GetCountry.GetNameNoFormatting]の宰相を務めている。[SCOPE.sCharacter('metternich_scope').GetHerHis|U]の課題は、[ROOT.GetCountry.GetAdjectiveNoFormatting]の[GetLawType('law_autocracy').GetName]の維持、ヨーロッパにおける保守的な平和の維持、そして芸術と科学の振興である。\n\n#b メッテルニヒの課題:#!\nメッテルニヒ宰相の課題の様々な項目を達成することは、この[concept_journal_entry]の効果を改善する。これらの達成は、この日誌が#b 完了#!した時に評価される。\n• [SCOPE.GetRootScope.GetCountry.GetCustom('metternich_ita_checkbox')] #b $ITA_ADJ$#!の[Concept('concept_unification', '$concept_unification_short$')]を阻止した\n• [SCOPE.GetRootScope.GetCountry.GetCustom('metternich_ger_checkbox')] #b $GER$#!が他の[concept_country]によって[Concept('concept_unification', '統一')]されていない\n• [SCOPE.GetRootScope.GetCountry.GetCustom('metternich_art_checkbox')] [ROOT.GetCountry.GetNameNoFlag]が[GetGoods('fine_art').GetName]の主要生産国である\n• [SCOPE.GetRootScope.GetCountry.GetCustom('metternich_krakow_checkbox')] [ROOT.GetCountry.GetNameNoFlag]が[GetStateRegion('STATE_WEST_GALICIA').GetName]の[concept_state_region]全体を所有している\n• [SCOPE.GetRootScope.GetCountry.GetCustom('metternich_tech_checkbox')] [ROOT.GetCountry.GetNameNoFlag]が[GetPlayer.MakeScope.ScriptValue('metternich_tech_target')|v0]の[Concept('concept_technology', '$concept_technologies$')]を研究済みである (現在 [GetPlayer.MakeScope.ScriptValue('techs_researched_script')|v0])[SCOPE.GetRootScope.GetCountry.GetCustom('metternich_system_entry')][SCOPE.GetRootScope.GetCountry.GetCustom('metternich_system_cohesion_entry')]\n• [SCOPE.GetRootScope.GetCountry.GetCustom('metternich_movement_checkbox')] すべての#tooltippable;tooltip:[GetPlayer.GetTooltipTag],liberal_movements_list_tt 自由主義#!または#tooltippable;tooltip:[GetPlayer.GetTooltipTag],socialist_movements_list_tt 社会主義#!の[Concept('concept_political_movement','$concept_political_movements$')]の支持が#b 限定的#!である\n• [SCOPE.GetRootScope.GetCountry.GetCustom('metternich_laws_checkbox')] [ROOT.GetCountry.GetNameNoFlag]が[GetLawType('law_autocracy').GetName]、[GetLawType('law_censorship').GetName]、[GetLawType('law_secret_police').GetName]を有している\n• [SCOPE.GetRootScope.GetCountry.GetCustom('metternich_institution_checkbox')] #b $institution_home_affairs$#!および#b $institution_police$#!の[Concept('concept_institution', '$concept_institutions$')]がレベル#v 3#!以上である"
+
+metternich_system_box_tt: "\n• [SCOPE.GetRootScope.GetCountry.GetCustom('metternich_bloc_checkbox')] [ROOT.GetCountry.GetPowerBloc.GetName]が[GetPlayer.MakeScope.ScriptValue('metternich_bloc_target')|v0]以上の[Concept('concept_power_bloc_member','$concept_power_bloc_members_extra_short$')]を有している (現在 [GetPlayer.MakeScope.ScriptValue('num_power_bloc_members_script')|v0])"
+metternich_system_cohesion_box_tt: "\n• [SCOPE.GetRootScope.GetCountry.GetCustom('metternich_bloc_cohesion_checkbox')] [ROOT.GetCountry.GetPowerBloc.GetName]の[concept_power_bloc_cohesion]が[GetPlayer.MakeScope.ScriptValue('metternich_bloc_cohesion_target')|v0]より高い (現在 [GetPlayer.MakeScope.ScriptValue('power_bloc_cohesion_script')|v0])"
+
+concept_unification_short: "統一"
+
+metternich_unticked: "@simple_box!"
+metternich_ticked: "@green_checkmark_box!"
+
+landowners_out_of_government_for_six_months_or_more_tt: "[SCOPE.gsInterestGroup('aristocracy_scope').GetName]が#v 6#!ヶ月以上連続して[concept_in_opposition]である (現在 #variable [ROOT.GetCountry.MakeScope.Var('landowners_out_var').GetValue]#!ヶ月)"
+
+metternich_not_leader_of_landowners_tt: "[SCOPE.sCharacter('metternich_scope').GetFullName]が[SCOPE.gsInterestGroup('aristocracy_scope').GetName]の[concept_leader]#b ではない#!"
+
+franz_joseph_acceded_tt: "[SCOPE.sCharacter('franz_joseph_scope').GetFullName]が[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]に就任した。"
+
+metternich_retirement_tt: "[SCOPE.sCharacter('metternich_scope').GetFullName]は平和的に#b 引退#!する。"
+metternich_memory_text_tt: "[SCOPE.sCharacter('metternich_scope').GetFullName]は、[SCOPE.GetRootScope.GetCountry.GetCustom('metternich_performance_text')]として記憶されるだろう。"
+
+metternich_memory_level_0: "その無能さによって、[ROOT.GetCountry.GetNameNoFormatting]の必然的な没落の種を蒔いた男。"
+metternich_memory_level_1:1 "そのビジョンが触れるすべてのものを腐食させることになる、信用を失った反動の源。"
+metternich_memory_level_2: "任期を大幅に過ぎても権力にしがみついた、色あせた政治家。"
+metternich_memory_level_3: "過去の時代の輝きを失った巨人。その真の業績は、後の愚行によって影が薄くなった。"
+metternich_memory_level_4: "旧社会の先見者。魅力的でありながらも運命づけられた理想を宿した人物。"
+metternich_memory_level_5: "反動の勇敢な擁護者。等しく嫌悪され、またロマンチックに語られる人物。"
+metternich_memory_level_6:1 "進歩主義者にとっての好敵手。今なお存続しうる気高い貴族制の象徴。"
+metternich_memory_level_7: "近代性に対する偉大な懐疑者でありながら、その無名の設計者の一人。"
+metternich_memory_level_8: "[ROOT.GetCountry.GetNameNoFormatting]がその成功を負う、戦略家かつ先見者。"
+metternich_memory_level_9: "現代国家運営の模範。誰もが自分もそうありたいと夢見る人物。"
+metternich_memory_level_10: "ナポレオンに匹敵する人物。あらゆる政治的潮流が自らの陣営の一人として主張する。"
+
+modifier_geheime_staatskonferenz: "$concept_geheime_staatskonferenz$"
+modifier_geheime_staatskonferenz_kolowrat: "$concept_geheime_staatskonferenz$"
+modifier_geheime_staatskonferenz_metternich: "$concept_geheime_staatskonferenz$"
+
+geheime_staatskonferenz_dissolve_tt: "[concept_geheime_staatskonferenz]は解散される。"
+
+concept_geheime_staatskonferenz: "秘密国家会議"
+concept_geheime_staatskonferenz_desc: "$concept_geheime_staatskonferenz$、すなわち#b 秘密国家会議#!は、#b オーストリア帝国#!の事実上の統治機関であり、皇帝フランツ1世の意志によって設立されました。法的には、この機関は皇帝フェルディナントに対する諮問委員会として存在しています。その構成は宮廷内の自由主義派と保守派の妥協の産物であり、[SelectLocalization(GetPlayer.IsValid,'LANDOWNERS_INGAME_LINK','$ig_landowners$')]、[SelectLocalization(GetPlayer.IsValid,'INTELLIGENTSIA_INGAME_LINK','$ig_intelligentsia$')]、そして[SelectLocalization(GetPlayer.IsValid,'ARMED_FORCES_INGAME_LINK','$ig_armed_forces$')]のメンバーを含んでいます。\n\n$concept_geheime_staatskonferenz$修正は、#v $je_metternich$#! [concept_journal_entry]が有効である限り持続します。この修正が有効な間、[SelectLocalization(GetPlayer.IsValid,'LANDOWNERS_INGAME_LINK','$ig_landowners$')]、[SelectLocalization(GetPlayer.IsValid,'INTELLIGENTSIA_INGAME_LINK','$ig_intelligentsia$')]、そして[SelectLocalization(GetPlayer.IsValid,'ARMED_FORCES_INGAME_LINK','$ig_armed_forces$')]は、[concept_in_government]でない場合、[concept_approval]が大幅に減少します。\n$TOOLTIP_DELIMITER$\n[GetStaticModifier('modifier_geheime_staatskonferenz').GetDesc]"
+
+LANDOWNERS_INGAME_LINK: "[GetInterestGroupVariant('ig_landowners',GetPlayer).GetNameWithCountryVariant]"
+INTELLIGENTSIA_INGAME_LINK: "[GetInterestGroupVariant('ig_intelligentsia',GetPlayer).GetNameWithCountryVariant]"
+ARMED_FORCES_INGAME_LINK: "[GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant]"
+
+modifier_geheime_staatskonferenz_member: "国家会議メンバー"
+
+metternich_resignation_and_flee_tt: "[SCOPE.sCharacter('metternich_scope').GetFullName]は[SCOPE.sCharacter('metternich_scope').GetHerHis]辞任を申し出る"
+
+metternich.1.t: "一つの時代の終わり"
+metternich.1.d: "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstName]の即位に伴い、長年仕えてきた宰相[SCOPE.sCharacter('metternich_scope').GetFullName]は[SCOPE.sCharacter('metternich_scope').GetHerHis]引退を発表しました。[SCOPE.sCharacter('metternich_scope').GetHerHis]政治家としての手腕によって定義された歴史の一章は幕を閉じました。"
+metternich.1.f: "「しかし、結局のところ、私が密かに抱いている考えは、古きヨーロッパが終末の始まりにあるということだ。私はそれと共に滅びる決意をしているので、自分の義務を果たす方法を知っている。これは私だけのモットーではない――皇帝のモットーでもあるのだ。一方、新たなヨーロッパは、その存在をまだ始めておらず、終わりと始まりの間には混沌があるだろう。」\n\n― クレメンス・フォン・メッテルニヒ" # Sourced from Wolfgang Siemann's Metternich: Strategist and Visionary
+metternich.1.a: "偉大なる指揮者が舞台を去る。"
+
+metternich.2.t: "不名誉な終焉"
+metternich.2.d_revolution: "[ROOT.GetCountry.GetNameNoFlag]が革命の混乱に苛まれ、政府がもはや[SCOPE.sCharacter('metternich_scope').GetHerHis]安全を保証できなくなったため、[SCOPE.sCharacter('metternich_scope').GetFullName]は[SCOPE.sCharacter('metternich_scope').GetHerHis]職を辞することを余儀なくされました。[SCOPE.sCharacter('metternich_scope').GetSheHe|U]は[ROOT.GetCountry.GetCapital.GetCityHubName]から逃れ、亡命しました。"
+metternich.2.d_gov_change: "[SCOPE.gsInterestGroup('aristocracy_ig').GetName]を政府から排除した結果、[SCOPE.sCharacter('metternich_scope').GetFullName]は[SCOPE.sCharacter('metternich_scope').GetHerHis]職を辞する以外に選択肢がなくなりました。[SCOPE.sCharacter('metternich_scope').GetHerHis]かつての影響力の多くを失い、[SCOPE.sCharacter('metternich_scope').GetSheHe]は[SCOPE.sCharacter('metternich_scope').GetHerHis]領地に隠遁しました。"
+metternich.2.f: "「私はもはや誰でもない。もうやることも、議論することもない。」\n\n― クレメンス・フォン・メッテルニヒ"
+metternich.2.a: "[SCOPE.sCharacter('metternich_scope').GetSheHe|U]が我々を定義することはもうない。"
+
+metternich.3.t: "小さなクーデター"
+metternich.3.d: "宰相[SCOPE.sCharacter('metternich_scope').GetFullName]は、$concept_geheime_staatskonferenz$の構造に関する一連の改革を提案しました。この改革は、機関の機能を改善すると同時に、[SCOPE.sCharacter('metternich_scope').GetHerselfHimself]をその疑いようのない長として据えるものです。[SCOPE.sCharacter('kolowrat_scope').GetFullName]は、この施策を阻止するために王室と連携しました。"
+metternich.3.f: "「メッテルニヒ以上に、追加の権力から恩恵を受ける男性はほとんどいません」と使者は言い始めた。「そして、大公が私の言うことをお許しくださるようお願いします。月末までにお時間があれば…」\n\n大公は、苛立った表情で彼を止めるよう身振りをした。彼のブーツは半分履いた状態で、彼はそれに完全に注意を向けたいと思っていた。「月末？ コロウラトは今どこだ？」\n\n「ボヘミアでございます、閣下。彼はインフルエンザの知らせを送ってきました。」」"
+metternich.3.a: "コロウラトの干渉が帝国の安定を脅かしている。"
+metternich.3.b: "宰相は外交問題に限定すべきだ。"
+
+metternich_modifier_t1: "メッテルニヒの遺産"
+metternich_modifier_t2: "メッテルニヒの遺産"
+metternich_modifier_t3: "メッテルニヒの遺産"
+metternich_modifier_t4: "メッテルニヒの遺産"
+
+GERMAN_UNIFICATION: "統一されていないドイツ"
+RIVAL_GERMAN_UNIFIERS: "他の有効なドイツの[Concept('concept_unification_candidate','$concept_unification_candidates$')]"
+UNSOLVED_SCHLESWIG_HOLSTEIN_QUESTION: "#v $je_schleswig_holstein_question$#! 未解決"
+
+ITALIAN_UNIFICATION: "統一されていないイタリア"
+RIVAL_ITALIAN_UNIFIERS: "他の有効なイタリアの[Concept('concept_unification_candidate','$concept_unification_candidates$')]"
+
+galicia_formation.1.t: "第一歩"
+galicia_formation.1.d: "[SCOPE.sState('west_galicia_state').GetName]と[SCOPE.sState('east_galicia_state').GetName]の再統一により、我々は単なる自由都市としての以前の地位から大きく前進しました。しかし、一つの疑問が迫っています――[ROOT.GetCountry.GetNameNoFlag]は[GetCulture('polish').GetName]統一の基盤となるのか、それともその多民族的な性格を受け入れるのか？"
+galicia_formation.1.f: "[SCOPE.sState('west_galicia_state').GetCityHubName]の花火に集中すれば、キリルは考えた、東の問題をほとんど忘れることができるかもしれない。「ガリツィア」という名をかつて主張した唯一の国家は、古きハプスブルク王国――ポーランドの地主とドイツ人官僚のための器だった。ポーランドの民族主義者たちは確かに後者を置き換えるだろうが、彼らが我々の民に平等をもたらすことを信頼できるだろうか？ キリルは到着時に街をくまなく巡ったが、彼を安心させるものはほとんど見られなかった。彼らは連邦を復活させようという熱狂の中で、その欠点を忘れることにもあまりにも積極的だった。"
+galicia_formation.1.a: "[ROOT.GetCountry.GetNameNoFlag]は[GetCulture('polish').GetName]であり、これからもそうあり続ける。"
+galicia_formation.1.b: "[GetCulture('polish').GetCustom('getPluralDemonym')]と[GetCulture('ukrainian').GetCustom('getPluralDemonym')]は我々の統治の下で結束を見出すだろう。"
+galicia_formation.1.c: "我々はもっと大きな存在になれる。"
+
+ukrainian_culture_remains_krakow_tt: "[GetCulture('ukrainian').GetName]は[ROOT.GetCountry.GetNameNoFlag]の[Concept('concept_primary_cultures','$concept_primary_culture$')]であり続ける"
+ukrainian_culture_loss_warning_krakow_tt: "@warning! [Concept('concept_unification','形成')] #v $POL$#! は[GetCulture('ukrainian').GetName]の[Concept('concept_primary_cultures','$concept_primary_culture$')]を削除する"
+
+ruler_is_romance_tt: "[ROOT.GetCountry.GetNameNoFlag]の[concept_ruler]は、#v $language_hispanophone$#! [Concept('concept_discrimination_trait','$concept_discrimination_trait_short$')]を持つ[concept_culture]である"
+
+subjecthood_events.1.t: "多から一へ"
+subjecthood_events.1.d_1: "[ROOT.GetCountry.GetAdjectiveNoFlag]国家による[SCOPE.sCulture('relevant_primary_culture').GetName]民族主義の受容は、[SCOPE.sCulture('relevant_minority_culture').GetName]コミュニティの間で強制同化への恐怖を引き起こしました。彼らは[SCOPE.sLaw('current_law_scope').GetName]を制定しようとするあらゆる試みに反対することを誓約しました。"
+subjecthood_events.1.d_2: "[ROOT.GetCountry.GetAdjectiveNoFlag]国家による[SCOPE.sCulture('relevant_primary_culture').GetName]と[SCOPE.sCulture('relevant_primary_culture_2').GetName]民族主義の受容は、[SCOPE.sCulture('relevant_minority_culture').GetName]コミュニティの間で強制同化への恐怖を引き起こしました。彼らは[SCOPE.sLaw('current_law_scope').GetName]を制定しようとするあらゆる試みに反対することを誓約しました。"
+subjecthood_events.1.d_3: "[ROOT.GetCountry.GetAdjectiveNoFlag]国家による民族主義の受容は、[SCOPE.sCulture('relevant_minority_culture').GetName]コミュニティの間で強制同化への恐怖を引き起こしました。彼らは[SCOPE.sLaw('current_law_scope').GetName]を制定しようとするあらゆる試みに反対することを誓約しました。"
+subjecthood_events.1.f:1 "村の人々は長い間、[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]の忠実な臣民でした。確かに、問題はありました――脱税、個人の反乱、不満を抱く農民の典型的な不平――しかし、彼らは結局のところ忠実でした。そして、[ROOT.GetCountry.GetCapital.GetCityHubName]からの知らせが届き、大きな不安感がそれに伴いました。政府はこれから[SCOPE.sCulture('relevant_primary_culture').GetNameNoFormatting]語で法令を発布するというのです。その言語を話す者はほとんどおらず、読める者はさらに少ない。[SCOPE.sCulture('relevant_minority_culture').GetNameNoFormatting]語はもはや十分ではない。「学べ」と、それは言っているようだった。「我々の言葉で話せ、さもなければ何も言うな」と。"
+subjecthood_events.1.a: "なぜ彼らは進歩に抵抗し続けなければならないのか？"
+subjecthood_events.1.b: "人は[SCOPE.sCulture('relevant_minority_culture').GetName]でありながら、同時に[ROOT.GetCountry.GetAdjectiveNoFlag]人でもあり得る。"
+
+subjecthood_events.2.t: "理想の市民"
+subjecthood_events.2.d_1: "国民的市民権の本質についての議論が、[SCOPE.sState('relevant_state').GetCityHubName]のサロンで起こっています。[SCOPE.sLaw('current_law_scope').GetName]の下での[SCOPE.sCulture('relevant_primary_culture').GetName]優位性というビジョンが、より普遍主義的な理想と衝突するようになりました。"
+subjecthood_events.2.d_2: "国民的市民権の本質についての議論が、[SCOPE.sState('relevant_state').GetCityHubName]のサロンで起こっています。[SCOPE.sLaw('current_law_scope').GetName]の下での[SCOPE.sCulture('relevant_primary_culture').GetName]と[SCOPE.sCulture('relevant_primary_culture_2').GetName]優位性というビジョンが、より普遍主義的な理想と衝突するようになりました。"
+subjecthood_events.2.d_3: "国民的市民権の本質についての議論が、[SCOPE.sState('relevant_state').GetCityHubName]のサロンで起こっています。[SCOPE.sLaw('current_law_scope').GetName]の下での国家の公認民族の優位性というビジョンが、より普遍主義的な理想と衝突するようになりました。"
+subjecthood_events.2.f: "「[SCOPE.sCharacter('name_a_scope').GetLastNameNoFormatting]少佐がまた陰謀を企てている。」\n\n[SCOPE.sCharacter('name_b_scope').GetFirstNameNoFormatting]は友人の親指が指す方向に頭を向けた。そこには確かに、いつもと同じ軍服を着た少佐がいた。彼は何かを話し合うために仲間に身を乗り出していたが、それは秘密にしたいという真の欲求というよりは、見せかけのためだった。\n\n「そうだな。『名誉と忠誠』、彼はいつもそう言う、『名誉と忠誠』。先週、良い市民とは何かについて話した時、彼は同じことを言った。」\n\n「で、君は何て言ったの？」」"
+subjecthood_events.2.a: "「良い市民であるためには、良い[SCOPE.sCulture('relevant_primary_culture').GetCustom('getSingularDemonym')]でなければならない。」"
+subjecthood_events.2.b: "「もちろん、彼が正しいと。だが、何よりも忠誠心だ。」"
+subjecthood_events.2.c: "「[ROOT.GetCountry.GetAdjectiveNoFormatting]人であることは、それ自体が一つの国籍だ。」"
+
+subjecthood_events.3.t: "[SCOPE.sCulture('relevant_primary_culture').GetCustom('getPluralDemonym')]の[SCOPE.sCharacter('ruler_scope').GetPrimaryRoleTitle]"
+subjecthood_events.3.d: "政府が[SCOPE.sLaw('current_law_scope').GetName]を制定しようとする努力に励まされ、[SCOPE.sCulture('relevant_primary_culture').GetName]民族主義者たちは儀式的に、[SCOPE.sCharacter('ruler_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('ruler_scope').GetFullName]に「[SCOPE.sCulture('relevant_primary_culture').GetCustom('getPluralDemonym')]の[SCOPE.sCharacter('ruler_scope').GetPrimaryRoleTitle]」という称号を献上しました。この称号を受け入れることは、[SCOPE.sCharacter('ruler_scope').GetHerHis]権力が究極的には国民に由来するという主張を正当化することになります。"
+subjecthood_events.3.f: "「ナポレオンが戴冠した時、彼は『$french$国民の唯一の利益、幸福、栄誉のために』統治することを誓った。これが彼に権力を与え、すべての敵に打ち勝つことを可能にしたのだ。[SCOPE.sCharacter('ruler_scope').GetPrimaryRoleTitle]が望めば、[SCOPE.sCharacter('ruler_scope').GetSheHe]も同じことができよう、[SCOPE.sCulture('relevant_primary_culture').GetNameNoFormatting]国民を念頭に置いて。」\n\n[SCOPE.sCharacter('ruler_scope').GetPrimaryRoleTitle]は、請願者を思慮深い表情で見つめた。\n\n「そして、ナポレオンはどうなった？」\n\n「彼は不死となられました、[SCOPE.sCharacter('ruler_scope').GetCustom('getLadyLordSpouse')|l]。」」"
+subjecthood_events.3.a: "万歳、[SCOPE.sCulture('relevant_primary_culture').GetCustom('getPluralDemonym')]の[SCOPE.sCharacter('ruler_scope').GetPrimaryRoleTitle]よ！"
+subjecthood_events.3.b: "権力は国民からではなく、[SCOPE.GetRootScope.GetCountry.GetCustom('GetDivinity')]に由来する。"
+
+subjecthood_events.4.t: "臣民から市民へ"
+subjecthood_events.4.d_1: "[ROOT.GetCountry.GetName]が国民国家へと徐々に変容するにつれ、その学校における新しい公民科カリキュラムの必要性が生じました。新しいカリキュラムは、他の民族の歴史よりも[SCOPE.sCulture('relevant_primary_culture').GetName]民族の歴史を重視します。"
+subjecthood_events.4.d_2: "[ROOT.GetCountry.GetName]が国民国家へと徐々に変容するにつれ、その学校における新しい公民科カリキュラムの必要性が生じました。新しいカリキュラムは、他の民族の歴史よりも[SCOPE.sCulture('relevant_primary_culture').GetName]民族と[SCOPE.sCulture('relevant_primary_culture_2').GetName]民族の歴史を重視します。"
+subjecthood_events.4.d_3: "["
+subjecthood_events.4.f: ""
+subjecthood_events.4.a: ""
+subjecthood_events.4.b: ""
+subjecthood_events.4.c: ""
+neighbouring_state_claimable_tt: ""
+
+subjecthood_events.5.t: ""
+subjecthood_events.5.d: ""
+subjecthood_events.5.f: "「まったく不自然だ。罪深いと言おう――罪深く、そして#italic 異国的#!だ。我が祖先は千年にわたりこの地を治めてきた。それなのに、[ROOT.GetCountry.GetCapital.GetCityHubName]のあの干渉者たちは、すべての秩序を覆そうとしている。彼らは私が「#italic 市民#! [SCOPE.sCharacter('name_a_scope').GetLastNameNoFormatting]」として知られることを望んでいるのか？ これがすべての終わりだ」\n\n御者はうなずき、目はしっかりと前方の道に据えていた。次の轍が二人を飲み込むかもしれない。\n\n「私に言わせれば」と領主は続けた。「[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]は、あの忌々しい新大臣たちに完全に惑わされている。平民を登用した結果がこれだ！」"
+subjecthood_events.5.a: "「幻影に気絶するとは、彼ららしいありがちな反応だ。」"
+subjecthood_events.5.b: "「彼らは[SCOPE.sCulture('relevant_primary_culture').GetName]国家の中で筆頭である。」"
+subjecthood_events.5.c: "「そう、それらすべては消え去るだろう。」"
+
+modifier_civic_nationalist_focus: "「包括的民族主義」"
+modifier_angered_minorities_with_nationalism: "「排他的民族主義」"
+modifier_empire_of_the_nation: "「国家の主権者」"
+modifier_emperor_of_the_nation: "「国家の主権者」"
+modifier_upheld_divine_right: "「神権の堅持」"
+modifier_compromised_divine_right: "「妥協された神権」"
+modifier_nationalist_curriculum: "「民族主義的カリキュラム」"
+modifier_nationalism_teaching_expenses: "「物的経費」"
+modifier_citizenship_compromises: "「保護された貴族の称号」"
+modifier_first_among_the_nation: "「国家の筆頭」"
+modifier_clinging_to_privilege: "「特権へのしがみつき」"
+modifier_cosmopolitan_nation: "「国際的なアイデンティティ」"
+modifier_united_by_blood: "「血による結束」"
+modifier_united_by_loyalty: "「忠誠による結束」"
+modifier_united_by_blood_ig: "「血による結束」"
+modifier_united_by_loyalty_ig: "「忠誠による結束」"
+
+je_eastern_question_russia: "「危機と機会」"
+je_eastern_question_russia_reason: "「#v $dyn_c_ottoman_empire$#!を揺るがす危機は、[GetStrategicRegion('region_balkans').GetName]における我々の影響力をさらに確保する機会を与えてくれた。[GetCulture('bulgarian').GetName]国家の建国を支援することで、$dyn_c_ottoman_empire_adj$圏を弱体化させるとともに、ヨーロッパ全土の[GetReligion('orthodox').GetName]教徒の保護者としての我々の信頼性を高めることができる。」"
+bulgaria_is_not_free_tt: "「#v $BUL$#!は#b 存在しない#!」"
+bulgaria_is_not_at_war_with_tur_tt: "「#v $BUL$#!は#v $dyn_c_ottoman_empire$#!と#b 交戦中でない#!」"
+ottomans_not_owns_dobruja_tt: "「#v $dyn_c_ottoman_empire$#!は[GetStateRegion('STATE_DOBRUDJA').GetName]にいかなる州も所有していない」"
+
+je_eastern_question_austria: "「ボスニア問題」"
+je_eastern_question_austria_reason: "「我々のロビーは、現在[SCOPE.sCountry('bosnia_owner_scope').GetName]の領土である[GetStateRegion('STATE_BOSNIA').GetName]を占領するよう要請してきた。これに応じれば、彼らの提案は[GetStrategicRegion('region_balkans').GetName]における[SelectLocalization(SCOPE.sCountry('relevant_country').IsValid, SCOPE.sCountry('relevant_country').GetAdjectiveNoFlag, 'dyn_c_rsfsr_adj')]の影響力拡大を阻止するのに役立つだろう。\n\n彼らの要請に成功裏に対応すれば、[Concept('concept_political_lobby','$concept_political_lobby_short$')]との良好な関係を得られるが、割り当てられた時間内に実行しなければ、彼らを大いに不愉快にするだろう。」"
+
+eastern_question_austria.1.t: "「前線の移動」"
+eastern_question_austria.1.d: "「[SCOPE.sCountry('relevant_country').GetName]がバルカン地域での影響力を拡大しようとする努力は、[SCOPE.sPoliticalLobby('relevant_lobby').GetName]に警戒感を抱かせた。彼らは、[SCOPE.sCountry('relevant_country').GetNameNoFormatting]が[GetStateRegion('STATE_BOSNIA').GetName]に対する影響力を確立するのを防ぐため、[SCOPE.sCountry('bosnia_owner_scope').GetName]に対する先制行動を提案している。」"
+eastern_question_austria.1.f: "「提案させてほしい」と[SCOPE.sCharacter('lobby_politician_scope').GetLastNameNoFormatting]は切り出した。\n\n[SCOPE.sCharacter('lobby_politician_scope').GetSheHe|U]は将軍を[ROOT.GetCountry.GetCapital.GetCityHubName]のレストランに追い詰め、30分の時間と引き換えに勘定を払うと約束した。将軍はメニューで最も高価なワインのグラスを置き、うなずいた。\n\n「それは[SCOPE.sCulture('relevant_country_culture').GetCustom('getPluralDemonym')]と、彼らの現在の企てに関するものだ。新聞に目を通し、スラヴ人の不安定な状況と、それに関する[SCOPE.sCountry('relevant_country').GetRuler.GetPrimaryRoleTitle]の攻撃的な言辞についてご存知だろうと存じるが…」"
+eastern_question_austria.1.a: "「我々が[GetStateRegion('STATE_BOSNIA').GetNameNoFormatting]を文明化する負担を担おう。」"
+eastern_question_austria.1.b: "「この提案は戦争の味がする。」"
+
+eastern_question_austria.2.t: "「占領政府」"
+eastern_question_austria.2.d: "「[GetStateRegion('STATE_BOSNIA').GetName]を確保した今、我々はこの地域の将来を決定できる。名目上[SCOPE.sCountry('bosnia_owner_scope').GetAdjective]の権威を維持する占領は、国際的な承認を得られる可能性が高いが、我々の実質的な利益は限られるだろう。」"
+eastern_question_austria.2.d_2: "「[GetStateRegion('STATE_BOSNIA').GetName]を確保した今、我々はこの地域の将来を決定できる。名目上この地域の主権を維持する占領は、国際的な承認を得られる可能性が高いが、我々の実質的な利益は限られるだろう。」"
+eastern_question_austria.2.f: "「次のように推奨する」と大臣は言った。「初期評価として、[SCOPE.sState('bosnia_state_scope').GetCityHubName]の[SCOPE.sCharacter('name_a_scope').GetLastNameNoFormatting]、[SCOPE.sState('bosnia_state_scope').GetFarmHubName]の[SCOPE.sCharacter('name_b_scope').GetLastNameNoFormatting]、そして[SCOPE.sState('bosnia_state_scope').GetForestryHubName]の[SCOPE.sCharacter('name_c_scope').GetLastNameNoFormatting]だ。各地域の特定の欠陥に基づいて行政タスクフォースを派遣する。」\n\n前列に座っていた[SCOPE.sCharacter('name_b_scope').GetLastNameNoFormatting|U]が手を挙げた。「まだ軍の報告書を受け取っていない。何が予想される？」\n\n「憤慨した住民と、徴税請負に固執する役人たちだ。必要ならば何人でも解任せよ。トルコ人は良政の評判を得たことはない。」"
+eastern_question_austria.2.a: "「領土を占領し、その行政を再編成せよ。」"
+eastern_question_austria.2.b: "「[GetStateRegion('STATE_BOSNIA').GetName]を我が帝国の不可分の一部として併合せよ。」"
+eastern_question_austria.2.c: "「共同財務省の後援の下、[GetStateRegion('STATE_BOSNIA').GetName]を我が帝国に吸収せよ。」"
+eastern_question_austria.2.e: "「[GetStateRegion('STATE_BOSNIA').GetName]を[SCOPE.sCountry('croatia_scope').GetName]の一部として併合せよ。」"
+
+bosnian_protectorate_tt: "「[GetStateRegion('STATE_BOSNIA').GetName]の領土は、[GetCulture('bosniak').GetName]の[concept_protectorate]として編成される。」"
+bosnian_puppet_tt: "「[GetStateRegion('STATE_BOSNIA').GetName]の領土は、[GetCulture('bosniak').GetName]の[concept_puppet]として編成される。」"
+
+eastern_question_russia.1.t: "「南スラヴの保護者」"
+eastern_question_russia.1.t2: "「[SelectLocalization(SCOPE.sCountry('bulgaria_scope').IsValid, SCOPE.sCountry('bulgaria_scope').GetAdjective, 'BUL_ADJ')]復興」"
+eastern_question_russia.1.d: "「[SCOPE.sCountry('bulgaria_scope').GetName]の独立への貢献は、南スラヴ諸民族の保護者としての我々の信頼性をもたらした。我々は今、バルカン半島における影響力を確固たるものにする十分な機会を得ている。」"
+eastern_question_russia.1.d2: "「[SCOPE.sCountry('bulgaria_scope').GetName]の独立は、オスマン圏の亀裂を露呈させた。我々はバルカン半島における勢力圏を拡大する幸運な機会を得た。」"
+eastern_question_russia.1.f: "「新しく編成された[SCOPE.sCountry('bulgaria_scope').GetAdjectiveNoFormatting]連隊が行進を開始する中、ブラスバンドの音が鳴り響いた。新しい[SCOPE.sCountry('bulgaria_scope').GetAdjectiveNoFormatting]の軍服が[SCOPE.sCharacter('name_a_scope').GetHerHis]自身のものとほとんど同じに見えるのは、なんて興味深いことか、と[SCOPE.sCharacter('name_a_scope').GetLastNameNoFormatting]は思った。青緑色の生地に赤い縁取り。子供が父親を真似るような、愛らしさがあった。\n\nしかし、彼の任務には愛らしさ以上のものが求められた。いつの日か、これらの兵士たちは彼自身の国の利益のために行進する必要があるかもしれない。[ROOT.GetCountry.GetNameNoFormatting]は[SCOPE.sCountry('bulgaria_scope').GetRuler.GetPrimaryRoleTitle]からの保証を必要とするだろう。調整すべき軍事協力があり、請求すべきオスマンの文書があった。喜びの一時間ごとに、一日分の仕事があるのだ。」"
+eastern_question_russia.1.a: "「[SCOPE.sCountry('bulgaria_scope').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('bulgaria_scope').GetRuler.GetLastName]に祝意と大使館を提供せよ。」"
+eastern_question_russia.1.b: "「さらに遠方にも機会はある。」"
+eastern_question_russia.1.c: "「[SCOPE.sCountry('bulgaria_scope').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('bulgaria_scope').GetRuler.GetLastName]に祝意と大使館を提供せよ。」"
+eastern_question_russia.1.e: "「おそらく長期滞在が必要だろう。」"
+
+focus_on_bosnia: "「ボスニアに焦点」"
+focus_on_bulgaria: "「ブルガリアに焦点」"
+
+modifier_protector_of_the_south_slavs: "「南スラヴの保護者」"
+modifier_protector_of_the_south_slavs_twice_dummy: "「$modifier_protector_of_the_south_slavs$」"
+
+achievement_usga_tt: "「#b $je_danubian_federation$#! [concept_journal_entry]を成功裏に完了し、#v $dyn_c_usga$#!を形成した。」"
+achievement_neo_absolutist_tt: "「#b $je_austrian_neo_absolutism$#! [concept_journal_entry]を成功裏に完了した。」"
+achievement_brotherhood_and_unity_tt: "「#v $YUG$#!を形成した。」"
+achievement_teamkiller_1_tt: "「#b バルカン同盟#!に加盟した。」"
+achievement_teamkiller_2_tt: "「#b $je_spoils_of_war$#! [concept_journal_entry]を成功裏に完了した。」"
+achievement_david_slays_goliath_tt: "「#v $TUR$#!は#b 存在しない#!」"
+achievement_prussia_of_the_balkans_tt: "「#b $je_prussia_of_the_balkans$#! [concept_journal_entry]を成功裏に完了した。」"
+achievement_sorbia_is_serbia_tt: "「#v $SER$#!、#v $dyn_c_serbian_montenegro$#!、または$serb$国家として#v $YUG$#!を形成している。」"
+achievement_im_feeling_hungary_tt: "「#b $je_hungarian_revolution$#! [concept_journal_entry]を成功裏に完了した。」"
+achievement_not_a_subject_tt: "「他の国の#b 属国でない#!」"
+achievement_exactly_100_tt: "「我々のいずれかの[concept_primary_cultures]が[concept_fervor] #v 100#!に等しい。」"
+achievement_sorbia_is_serbia_2_tt: "「#b $STATE_SAXONY$#!のすべてを所有している。」"
+achievement_prussia_of_the_balkans_2_tt: "「[THIS.GetCountry.GetName]は[ROOT.GetCountry.GetName]より[concept_prestige]が低い。」"
+achievement_prussia_of_the_balkans_3_tt: "「[GetCulture('bulgarian').GetName]はこの[concept_country]の[Concept('concept_primary_cultures','$concept_primary_culture$')]である。」"
+achievement_david_slays_goliath_2_tt: "「#v $MON$#!、#v $dyn_c_serbian_montenegro$#!、または#v $MON$#!から#v $YUG$#!を形成している。」"
+
+slave_revolt.4.t: "自国領土にて"
+slave_revolt.4.d: "我々の植民地[SCOPE.sState('fleeing_slaves_state').GetName]から逃亡した[GetPopType('slaves').GetName]の一団が、交易船に密航し、無事に[ROOT.GetCountry.GetAdjectiveNoFlag]本国に到達した。法律により、[ROOT.GetCountry.GetAdjectiveNoFormatting]の土を踏んだ全ての奴隷は自由の身となる。"
+slave_revolt.4.f: "[SCOPE.sCharacter('name_a_scope').GetFirstNameNoFormatting]は埠頭の端に座り、足を水面の上で揺らしていた。夕日が水面を赤く染めていた。今日の知らせを考えれば、ふさわしい色だった。彼はその記事を新聞で、壁に貼られた張り紙で、通りすがりの人々の口の端で目にした。\n\n背後から声がした。[SCOPE.sCharacter('name_a_scope').GetSheHe|U]はそれを聞き覚えていた——裁判所の別の事務員、[SCOPE.sCharacter('name_b_scope').GetFirstNameNoFormatting]だ。\n\n「何を考えているんだ？」\n\n「[SCOPE.sState('port_state').GetPortHubName]では、鎖につながれた人々のことを考えると身を引く。だが、あの水平線の向こうにいる者たちのことは考えもしない。いつか、[SCOPE.GetRootScope.GetCountry.GetCustom('GetDivinity')]が我々全員に罰を下すだろう。」"
+slave_revolt.4.a: "彼らは自由民としての全ての権利を有する。"
+slave_revolt.4.b: "自由の身であろうとなかろうと、彼らは[SCOPE.sState('fleeing_slaves_state').GetName]に戻らねばならない。"
+
+modifier_refused_deporting_slaves: "送還拒否"
+modifier_doomed_former_slaves: "絶望した元奴隷たち"
+modifier_deported_slaves: "植民地へ戻れ"
+
+je_standestaat: "シュテンデシュタート"
+je_standestaat_reason: "[ROOT.GetCountry.GetName]における大衆政治の台頭は、伝統的階級の間で反対運動の勃興を促した。[SelectLocalization(SCOPE.sPoliticalMovement('corporatist_movement_scope').IsValid, SCOPE.sPoliticalMovement('corporatist_movement_scope').GetName, 'movement_corporatist')]は、[SCOPE.GetRootScope.GetCountry.GetCustom('country_legislature_name')]と多党制民主主義を廃止し、[GetLawType('law_organic_democracy').GetName]、すなわち「シュテンデシュタート」を支持する。\n\nこの[concept_journal_entry]が有効な間、[GetIdeology('ideology_corporatist_leader').GetName]の[concept_character]が出現する確率が上昇する。"
+no_interest_group_in_government_is_corporatist_tt: "#b いいえ#! [concept_interest_group]が[concept_in_government]におり、かつ[GetIdeology('ideology_dop_organic_state').GetName]の[concept_ideology]を持つか、あるいは#tooltippable;tooltip:[GetPlayer.GetTooltipTag],corporatist_ideologies_list_tt コーポラティスト#!の[concept_leader]または[concept_agitator]がいる"
+corporatist_movement_disbanded_tt: "[SCOPE.sPoliticalMovement('corporatist_movement_scope').GetName]は解散した"
+corporatist_movement_disbanded_dummy_tt: "#v $movement_corporatist$#!は解散した"
+has_repressed_corporatists_for_some_years_tt: "[SCOPE.sInterestGroup('corporatist_ig_scope').GetName]の[concept_clout]が#b 24#!か月連続で#v 5%#!を下回っている（現在#v [ROOT.GetCountry.MakeScope.Var('corporatists_suppression_var').GetValue]#!）："
+
+corporatist_ideologies_list_tt: "#bold コーポラティスト#! [Concept('concept_ideology','$concept_ideologies$')]には以下が含まれる：\n• [GetIdeology('ideology_corporatist_leader').GetName]\n• [GetIdeology('ideology_fascist').GetName]\n• [GetIdeology('ideology_integralist').GetName]"
+has_corporatist_ideology_tt: "[ROOT.GetCountry.GetRuler.GetInterestGroup.GetName]は[GetIdeology('ideology_corporatist').GetName]の[concept_ideology]を持っている"
+leader_has_corporatist_ideology_tt: "[ROOT.GetCountry.GetRuler.GetInterestGroup.GetName]の[concept_leader]が、#tooltippable;tooltip:[GetPlayer.GetTooltipTag],corporatist_ideologies_list_tt コーポラティスト#!の[concept_ideology]をいずれか持っている"
+corporatist_agitator_appears_tt: "[GetIdeology('ideology_corporatist_leader').GetName]の[concept_agitator]が[ROOT.GetCountry.GetNameNoFlag]に出現する"
+no_non_fatherland_front_party_in_government_tt: "#tooltippable;tooltip:[GetPlayer.GetTooltipTag],anti_corporatist_party_list_tt 相容れない#! [concept_party]は[concept_in_government]にいない"
+is_fatherland_front_party_tt: "[ROOT.GetCountry.GetRuler.GetInterestGroup.GetName]は、#b 祖国戦線#!を形成するのに#tooltippable;tooltip:[GetPlayer.GetTooltipTag],pro_corporatist_party_list_tt 相容れる#! [concept_party]に属している"
+anti_corporatist_party_list_tt: "この行動と相容れない[Concept('concept_party','$concept_parties$')]には以下が含まれる：\n• $party_sdapo$\n• $party_free_conservative_party$\n• $party_constitutional_party$\n• $party_anarchist$\n• $party_progressive_club$\n• $party_kpo$\n• $party_communist$"
+pro_corporatist_party_list_tt: "この行動と相容れる[Concept('concept_party','$concept_parties$')]には以下が含まれる：\n• $party_christian_social_party$\n• $party_landbund$\n• $party_greater_german_peoples_party$\n• $party_national_peoples_party$\n• $party_catholic_peoples_party$"
+form_fatherland_front_tt: "[SCOPE.sParty('relevant_party').GetName]とその同盟者は、#v $party_fatherland_front$#!へと再編成される"
+
+austrian_fascism.1.t: "新保守主義者たち"
+austrian_fascism.1.d: "[ROOT.GetCountry.GetAdjective]の議会制民主主義への不満に触発され、伝統的階級は[SelectLocalization(SCOPE.sPoliticalMovement('corporatist_movement_scope').IsValid, SCOPE.sPoliticalMovement('corporatist_movement_scope').GetName, 'movement_corporatist')]へと方向転換し始めた。彼らの綱領は、[GetReligion('catholic').GetName]の社会教義と、[GetLawType('law_corporate_state').GetName]の下での労働運動の鎮静化を呼びかけている。"
+austrian_fascism.1.f: "「我々はまた、第二のもの、共有する実践的目標によって結ばれている。すなわち、最善を望み、人間共同体をその最も快適な状態へと導くことである。\n\n右に立つ者、左翼社会主義者の行動に破壊以外の何ものも見ない者、ちょうど左に立つ者が右翼の行動に暗黒の災厄しか見ないように——彼らは皆、同じ高貴な努力が彼らを導いているという確信を互いに認めてもよいし、認めねばならない。」\n\n— オトマール・シュパン、#italic 『真の国家』#!" #- Othmar Spann, notable Austrian representative of the Conservative Revolution and later member of the Nazi Party.
+austrian_fascism.1.a: "これが保守主義の未来だ。"
+austrian_fascism.1.b: "我々は今、最も暗黒の反動に直面している。"
+
+austrian_fascism.2.t: "目覚めたオーストリア"
+austrian_fascism.2.d: "[SCOPE.sCharacter('ruler_scope').GetFullName]と[SCOPE.sParty('fascist_party_scope').GetName]の努力により、[ROOT.GetCountry.GetName]は[GetLawType('law_corporate_state').GetName]へと変貌を遂げた。労働運動が沈黙させられ、あるいは取り込まれたことで、ついに社会的平和の感覚が確立された。"
+austrian_fascism.2.f: "「労働者階級の最高の願いは、神と国のために働く権利である。それはまさに、共産主義者が最も恐れていることなのだ。」\n\n整った髪の前線募集係が話しながら行ったり来たり歩いていた。[SCOPE.sCharacter('name_a_scope').GetFirstNameNoFormatting]は気をつけの姿勢で立ち、クラスメートが両脇にいた。48の目が彼の一挙手一投足を追っていた。\n\n「彼らの武器は破壊工作と分裂であり、彼らは行く先々でそれを撒き散らす。これが君たちが戦うものだ。君たちはこのホールに、クラスのトップに立つ学生として入った。突撃兵としてここを去ることになる。」"
+austrian_fascism.2.a: "エスターライヒ！"
+austrian_fascism.2.b: "前線の意志が法となる。"
+
+austrian_fascism.3.t: "ただの夢"
+austrian_fascism.3.d: "[SelectLocalization(SCOPE.sPoliticalMovement('corporatist_movement_scope').IsValid, SCOPE.sPoliticalMovement('corporatist_movement_scope').GetName, 'movement_corporatist')]は[ROOT.GetCountry.GetName]の支配権掌握に失敗した。急進的民族主義の亡霊は確かに残るだろうが、$gov_corporate_state_austrofascist$のビジョンは歴史の中に消え去った。"
+austrian_fascism.3.f: "最近、[ROOT.GetCountry.GetCapital.GetCityHubName]は息をついているように見えた。制服を着た厳しい目をした若者たちは街角から消え、小麦糊で貼られた労働組合のポスターが再び普通の光景となっていた。コーヒーハウスのベランダに座って、[SCOPE.sCharacter('name_a_scope').GetFirstNameNoFormatting]は通り過ぎていく労働者の一団を見渡した。その中心に、見覚えのある顔が一瞬映った。\n\n「[SCOPE.sCharacter('name_b_scope').GetLastNameNoFormatting]さんか？」向かいの席の男が言った。「ちらしで見たような気がする。」\n\n「誰のちらしだ？」\n\n「大したことない奴らだろう。この辺りで最後に見たのはいつだったか覚えていない。」"
+austrian_fascism.3.a: "[ROOT.GetCountry.GetNameNoFormatting]は救われた！"
+austrian_fascism.3.b: "これから我々はどこへ向かうのか？"
+
+je_standestaat_eliminate_parliament: "議会の廃止"
+je_standestaat_eliminate_parliament_desc: "[SelectLocalization(SCOPE.sPoliticalMovement('corporatist_movement_scope').IsValid, SCOPE.sPoliticalMovement('corporatist_movement_scope').GetName, 'movement_corporatist')]は、同情的な大統領と[SCOPE.GetRootScope.GetCountry.GetCustom('country_legislature_name')]における相当数の議席の両方を確保した。今や[SCOPE.GetRootScope.GetCountry.GetCustom('country_legislature_name')]の廃止を画策し、自らを[ROOT.GetCountry.GetNameNoFormatting]における唯一の合法的な政治主体として確立することができる。"
+
+from_austrian_devout: "キリスト教社会主義の伝統"
+
+modifier_corporatist_consolidation: "コーポラティストの統合"
+modifier_corporatists_countered: "反コーポラティズム"
+modifier_austria_corporate_state: "真の国家"
+modifier_austria_corporate_state_vigilance: "義勇防衛隊"
+modifier_resurgent_labor_movement: "復活する労働運動"
+
+austria_events.40.t: "帝国を救うために"
+austria_events.40.d: "[ROOT.GetCountry.GetName]における選挙権の拡大は、伝統的に保守的な[SCOPE.gsInterestGroup('armed_forces_ig').GetName]の間で鋭い反応を引き起こした。多くの[GetPopType('officers').GetName]が、[SCOPE.GetRootScope.GetCountry.GetCustom('country_legislature_name')]を帝国の安定に対する負債と見なすようになった。"
+austria_events.40.f: "「政治家たちは帝国を茶番劇にしようとしている」大佐は語り始めた。「投票権の拡大は、[SCOPE.GetRootScope.GetCountry.GetCustom('country_legislature_name')]をますます手に負えないものにする。彼らは混乱と遅延を煽ることに時間を費やし、遅延した行為はすべて王冠に新たな汚点を刻む。」\n\n彼は周囲のうなずきを見た。テーブルに着いた男たちは皆、地方議会の支持を確保するという名目の予算削減を経験していた。彼は続けた。\n\n「我々の帝国は黄昏の年に入り、我々はこの廃墟の中に立っている。これが続けば——もしこれが#italic 許されれば#!——我々は皆、忘却の彼方に掃き流されることを恐れる。」"
+austria_events.40.a: "彼らの言葉は独裁を脅かす。"
+austria_events.40.b: "彼らが間違っていると本当に言えるのか？"
+
+modifier_military_absolutist_bonus: "憲法より帝国"
+
+is_integrated_tt: "[THIS.GetCulture.GetName]は[Concept('concept_integrated_culture','$concept_integrated_culture_short$')]である"
+is_disqualified_tt: "[THIS.GetCulture.GetName]は[Concept('concept_disqualified_culture','$concept_disqualified_culture_short$')]である"
+
+### Federal Project
+je_danubian_federation_observer: "連邦構想"
+je_danubian_federation_observer_reason: "[SCOPE.sCountry('austria_scope').GetName]政府は、[SCOPE.sCountry('austria_scope').GetAdjectiveNoFormatting]帝国の領土を、民族線に沿って描かれた自治国家の連邦へと再編成する提案を支持した。この提案は、現在帝国を形成している複雑な王領地と同君連合のネットワークを廃止し、最終的にはウィーンに責任を負う連邦構造に置き換えるものである。\n\nもし[SCOPE.sCountry('austria_scope').GetNameNoFlag]が#v $je_danubian_federation$#! [concept_journal_entry]を#b 完了#!すれば、[ROOT.GetCountry.GetName]の伝統的な権利と特権は廃止され、我々の土地は直接[SCOPE.sCountry('austria_scope').GetCustom('future_kuk_name')|v]に統合される。"
+
+has_been_integrated_into_federation_tt: "[SCOPE.sCountry('austria_scope').GetName]は、以下を通じて#v $je_danubian_federation$#!を#b 完了#!し、#v $dyn_c_usga$#!を形成した：#indent_newline:3"
+has_been_integrated_into_federation_republic_tt: "[SCOPE.sCountry('austria_scope').GetName]は、以下を通じて#v $je_danubian_federation$#!を#b 完了#!し、#v $KUK$#!を形成した：#indent_newline:3"
+austria_has_failed_je_danubian_federation_tt: "[SCOPE.sCountry('austria_scope').GetName]は、以下を通じて#v $je_danubian_federation$#!に#b 失敗#!した：#indent_newline:3"
+
+has_been_integrated_by_austria_tt: "連邦に満足に[Concept('concept_integrated_culture','$concept_integrated_culture_short$')]されている"
+
+austria_federation.13.t: "連邦帝国"
+austria_federation.13.d: "[SCOPE.sCountry('austria_scope').GetName]政府は、帝国を連邦国家へと再編成する提案を公式に支持した。もし首尾よく施行されれば、これは[ROOT.GetCountry.GetNameNoFlag]の現在の自治権の終わり、そして我々の歴史的領土の喪失を意味する可能性がある。"
+austria_federation.13.f: "「この観点からすれば、それは[SCAPE.sCountry('austria_scope').GetNameNoFormatting]の「没落」の問題ではなく、再編成、再生の問題である。この帝国を心から気にかけるすべての人々が、たとえ暗い憧れの中にあっても、正しい前進の道を完全に自覚することができさえすればよい。第一に、独立した民族国家だけが存在する権利があるというのは真実ではない。$SWI$、多く引用され正当にも引用される例は、混合民族政体の典型であり、その存在権を合理的に否定しようとする者はいない。実際、我々の帝国において、歴史的過程は、新たに目覚めた必要性に対応する、民族国家関係の近代的形式を求めて闘っているに過ぎない。」\n\n— アウレル・ポポヴィチ、#italic 『大オーストリア合衆国』#!" # Intentional that this is the same as austria_federation.1 but with a changed scope.
+austria_federation.13.a: "連邦には[ROOT.GetCountry.GetNameNoFlag]の居場所がある。"
+austria_federation.13.b: "我々が主権を守らねばならないなら、それもまたよし。"
+
+austria_federation.14.t: "沈みゆく船から離れて"
+austria_federation.14.d: "[SCOPE.sCountry('austria_or_danubia_scope').GetName]からの我々の独立は、[SCOPE.sCountry('austria_or_danubia_scope').GetCapital.GetCityHubName]からの干渉の危険を永久に終わらせた。[SCOPE.sCountry('austria_or_danubia_scope').GetAdjectiveNoFlag]政府がその構想を続けようと続けまいと、我々はその一部にはならない。"
+austria_federation.14.f: "[ROOT.GetCountry.GetCapital.GetCityHubName]は"
+austria_federation.14.a: ""
+austria_federation.14.b: ""
+
+austria_federation.15.t: "[SCOPE.sCountry('relevant_subject').GetAdjective]政府が協力を誓約"
+austria_federation.15.d: "[SCOPE.sCountry('relevant_subject').GetName]政府は、帝国を連邦化する我々の計画に全面的に協力することを誓約した。我々の[SCOPE.sCulture('primary_culture_scope').GetName]人口の多くが彼らの決定を支持している。"
+austria_federation.15.f: "「さっき、大臣が笑っていたよ。聞いたか？」\n\n[SCOPE.sCharacter('name_a_scope').GetFirstNameNoFormatting]の声は、隣席の者が磁器にスプーンを当てる音よりわずかに大きいだけだった。同僚の一人が顔を上げ、その発言に眉を上げて彼を見た。\n\n「ほとんど信じられないな」と彼は言った。「どこで聞いたんだ？」\n\n「この目で見たよ。彼はロビーにいて、どこかの大佐か何かと一緒だった」\n\n「[SCOPE.sCulture('primary_culture_scope').GetCustom('getPluralDemonym')]に違いない」とテーブルの端に座る男が言った。「昨夜、[SCOPE.sCountry('relevant_subject').GetCapital.GetCityHubName]から馬車が来たが、誰が乗っていたかは言わなかった。何か面白いことが進行中だ」"
+austria_federation.15.a: "友情の精神がドナウに咲く。"
+austria_federation.15.b: "彼らの意見は必要ない。"
+inform_vienna_tt: "[ROOT.GetCountry.GetTopOverlord.GetName]は、我々の該当する全ての[concept_primary_cultures]を[Concept('concept_integrated_culture','$concept_integrated_culture_present$')]する機会を得る。"
+
+austria_federation.16.t: "[SCOPE.sCountry('relevant_subject').GetAdjective]政府が統合を拒否"
+austria_federation.16.d: "[SCOPE.sCountry('relevant_subject').GetName]政府は、帝国を連邦化する我々の計画に反対することを誓約した。我々の[SCOPE.sCulture('primary_culture_scope').GetName]人口の多くが彼らを支持する可能性が高い。"
+austria_federation.16.f: "手紙はいつもの話でいっぱいだった。国家主権、[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]の越権行為、[SCOPE.sCountry('relevant_subject').GetAdjectiveNoFormatting]諸邦の古来の権利と特権。送られた最初のそのような手紙ではなく、おそらく最後でもないだろうが、これまでで最も都合の悪いものだった。政府の壮大な計画に対する側面からの魚雷。役人はそれを大臣に送るためのトレイに置いた。\n\n彼の視線は、部屋の反対側でコーヒーをすすっている同僚に留まった。「別の計画はあるのか？」\n\n「言えない」\n\n「知らないからか、それとも軍事機密だからか？」\n\n「言えない」"
+austria_federation.16.a: "彼らなしで何とかやらなければならない。"
+inform_vienna_that_no_tt: "[ROOT.GetCountry.GetTopOverlord.GetName]は、我々の該当するいかなる[concept_primary_cultures]も[Concept('concept_integrated_culture','$concept_integrated_culture_present$')]することができなくなる。"
+
+modifier_free_and_independent_subject: "独立記念日"
+to_complete_je_danubian_federation_tt: "[SCOPE.sCountry('austria_scope').GetName]が#b 達成#!するため #v $je_danubian_federation$#!: #indent_newline:3"
+to_fail_je_danubian_federation_tt: "[SCOPE.sCountry('austria_scope').GetName]が#b 失敗#!するため #v $je_danubian_federation$#!:"
+no_other_subject_signaling_support_tt: "他の#v $AUS_ADJ$#! [concept_subject]は現在、支持を表明していない。"
+no_other_subject_signaling_opposition_tt: "他の#v $AUS_ADJ$#! [concept_subject]は現在、反対を表明していない。"
+
+je_danubian_federation_observer_pledge_cooperation: "協力を誓約"
+je_danubian_federation_observer_pledge_cooperation_desc: "我々は、連邦化が我々の利益、そして帝国全体の利益になると判断した。[ROOT.GetCountry.GetTopOverlord.GetCapital.GetCityHubName]に、帝国再編の過程における我々の全面的な協力を期待するよう伝える。"
+
+no_culture_disqualified_tt: "[SCOPE.sCountry('austria_scope').GetName]は、我々のいかなる[concept_primary_cultures]も[Concept('concept_disqualified_culture','$concept_disqualified_culture_present$')]するような行動を取っていない。"
+
+je_danubian_federation_observer_reject_cooperation: "連邦化を拒否"
+je_danubian_federation_observer_reject_cooperation_desc: "我々は、連邦化が我々の利益に反すると判断した。[ROOT.GetCountry.GetTopOverlord.GetCapital.GetCityHubName]に、帝国再編の過程に協力しないことを伝える。"
+
+modifier_resisting_federalization: "反連邦主義の立場"
+modifier_welcoming_federalization: "連邦主義の立場"
+
+notification_danubian_federation_culture_angered_name: "[SCOPE.sCountry('austria_scope').GetName]が[SCOPE.sCulture('relevant_culture_scope').GetName]の[Concept('concept_pop', '$concept_pops$')]を怒らせる"
+notification_danubian_federation_culture_angered_desc: "帝国の連邦化が進む中、[SCOPE.sCountry('austria_scope').GetAdjective]政府は[SCOPE.sCulture('relevant_culture_scope').GetName]の人々の間で不満を引き起こす決定を下した。\n\n我々の[concept_country]内のいくつかの[SCOPE.sCulture('relevant_culture_scope').GetName] [Concept('concept_pop', '$concept_pops$')]がより[concept_radical]になった。"
+notification_danubian_federation_culture_angered_tooltip: "#header $notification_danubian_federation_culture_angered_name$#!\n$TOOLTIP_DELIMITER$\n$notification_danubian_federation_culture_angered_desc$"
+
+notification_danubian_federation_culture_disqualified_name: "[SCOPE.sCountry('austria_scope').GetName]が[SCOPE.sCulture('relevant_culture_scope').GetName] [concept_culture]を[Concept('concept_disqualified_culture','$concept_disqualified_culture_verb$')]"
+notification_danubian_federation_culture_disqualified_desc: "帝国の連邦化が進む中、[SCOPE.sCountry('austria_scope').GetAdjective]政府は、[SCOPE.sCulture('relevant_culture_scope').GetName] [concept_culture]が統合から恒久的に[Concept('concept_disqualified_culture','$concept_disqualified_culture_short$')]される決定を下した。\n\n[SCOPE.sCountry('austria_scope').GetName]は、我々の[concept_liberty_desire]を#v 25#!未満に減らし、相互関係を#v 50#!以上に高めない限り、#v $je_danubian_federation$#! [concept_journal_entry]を達成できなくなる。"
+notification_danubian_federation_culture_disqualified_tooltip: "#header $notification_danubian_federation_culture_disqualified_name$#!\n$TOOLTIP_DELIMITER$\n$notification_danubian_federation_culture_disqualified_desc$"
+
+notification_danubian_federation_culture_angered_primary_name: "[SCOPE.sCountry('austria_scope').GetName]が[SCOPE.sCulture('relevant_culture_scope').GetName] [concept_culture]を怒らせる"
+notification_danubian_federation_culture_angered_primary_desc: "帝国の連邦化が進む中、[SCOPE.sCountry('austria_scope').GetAdjective]政府は[SCOPE.sCulture('relevant_culture_scope').GetName]の人々の間で不満を引き起こす決定を下した。\n\n我々の[concept_liberty_desire]はそれに応じて増加し、[SCOPE.sCountry('austria_scope').GetName]との[concept_relations]は悪化した。"
+notification_danubian_federation_culture_angered_primary_tooltip: "#header $notification_danubian_federation_culture_angered_primary_name$#!\n$TOOLTIP_DELIMITER$\n$notification_danubian_federation_culture_angered_primary_desc$"
+
+notification_danubian_federation_culture_pleased_name: "[SCOPE.sCountry('austria_scope').GetName]が[SCOPE.sCulture('relevant_culture_scope').GetName]の[Concept('concept_pop', '$concept_pops$')]を宥める"
+notification_danubian_federation_culture_pleased_desc: "帝国の連邦化が進む中、[SCOPE.sCountry('austria_scope').GetAdjective]政府は、一部の[SCOPE.sCulture('relevant_culture_scope').GetName]の人々の感謝を集める決定を下した。\n\n我々の[concept_country]内のいくつかの[SCOPE.sCulture('relevant_culture_scope').GetName] [Concept('concept_pop', '$concept_pops$')]がより[concept_loyalist]になった。"
+notification_danubian_federation_culture_pleased_tooltip: "#header $notification_danubian_federation_culture_pleased_name$#!\n$TOOLTIP_DELIMITER$\n$notification_danubian_federation_culture_pleased_desc$"
+
+notification_danubian_federation_culture_pleased_primary_name: "[SCOPE.sCountry('austria_scope').GetName]が[SCOPE.sCulture('relevant_culture_scope').GetName]の[Concept('concept_pop', '$concept_pops$')]を宥める"
+notification_danubian_federation_culture_pleased_primary_desc: "帝国の連邦化が進む中、[SCOPE.sCountry('austria_scope').GetAdjective]政府は、一部の[SCOPE.sCulture('relevant_culture_scope').GetName]の人々の感謝を集める決定を下した。\n\n我々の[concept_liberty_desire]はそれに応じて減少し、[SCOPE.sCountry('austria_scope').GetName]との[concept_relations]は改善した。"
+notification_danubian_federation_culture_pleased_primary_tooltip: "#header $notification_danubian_federation_culture_pleased_primary_name$#!\n$TOOLTIP_DELIMITER$\n$notification_danubian_federation_culture_pleased_primary_desc$"
+
+notification_danubian_federation_culture_integrated_name: "[SCOPE.sCountry('austria_scope').GetName]が[SCOPE.sCulture('relevant_culture_scope').GetName] [concept_culture]を[Concept('concept_integrated_culture','$concept_integrated_culture_verb$')]"
+notification_danubian_federation_culture_integrated_desc: "帝国の連邦化が進む中、[SCOPE.sCountry('austria_scope').GetAdjective]政府は、[SCOPE.sCulture('relevant_culture_scope').GetName] [concept_culture]が連邦計画に完全に[Concept('concept_integrated_culture','$concept_integrated_culture_short$')]される決定を下した。\n\n[SCOPE.sCountry('austria_scope').GetName]は、我々の[concept_liberty_desire]を#v 25#!未満に減らしたり、関係を#v 50#!以上に高めたりする必要なく、#v $je_danubian_federation$#! [concept_journal_entry]を達成できるようになる。"
+notification_danubian_federation_culture_integrated_tooltip: "#header $notification_danubian_federation_culture_integrated_name$#!\n$TOOLTIP_DELIMITER$\n$notification_danubian_federation_culture_integrated_desc$"
+
+modifier_hungarian_renaissance: "ハンガリー・ルネサンス"
+YUGOSLAV_UNIFICATION: "統一されていない南スラヴ人"
+RIVAL_YUGOSLAV_UNIFIERS: "その他の有効な南スラヴ系[Concept('concept_unification_candidate','$concept_unification_candidates$')]"
+FERVOR_OF_CULTURE_ACTIVISM: "[SCOPE.sCulture('culture').GetName] [concept_culture]の[concept_fervor] ([SCOPE.sCulture('culture').GetCurrentFervor|v0])"
+FERVOR_OF_GERMAN_CULTURE_ACTIVISM: "[GetCulture('north_german').GetName]及び[GetCulture('south_german').GetName] [Concept('concept_culture','$concept_cultures$')]の平均[concept_fervor] ([GetPlayer.MakeScope.ScriptValue('average_german_fervor')|v0])"
+FERVOR_OF_ITALIAN_CULTURE_ACTIVISM: "[GetCulture('north_italian').GetName]及び[GetCulture('south_italian').GetName] [Concept('concept_culture','$concept_cultures$')]の平均[concept_fervor] ([GetPlayer.MakeScope.ScriptValue('average_italian_fervor')|v0])"
+FERVOR_OF_SOUTH_SLAVIC_CULTURE_ACTIVISM: "[GetCulture('croat').GetName]、[GetCulture('serb').GetName]、[GetCulture('bosniak').GetName]、[GetCulture('slovene').GetName] [Concept('concept_culture','$concept_cultures$')]の平均[concept_fervor] ([GetPlayer.MakeScope.ScriptValue('average_south_slavic_fervor')|v0])"
+
+NEIGHBOURING_COUNTRY_WITH_REVOLUTION: "[Concept('concept_insurrection', '$concept_insurrectionary$')]な[SCOPE.GetRootScope.GetPoliticalMovement.GetName]を持つ[Concept('concept_neighbors','$concept_neighboring$')]な[Concept('concept_country','$concept_countries$')]"
+NEIGHBOURING_COUNTRY_WITH_RELIGIOUS_REVOLUTION: "関連する[concept_religion]の[Concept('concept_insurrection', '$concept_insurrectionary$')]な[Concept('concept_political_movement','$concept_political_movement_short$')]を持つ[Concept('concept_neighbors','$concept_neighboring$')]な[Concept('concept_country','$concept_countries$')]"
+NEIGHBOURING_COUNTRY_WITH_CULTURE_REVOLUTION: "関連する[concept_culture]の[Concept('concept_insurrection', '$concept_insurrectionary$')]な[Concept('concept_political_movement','$concept_political_movement_short$')]を持つ[Concept('concept_neighbors','$concept_neighboring$')]な[Concept('concept_country','$concept_countries$')]"
+
+INSURRECTIONARY_MOVEMENTS: "[Concept('concept_insurrection', '$concept_insurrectionary$')]な[Concept('concept_political_movement','$concept_political_movements$')]"
+
+subjecthood_fervor_no_effects_ld_tt: "我々の[concept_primary_cultures]の[concept_fervor]は、もはや我々の[concept_liberty_desire]増加に寄与しなくなる。"
+fervor_effects_ld_tt: "我々の[concept_primary_cultures]の[concept_fervor]は、我々の[concept_liberty_desire]増加に寄与する。"
+
+modifier_polish_organic_statute: "1832年組織法"
+modifier_serbian_revolt_aftermath: "革命の遺産"
+modifier_greek_revolt_aftermath: "$modifier_serbian_revolt_aftermath$"
+
+tippu_tip_country_spawn_tt: "#b $UTR$#!が[SCOPE.sState('tippu_tip_state').GetName]に建国される。"
+tippu_tip_country_spawn_subject_tt: "#b $UTR$#!が[ROOT.GetCountry.GetName]の[concept_tributary]として[SCOPE.sState('tippu_tip_state').GetName]に建国される。"
+
+tippu_tip_spawn_tt: "$Hamad$ $al_Murjabi$が[GetIdeology('ideology_traditionalist').GetName]な[concept_agitator]として[ROOT.GetCountry.GetNameNoFlag]に登場する。"
+tippu_tip_general_tt: "$Hamad$ $al_Murjabi$が[concept_general]として[ROOT.GetCountry.GetNameNoFlag]に登場する。"
+
+aus_integrate_crown_lands_decision: "王室領を統合"
+aus_integrate_crown_lands_decision_desc: "ハンガリー問題が解決された今、我々の残る自治的な$concept_crown_lands$がその有用性を長く過ぎてしまったことは明らかだ。我が偉大なる帝国の繁栄のために、これらの地域はオーストリアの行政に完全に統合されなければならない。"
+
+notification_hungary_dual_monarchy_name: "[SCOPE.sCountry('austria_scope').GetName]が二重君主制を確立"
+notification_hungary_dual_monarchy_desc: "[SCOPE.sCountry('austria_scope').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('austria_scope').GetRuler.GetFullName]は、[SCOPE.sCountry('hungary_scope').GetName]を[SCOPE.sCountry('austria_scope').GetName]と対等な地位に引き上げた。我々の[concept_autonomy]レベルは[concept_personal_union]に上昇した。"
+notification_hungary_dual_monarchy_tooltip: "#header $notification_hungary_dual_monarchy_name$#!\n$TOOLTIP_DELIMITER$\n$notification_hungary_dual_monarchy_desc$"
+
+unlocks_actions_to_allow_federalization_tt: "我々の[concept_primary_cultures]を[Concept('concept_integrated_culture','$concept_integrated_culture_present_verb$')]することにより、#b $dyn_c_usga$#!の形成を#b 支援#!する行動が可能になる。"
+unlocks_actions_to_prevent_federalization_tt: "我々の[concept_primary_cultures]を[Concept('concept_integrated_culture','$concept_integrated_culture_process$')]から[Concept('concept_integrated_culture','$concept_disqualified_culture_present_verb$')]することにより、#b $dyn_c_usga$#!の形成を#b 阻止#!する行動が可能になる。"
+
+UPRISING_DEFEATED: "反乱鎮圧"
+pb_ruler_tt: "[concept_ruler]の[concept_interest_group]は#v $ig_petty_bourgeoisie$#!である。"
+
+movement_suppressed_after_civil_war_copy: "内戦後の運動抑圧"

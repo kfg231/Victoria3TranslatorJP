@@ -1,0 +1,653 @@
+﻿l_russian:
+
+# GENERIC LOC
+ bpm_je_progress_complete:0 "#bold Индикатор Прогресса#! достиг #variable 100%#!"
+ bpm_je_progress_zero:0 "#bold Индикатор Прогресса#! достиг #variable 0%#!"
+
+ bpm_journal_final_stage:0 "#bold Индикатор Прогресса#! достиг #variable 66%#!, переходя в завершающую стадию Журнальной Записи."
+ bpm_je_button_cooldown_week:0 "Эта опция недоступна еженедельно"
+ bpm_je_button_cooldown_month:0 "Эта опция недоступна ежемесячно"
+
+ bpm_je_reached_stage_2:0 "#bold Индикатор Прогресса#! ранее был #v выше 33%#!."
+ bpm_je_reached_stage_3:0 "#bold Индикатор Прогресса#! ранее был #v выше 66%#!."
+
+ bpm_je_trigger_bpm_peoples_springtime_happened:0 "Весна Народов должна закончиться на международном уровне."
+ bpm_je_trigger_peoples_springtime_not_recent:0 "Весна Народов должна закончиться на международном уровне #v 2 года#! назад."
+
+ bpm_je_trigger_complete_elsewhere:0 "Другая страна завершила эту Журнальную Запись."
+
+ bpm_labor_igs_not_insurrectionary:0 "Ни одна [concept_bpm_ig_is_labor] [concept_interest_group] не является [Concept('concept_revolution', '$concept_revolutionary$')]."
+
+# TUTORIAL
+ je_bpm_winds_of_change:0 "Ветры Перемен (Обучение)"
+ je_bpm_winds_of_change_status:0 "Узнайте о Политической Ригидности."
+ je_bpm_winds_of_change_reason:0 "Ветры перемен пересекают нашу нацию в эту новую эру, но для принятия законов нам нужно снизить нашу [Concept('concept_bpm_political_stability', 'Политическую Ригидность')]. Это значение можно найти в верхней части окна правительства, над индикатором Легитимности.\n\nВ зависимости от уровня ригидности в вашем правительстве вы будете [Concept('concept_bpm_politically_stagnant', 'Застойным')], [Concept('concept_bpm_politically_dynamic', 'Динамичным')] или [Concept('concept_bpm_politically_unstable', 'Нестабильным')]:\n- [Concept('concept_bpm_politically_stagnant', 'Застойная')] ригидность #v (66\-100)#! значительно затрудняет [Concept('concept_enactment_of_laws','Принятие Законов')]\n- [Concept('concept_bpm_politically_dynamic', 'Динамичная')] ригидность #v (33\-66)#! не дает особых бонусов\n- [Concept('concept_bpm_politically_unstable', 'Нестабильная')] ригидность #v (0\-33)#! снижает эффективность [concept_throughput] и [concept_construction]\n\nРигидность колеблется от #v 0 до 100#! и медленно движется к #v целевому значению#!. Эта цель@arrow_up!#v повышается#! различными факторами, например:\n- Консервативное управление, например, [GetLawType('law_monarchy').GetName] и [GetLawType('law_ad_hoc_centralization').GetName]\n- Консервативная экономика, например, [GetLawType('law_serfdom').GetName] или [GetLawType('law_tenant_farmers').GetName]\n- Подавление свободы слова, например, [GetLawType('law_censorship').GetName] или [GetLawType('law_outlawed_dissent').GetName]\n- Инвестиции в [concept_institution] #yellow $institution_police$#!\n- Большое количество [concept_loyalist] населения\n\nС другой стороны, #v целевое значение#! может быть@arrow_down!#v снижено#! такими факторами, как:\n- Инвестиции в [concept_institution] #yellow $institution_suffrage$#!\n- Бунтующие Группы Интересов и [concept_revolution]\n- [concept_war_exhaustion]\n- Низкая [concept_legitimacy]\n- Большое количество [concept_radical] населения\n\n#v Не беспокойтесь, если вы не можете немедленно снизить ригидность.#! Попробуйте индустриализировать и воспользоваться [Concept('concept_political_movement','Политическими Движениями')] и [Concept('concept_war', 'Войнами')] всякий раз, когда это возможно. Провоцирование групп интересов на восстание может помочь, а гражданская война очень поможет!"
+ bpm_tutorial_stability_req:0 "Did not complete the tutotial yet and has more than 66 #v Political Rigidity#!."
+ bpm_tutorial_stability:0 "Снизьте свою #v Политическую Ригидность#! до 66 или ниже."
+
+ bpm_tutorial.1.t:0 "Динамичное Правительство"
+ bpm_tutorial.1.d:0 "Теперь у нас [Concept('concept_bpm_politically_dynamic', 'Динамичный')] уровень [Concept('concept_bpm_political_stability', 'Политической Ригидности')]! Пока мы сохраняем его на этом уровне, наше политическое устройство больше не будет препятствовать всем попыткам реформ.\n\n@warning! Если ригидность слишком низкая, наше правительство станет [Concept('concept_bpm_politically_unstable', 'Нестабильным')] с серьезными дебаффами!"
+ bpm_tutorial.1.f:0 "Новый воздух политического динамизма веет в столице, возможно, наступила эра перемен."
+ bpm_tutorial.1.a:0 "Вперед!"
+
+# PARTY BAN
+ je_bpm_ban_communists:0 "Антисоциалистические Законы"
+ je_bpm_ban_communists_status:0 "Искоренить социалистические организации из правительства."
+ je_bpm_ban_communists_reason:0 "Социалисты поют песнь революции, которая хочет перевернуть хрупкий естественный порядок; революция, которая стала весьма тревожной для нашего политического устройства.\n\nПока эта Журнальная Запись активна, наши [Concept('concept_bpm_ig_is_liberal', '$concept_bpm_ig_is_liberal$')] и [Concept('concept_bpm_ig_is_moderate_conservative', '$concept_bpm_ig_is_moderate_conservative$')] [Concept('concept_interest_group', 'Группы Интересов')] будут склонны поддерживать законы, запрещающие коммунистические партии."
+
+ je_bpm_ban_fascists:0 "Антифашистские Законы"
+ je_bpm_ban_fascists_status:0 "Искоренить фашистские организации из правительства."
+ je_bpm_ban_fascists_reason:0 "Фашисты, бесноватые ксенофобские и ультрамилитаристские фанатики, высыпали на улицы, как коричневая чума, заражая нашу политическую сцену своим жестоким безумием. По мере того, как фашистская угроза становилась очевидной, большая часть нашей политической сцены стала относиться к ним настолько враждебно, что выступает за полный запрет их деятельности.\n\nПока эта Журнальная Запись активна, наши [Concept('concept_bpm_ig_is_liberal', '$concept_bpm_ig_is_liberal$')], [Concept('concept_bpm_ig_is_moderate_conservative', '$concept_bpm_ig_is_moderate_conservative$')] и неанархистские [Concept('concept_bpm_ig_is_socialist', '$concept_bpm_ig_is_socialist$')] [Concept('concept_interest_group', 'Группы Интересов')] будут склонны поддерживать законы, запрещающие фашистские партии."
+
+ je_bpm_ban_anti_communists:0 "Антикапиталистические Законы"
+ je_bpm_ban_anti_communists_status:0 "Искоренить капиталистические организации из правительства."
+ je_bpm_ban_anti_communists_reason:0 "Наш революционный проект оказался заражен врагами внутри, желающими восстановить ярмо буржуазии. По мере того, как реакционные силы наращивают власть, участвуя в нашем демократическом процессе, наши революционные лидеры становятся все более тревожными, требуя решительных мер для борьбы с ними.\n\nПока эта Журнальная Запись активна, наши неанархистские [Concept('concept_bpm_ig_is_socialist', '$concept_bpm_ig_is_socialist$')] [Concept('concept_interest_group', 'Группы Интересов')] будут склонны поддерживать законы, запрещающие несоциалистические партии."
+
+# SINGLE PARTY STATE
+ bpm_become_single_party:0 "Нынешняя единственная правящая [Concept('concept_party', 'Партия')] примет [GetLawType('law_party_single').GetName] [Concept('concept_law', 'закон')], запрещающий все остальные [Concept('concept_party', 'Политические Партии')] в вашей стране."
+ bpm_je_single_party_in_government_trigger:0 "Текущая [Concept('concept_party', 'Политическая Партия')] вашего [Concept('concept_ruler', 'Правителя')] должна быть одна в [Concept('concept_government', 'Правительстве')], без других [Concept('concept_party', 'Партий')] или [Concept('concept_interest_group', 'Групп Интересов')]."
+ bpm_je_single_party_has_elections:0 "У вас есть [Concept('concept_law', 'Законы')], разрешающие [Concept('concept_election', 'Выборы')]"
+
+ je_bpm_single_party_become:0 "Путь к Однопартийному Государству"
+ je_bpm_single_party_become_status:0 "Консолидировать власть и укрепить правление нынешней партии."
+ je_bpm_single_party_become_reason:0 "Настало время для Партии взять безраздельный контроль над рычагами государства и направить наше государство в славное будущее! С еще несколькими деталями на доске мы сможем консолидировать власть и гарантировать, что все остальные партии будут убраны с нашего пути."
+
+ bpm_single_party.1.t:0 "Партийное Государство"
+ bpm_single_party.1.d:0 "С этого самого дня [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullName] объявил все партии, кроме [SCOPE.sParty('single_party_party').GetName], вне закона. Однако еще до этого решения оппозиция страдала от арестов, исчезновений и убийств, что фактически уже сделало их политическое присутствие незаконным."
+ bpm_single_party.1.f:0 "Русская Революция использовала политическую диктатуру, не считаясь ни с чем, кроме успеха революции... ее успех был достигнут потому, что партия была поставлена выше государства. Я считаю, что мы должны реорганизоваться, поставив партию выше государства.\n\n— Сунь Ятсен, 1924"
+ bpm_single_party.1.a:0 "Слава [SCOPE.sParty('single_party_party').GetName]!"
+
+# SOCIALIST ELECTORALISM
+ je_bpm_socialist_electoralism:0 "О Социалистах и Выборах"
+ je_bpm_socialist_electoralism_status:0 "Мониторить уровень электоральной активности Социалистов."
+ je_bpm_socialist_electoralism_reason:0 "Сочетание наших демократических институтов и развития социалистической идеологии поставило революционных деятелей в трудное положение — дебаты о целесообразности участия в том, что они называют #bold 'Буржуазной Демократией'#! и, на практике, нашей избирательной системой. Должны ли мы хотеть, чтобы они оставались вне наших избирательных бюллетеней, или, возможно, поощрять их вступать в респектабельную политику? Выбор наш, косвенно.\n\nВ текущих условиях, значение электорализма #bold Социалистов#!, как ожидается, достигнет #tooltippable;tooltip:[Country.GetTooltipTag],je_bpm_socialist_electoralism_special_tooltip [Country.MakeScope.Var('bpm_je_socialist_electoralism_baseline_target').GetValue|-=]#! в ближайшие недели. Пока уровень электорализма выше #bold 10#!, @ig_reformist_socialists!#bold Социалисты-Реформисты#! останутся в избирательной политике. @ig_revolutionist_socialists!#bold Социалисты-Революционеры#! станут менее склонны вступать в партии, если уровень электорализма ниже #bold 40#!, и полностью откажутся от электорализма, если уровень ниже #bold 25#!. @ig_anarchists!#bold Анархисты#! останутся маловероятными кандидатами на вступление в партии при уровне электорализма ниже #bold 90#! и станут полностью антиэлекторалистскими при уровнях ниже #bold 75#!\n\n#lore "Вывод, который следует из этого, совершенно неопровержим: доказано, что участие в буржуазно-демократическом парламенте, даже за несколько недель до победы Советской республики и даже после такой победы, не только не причиняет вреда революционному пролетариату, но фактически помогает этому пролетариату доказать отсталым массам, почему такие парламенты заслуживают того, чтобы их уничтожили; оно способствует их успешному роспуску и помогает сделать буржуазный парламентаризм 'политически устаревшим'."\n\n— Владимир Ленин, 1920#!"
+
+ je_bpm_socialist_electoralism_special_tooltip:0 "Этот естественный базовый уровень определяется следующим:\n#variable [Country.MakeScope.Var('bpm_je_socialist_electoralism_from_base').GetValue|-=]#! базовое значение\n#variable [Country.MakeScope.Var('bpm_je_socialist_electoralism_from_powerful_socialists').GetValue|-=]#! от Влиятельных #bold Социалистических#! [Concept('concept_interest_group', 'Групп Интересов')]\n#variable [Country.MakeScope.Var('bpm_je_socialist_electoralism_from_socialists_in_government').GetValue|-=]#! от #bold Социалистических#! [Concept('concept_interest_group', 'Групп Интересов')] в правительстве\n#variable [Country.MakeScope.Var('bpm_je_socialist_electoralism_from_bolstered_socialists').GetValue|-=]#! от #bold Социалистических#! [Concept('concept_interest_group', 'Групп Интересов')] в поддержке\n#variable [Country.MakeScope.Var('bpm_je_socialist_electoralism_from_happy_socialists').GetValue|-=]#! от Счастливых #bold Социалистических#! [Concept('concept_interest_group', 'Групп Интересов')]\n#variable [Country.MakeScope.Var('bpm_je_socialist_electoralism_from_suppressed_socialists').GetValue|-=]#! от #bold Социалистических#! [Concept('concept_interest_group', 'Групп Интересов')] в подавлении\n#variable [Country.MakeScope.Var('bpm_je_socialist_electoralism_from_revolution').GetValue|-=]#! от #bold Текущей Революции#! или ниже 33% [Concept('concept_bpm_political_stability', 'Политической Стабильности')]\n#variable [Country.MakeScope.Var('bpm_je_socialist_electoralism_from_censorship').GetValue|-=]#! от законов #bold Свободы Слова#!\n#variable [Country.MakeScope.Var('bpm_je_socialist_electoralism_from_party_ban').GetValue|-=]#! от законов #bold О Партиях#!\n#variable [Country.MakeScope.Var('bpm_je_socialist_electoralism_from_home_affairs').GetValue|-=]#! от [Concept('concept_institution', '$concept_institutions$')] #bold Внутренних Дел#!"
+
+# ANARCHIST PROPAGANDA OF THE DEED
+ je_bpm_propaganda_of_the_deed:0 "Пропаганда Действием"
+ je_bpm_propaganda_of_the_deed_status_1:0 "Теперь к взрывной философии."
+ je_bpm_propaganda_of_the_deed_status_2:0 "Взрывное планирование уже идет."
+ je_bpm_propaganda_of_the_deed_status_3:0 "Дело почти готово."
+ je_bpm_propaganda_of_the_deed_reason:0 "#v Ежемесячный Прогресс Планирования:#! #tooltippable;tooltip:[Country.GetTooltipTag],je_bpm_propaganda_of_the_deed_bomb_tooltip [Country.MakeScope.ScriptValue('bpm_je_propaganda_of_the_deed_бомбометр_rate_true')|-=]#!\n@warning! При #v 100%#! [GetInterestGroupVariant('ig_anarchists',GetPlayer).GetName] попытаются #N взорвать#! [concept_leader].\n\n#PB Сила Убеждения:#! [Country.MakeScope.ScriptValue('bpm_je_propaganda_of_the_deed_philosophy_value')|-] @arrow_right! #tooltippable;tooltip:[Country.GetTooltipTag],je_bpm_propaganda_of_the_deed_baseline_tooltip [Country.MakeScope.ScriptValue('bpm_je_propaganda_of_the_deed_baseline_target')|-]#! (#v 0.5#!/месяц)\nКогда это значение будет #v выше [Country.MakeScope.ScriptValue('bpm_je_propaganda_of_the_deed_decay_threshold_value')]#!, прогресс журнала будет расти.\n@warning! При #v [Country.MakeScope.ScriptValue('bpm_je_propaganda_of_the_deed_complete_threshold_value')]#! [GetInterestGroupVariant('ig_anarchists',GetPlayer).GetName] попытаются #N взорвать#! нашего [concept_ruler].\n\nПо мере того, как наши радикалы все больше разочаровываются в государстве, часть убежденных Анархистов пытается пробудить сознание масс целенаправленными убийствами.\n\nИх #pink Сила Убеждения#! стремится к #v целевому значению#!, определяемому такими факторами, как государственные репрессии, экономические трудности, война и смелость Анархистского движения. Если это значение достаточно высоко, Анархисты начнут #v планировать#! свою следующую #N бомбардировку#!.\n\nАнархисты со временем разочаруются в этой стратегии. Каждая попытка #N бомбардировки#!:\n  @arrow_up!Повышает порог #pink Убеждения#! (#v [Country.MakeScope.ScriptValue('bpm_je_propaganda_of_the_deed_decay_threshold_value')]#!) для планирования следующей, и\n  @arrow_down!Снижает порог #pink Убеждения#! (#v [Country.MakeScope.ScriptValue('bpm_je_propaganda_of_the_deed_complete_threshold_value')]#!) для #N бомбардировки#! [concept_ruler].\n\nПоследняя попытка #N бомбардировки#! была [Country.MakeScope.ScriptValue('bpm_je_propaganda_of_the_deed_months_below_value')] месяцев назад.\n\n#lore "Окончательное убийство одиннадцати безоружных рабочих 6 июля 1892 года вызвало негодование в Америке... Но был только один человек, который перевел гнев тружеников в героический поступок. Этим человеком был Александр Беркман. 22 июля 1892 года он вошел в кабинет Х. К. Фрика и совершил покушение на его жизнь. Три пули попали в тело Фрика, но он выжил... Это был первый анархистский акт экономического террора в Соединенных Штатах, и Александр Беркман должен был дорого заплатить за свой революционный протест."\n\n— Эмма Гольдман, 1922#!"
+
+ je_bpm_propaganda_of_the_deed_full:0 "#Pink Сила Убеждения#! равна #v [GetPlayer.MakeScope.ScriptValue('bpm_je_propaganda_of_the_deed_complete_threshold_value')]#!."
+ je_bpm_propaganda_of_the_deed_empty:0 "#Pink Сила Убеждения#! равна #v 0#! (движение затухает)."
+ je_bpm_propaganda_of_the_deed_timeout:0 "Нет #N бомбардировок#! в течение #v 10 лет#! (движение затухает)."
+
+ je_bpm_propaganda_of_the_deed_baseline_tooltip:0 "[Country.MakeScope.GetScriptValueDesc('bpm_je_propaganda_of_the_deed_baseline_target')]"
+ je_bpm_propaganda_of_the_deed_bomb_tooltip:0 "[Country.MakeScope.GetScriptValueDesc('bpm_je_propaganda_of_the_deed_бомбометр_rate')]"
+
+ bpm_je_potd_will_add_progress:0 "#bold Пропаганда Действием#! [Concept('concept_journal_entry', 'Журнальная Запись')] получит #pink Убеждение#!"
+ bpm_je_potd_will_remove_progress:0 "#bold Пропаганда Действием#! [Concept('concept_journal_entry', 'Журнальная Запись')] потеряет #pink Убеждение#!"
+ bpm_je_propaganda_of_the_deed_complete:0 "Если движение затухнет, [GetInterestGroupVariant('ig_anarchists',GetPlayer).GetName] будет искать другие стратегии.\n\nЕсли #pink Сила Убеждения#! достигнет #v [GetPlayer.MakeScope.ScriptValue('bpm_je_propaganda_of_the_deed_complete_threshold_value')]#!, будет совершена попытка покушения на жизнь нашего [Concept('concept_ruler', 'Правителя')]. Покушение не удастся, если:\n- [GetInterestGroupVariant('ig_anarchists',GetPlayer).GetName] находятся в [concept_marginalized], и,\n- В нашей стране нет [GetInterestGroupVariant('ig_anarchists',GetPlayer).GetName] [Concept('concept_agitator', 'Агитаторов')].\nВ противном случае [Concept('concept_ruler', 'Правитель')] умрет, и мы будем вынуждены прибегнуть к жестким мерам."
+
+ bpm_anarchist_potd.1.t:0 "Следующая Цель"
+ bpm_anarchist_potd.1.desc:0 "@ig_anarchists! #bold Анархисты#! завершают подготовку к следующему действию. Теперь они выбирают между несколькими планами."
+ bpm_anarchist_potd.1.f:0 "В воздухе витало мрачное предчувствие. Бомба, сделанная из подручных материалов, едва сдерживала свой убийственный импульс. Скоро она будет выпущена, и отголоски этого действия распространятся дальше, чем когда-либо мог распространиться громовой звук этого взрывного устройства."
+ bpm_anarchist_potd.1.a:0 "Низшие чиновники"
+ bpm_anarchist_potd.1.b:0 "[SCOPE.sCharacter('bpm_anarchist_potd_target_1').GetFullName]"
+ bpm_anarchist_potd.1.c:0 "[SCOPE.sCharacter('bpm_anarchist_potd_target_2').GetFullName]"
+ bpm_anarchist_potd.1.d:0 "[SCOPE.sCharacter('bpm_anarchist_potd_target_3').GetFullName]"
+
+ bpm_anarchist_potd.2.t:0 "Бомбардировка Правительственного Здания!"
+ bpm_anarchist_potd.2.d:0 "@ig_anarchists! #bold Анархисты#! успешно убили одного из наших видных государственных служащих — его кабинет серьезно поврежден взрывом. Потребуется некоторое время, чтобы восстановить нашу способность управлять из этого учреждения в ближайшем будущем."
+ bpm_anarchist_potd.2.f:0 "Смерть бюрократа — не то, что невозможно исправить. Но символический жест был гораздо важнее — даже самые высокопоставленные слуги государства не были в безопасности от возмездия."
+ bpm_anarchist_potd.2.a:0 "Проклятие!"
+
+ bpm_anarchist_potd.3.t:0 "Убийство Крупной Политической Фигуры!"
+ bpm_anarchist_potd.3.d:0 "@ig_anarchists! #bold Анархисты#! успешно убили [SCOPE.sCharacter('bpm_anarchist_potd_target').GetFullName], изменив наш политический ландшафт своим дерзким актом."
+ bpm_anarchist_potd.3.f:0 "Быстрый бросок, быстрое отступление, и могущественный человек в конце концов становится равным всем."
+ bpm_anarchist_potd.3.a:0 "Эту смерть нужно отомстить!"
+ bpm_anarchist_potd.3.b:0 "Следует проявить сдержанность, чтобы не спровоцировать новых подобных актов!"
+
+ bpm_anarchist_potd.4.t:0 "Покушение Провалилось!"
+ bpm_anarchist_potd.4.d:0 "@ig_anarchists! #bold Анархисты#! уже некоторое время совершают покушения на жизнь [SCOPE.sCharacter('bpm_anarchist_potd_target_ruler').GetFullName]. Их последнее покушение было самым близким к успеху — и, возможно, самым трудным для повторения. Несколько исполнителей уже арестованы, проводится масштабная зачистка. Поскольку после стольких действий социальные изменения не материализовались, они ищут иную форму политического действия, которая требует гораздо более активной организации народа."
+ bpm_anarchist_potd.4.f:0 "Если извержения должны быть уменьшены и разоружены, нет иного выхода, кроме как предоставить всем свободу пропаганды и организации; оставить обездоленным, угнетенным и недовольным возможность цивилизованной кампании; дать им надежду, что, хоть и по частям, они смогут добиться своего освобождения бескровными методами. Правительство Италии не хочет этого; оно будет продолжать свои репрессии... и будет пожинать то, что сеет."\n\n— Эррико Малатеста, 1900"
+ bpm_anarchist_potd.4.a:0 "Хватит этой либеральной безхребетности!"
+ bpm_anarchist_potd.4.b:0 "Нам повезло избежать трагедии — давайте избежим еще одной."
+
+ bpm_anarchist_potd.5.t:0 "Наш Правитель Убит!"
+ bpm_anarchist_potd.5.d:0 "@ig_anarchists! #bold Анархисты#! уже некоторое время совершают покушения на жизнь [SCOPE.sCharacter('bpm_anarchist_potd_target_ruler').GetFullName]. Их последняя попытка оказалась #N кровавым успехом#!, и новости о смерти [SCOPE.sCharacter('bpm_anarchist_potd_target_ruler').GetFullName] потрясли нашу нацию. Наши последующие зачистки были быстрыми и жестокими."
+ bpm_anarchist_potd.5.f:0 "Убит король; и поскольку король, несмотря на все, все еще человек, этот факт следует оплакивать. Королева стала вдовой; и поскольку королева, несмотря на все, все еще женщина, мы сочувствуем ей в ее утрате. Но почему весь этот шум по поводу смерти одного мужчины и слез одной женщины, когда тот факт, что так много мужчин ежедневно убивают и так много женщин оставляют рыдать из-за войн, несчастных случаев на работе, восстаний, подавленных выстрелами, и тысяч преступлений, порожденных бедностью, духом мести, фанатизмом и алкоголизмом, воспринимается как естественный?"\n\n— Эррико Малатеста, 1900"
+ bpm_anarchist_potd.5.a:0 "[SCOPE.sCharacter('bpm_anarchist_potd_target_ruler').GetFullName] будет отомщен!"
+
+ bpm_anarchist_potd.6.t:0 "Дело Затухает"
+ bpm_anarchist_potd.6.d:0 "@ig_anarchists! #bold Анархисты#! постоянно разочаровывались в стратегии целенаправленных убийств. В результате внутренних дебатов и изменения стратегии они теперь переключают внимание на другие формы политического действия."
+ bpm_anarchist_potd.6.f:0 "С точки зрения чувства и принципа мы презираем насилие и всегда делаем все возможное, чтобы его избежать; только необходимость противостоять злу подходящими эффективными средствами может побудить нас прибегнуть к насилию. Мы знаем, что такие отдельные акты насилия, при отсутствии достаточной подготовки народа, остаются бесполезными и даже, вызывая ответные реакции, против которых нельзя устоять, приносят неисчислимый вред той самой цели, которой они были призваны служить. Мы знаем, что самое главное, бесспорно целесообразное действие заключается не в физическом убийстве короля, а в убийстве всех королей — из судов, парламентов и фабрик — в сердцах и умах людей; то есть в искоренении веры в принцип власти, которому поклоняются многие люди."\n\n— Эррико Малатеста, 1900"
+ bpm_anarchist_potd.6.a:0 "Время сменить стратегию."
+
+ bpm_anarchist_potd.7.t:0 "Взрывная Философия"
+ bpm_anarchist_potd.7.d:0 "[SCOPE.sCharacter('bpm_anarchist_potd_failed_target').GetFullName] путешествовал по городу, когда человек в плаще бросил бомбу в [SCOPE.sCharacter('bpm_anarchist_potd_failed_target').GetHerHis] экипаж. В безумной суматохе [SCOPE.sCharacter('bpm_anarchist_potd_failed_target').GetSheHe] и водитель успели выпрыгнуть из экипажа, прежде чем...\n\nНичего не произошло. Бомба оказалась нерабочей. Несостоявшегося убийцу быстро утащила полиция, которая находилась рядом, все еще крича 'Да здравствует Анархия!'"
+ bpm_anarchist_potd.7.f:0 "Война, Классовая война, и вы были первыми, кто начал ее под прикрытием могущественных институтов, которые вы называете порядком, во тьме ваших законов. Придется пролить кровь; мы не уклонимся; придется убивать: мы будем убивать, потому что это необходимо; придется разрушать; мы будем разрушать, чтобы избавить мир от ваших тиранических институтов."\n\n— Анархистский Памфлет, 1919"
+ bpm_anarchist_potd.7.a:0 "Этот наглый поступок не пройдет!"
+ bpm_anarchist_potd.7.b:0 "Никто не пострадал, верно?"
+
+# NATLIB SPLIT
+ je_bpm_split_natlibs:0 "Возникновение Национального Либерализма"
+ je_bpm_split_natlibs_status:0 "Отслеживать появление Национальных Либералов."
+ je_bpm_split_natlibs_reason:0 "Либерализм больше не является идеологией мечтателей, а полностью интегрирован в политико-экономическую структуру нашего общества. Недавние кризисы в нашей стране привели на сцену совершенно новую когорту консервативных либералов, выступающих за сильное государство, современную экономику и мощную армию на службе интересов нации.\n\n#lore \"У нас есть огромные невозделанные территории для обработки; дороги для открытия; порты для рытья; реки для судоходства; каналы для завершения, железнодорожная сеть для завершения. Перед Марселем у нас есть обширное королевство, которое нужно ассимилировать с Францией... Так я вижу Империю, если Империя будет восстановлена. Это те завоевания, которые я рассматриваю, и вы, кто вокруг меня, кто, как и я, желает добра нашей стране, вы мои солдаты.\"\n\n— Наполеон III, 1852"
+
+ je_bpm_split_natlibs_special_tooltip:0 "Прогресс определяется следующим:\n#variable [Country.MakeScope.Var('bpm_je_split_natlibs_progress_from_base').GetValue|+=]#! базовое значение\n#variable [Country.MakeScope.Var('bpm_je_split_natlibs_progress_from_conflicts').GetValue|+=]#! от участия в Войнах, Дипломатических Играх, Революциях или будучи лидером Национального Объединения\n#variable [Country.MakeScope.Var('bpm_je_split_natlibs_progress_from_liberals_empowered').GetValue|+=]#! от #bold Либеральных#! и #bold Консервативных#! [Concept('concept_interest_group', 'Групп Интересов')] в правительстве или в поддержке\n#variable [Country.MakeScope.Var('bpm_je_split_natlibs_progress_from_libcons_suppressed').GetValue|+=]#! от подавленных #bold Либеральных#! и #bold Консервативных#! [Concept('concept_interest_group', 'Групп Интересов')]\n#variable [Country.MakeScope.Var('bpm_je_split_natlibs_progress_from_libcons_marginal').GetValue|+=]#! от маргинализированных #bold Либеральных#! и #bold Консервативных#! [Concept('concept_interest_group', 'Групп Интересов')]\n#variable [Country.MakeScope.Var('bpm_je_split_natlibs_progress_from_radicals').GetValue|+=]#! от радикальных слоев бедного населения; это будет накапливаться только в том случае, если #bold Либеральные#! и #bold Консервативные#! [Concept('concept_interest_group', 'Группы Интересов')] не маргинализированы и не подавлены."
+
+ je_bpm_split_natlibs_progress_bar: "Возникновение Национального Либерализма"
+ je_bpm_split_natlibs_progress_bar_desc: "#v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100), меняется на #v [SCOPE.GetRootScope.GetCountry.MakeScope.ScriptValue('bpm_je_split_natlibs_progress_rate')|+=]#! каждую неделю."
+ bpm_je_split_natlibs_progress_from_base_desc: "базовое значение"
+ bpm_je_split_natlibs_progress_from_conflicts_desc: "участие в Войнах, Дипломатических Играх, Революциях или лидерство в Национальном Объединении"
+ bpm_je_split_natlibs_progress_from_liberals_empowered_desc: "@ig_liberals! Либералы, @ig_radicals! Радикальные Либералы или @ig_market_liberals! Рыночные Либералы в Правительстве или в поддержке"
+ bpm_je_split_natlibs_progress_from_libcons_suppressed_desc: "подавленные #bold Либеральные#! и #bold Консервативные#! [Concept('concept_interest_group', 'Группы Интересов')]"
+ bpm_je_split_natlibs_progress_from_libcons_marginal_desc: "маргинализированные #bold Либеральные#! и #bold Консервативные#! [Concept('concept_interest_group', 'Группы Интересов')]"
+ bpm_je_split_natlibs_progress_from_radicals_desc: "[concept_radical] слои бедного населения. #blue @information! Это будет накапливаться только в том случае, если @ig_liberals! Либералы и @ig_conservatives! Консерваторы не маргинализированы и не подавлены.#!"
+ bpm_je_split_natlibs_progress_from_ruler_desc: "[concept_ruler] из [Concept('concept_interest_group', 'Групп Интересов')]"
+
+# MARLIB SPLIT
+ je_bpm_split_marlibs:0 "Возникновение Рыночного Либерализма"
+ je_bpm_split_marlibs_status:0 "Отслеживать появление Рыночных Либералов."
+ je_bpm_split_marlibs_reason:0 "Недавние экономические дебаты в нашей стране приводят к формированию новой коалиции либералов среднего и высшего классов, которые страстно верят, что рынок наиболее эффективен при минимальном вмешательстве государства. Свободный рынок, по их мнению, снизит цены и обеспечит лучший уровень жизни для всех членов общества, одновременно сдерживая международные конфликты.\n\n#lore \"Свободная Торговля! Что это? Почему же, разрушение барьеров, разделяющих народы; тех барьеров, за которыми гнездятся чувства гордости, мести, ненависти и зависти, которые время от времени прорываются и заливают кровью целые страны; те чувства, которые питают яд войны и завоеваний, которые утверждают, что без завоеваний у нас не может быть торговли, которые подпитывают эту жажду завоеваний и господства, которая посылает ваших воинов-вождей сеять разрушение по другим землям, а затем призывает их обратно, чтобы они могли надежно утвердиться в ваших страстях, но только для того, чтобы дома издеваться над вами и угнетать.\"\n\n— Ричард Кобден, 1843"
+
+ je_bpm_split_marlibs_special_tooltip:0 "Прогресс определяется следующим:\n#variable [Country.MakeScope.Var('bpm_je_split_marlibs_progress_from_base').GetValue|+=]#! базовое значение\n#variable [Country.MakeScope.Var('bpm_je_split_marlibs_progress_from_top_gp').GetValue|+=]#! от лидерства среди [Concept('concept_great_power', '$concept_great_powers$')].\n#variable [Country.MakeScope.Var('bpm_je_split_marlibs_progress_from_law_enactment').GetValue|+=]#! от принятия современных законов о торговле, экономике или сельском хозяйстве.\n#variable [Country.MakeScope.Var('bpm_je_split_marlibs_progress_from_movement').GetValue|+=]#! от движения за принятие законов об экономике, торговле или сельском хозяйстве.\n#variable [Country.MakeScope.Var('bpm_je_split_marlibs_progress_from_bad_laws').GetValue|+=]#! от регрессивных экономических законов, таких как Крепостное право или Традиционализм.\n#variable [Country.MakeScope.Var('bpm_je_split_marlibs_progress_from_patcons').GetValue|+=]#! от принятия Консерваторами Патернализма.\n#variable [Country.MakeScope.Var('bpm_je_split_marlibs_progress_from_radcaps').GetValue|+=]#! от наличия как минимум 10% радикального капиталистического населения."
+
+ je_bpm_split_marlibs_progress_bar: "Возникновение Рыночного Либерализма"
+ je_bpm_split_marlibs_progress_bar_desc: "#v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100), меняется на #v [SCOPE.GetRootScope.GetCountry.MakeScope.ScriptValue('bpm_je_split_marlibs_progress_rate')|+=]#! каждую неделю."
+ bpm_je_split_marlibs_progress_from_base_desc: "базовое значение"
+ bpm_je_split_marlibs_progress_from_top_gp_desc: "лидерство среди [Concept('concept_great_power', '$concept_great_powers$')]."
+ bpm_je_split_marlibs_progress_from_law_enactment_desc: "принятие современных законов о торговле, экономике или сельском хозяйстве."
+  bpm_je_split_marlibs_progress_from_movement_desc: "движение за принятие экономических, торговых или сельскохозяйственных законов."
+#  bpm_je_split_marlibs_progress_from_good_laws_desc: ""
+ bpm_je_split_marlibs_progress_from_bad_laws_desc: "регрессивные экономические законы, такие как Крепостное право или Традиционализм."
+ bpm_je_split_marlibs_progress_from_patcons_desc: "Консерваторы Патерналистские"
+ bpm_je_split_marlibs_progress_from_radcaps_desc: "как минимум 10% капиталистического населения [concept_radical]"
+
+# PATCON "SPLIT"
+ je_bpm_split_patcons:0 "Возникновение Патерналистского Консерватизма"
+ je_bpm_split_patcons_status:0 "Отслеживать принятие Консерваторами Патернализма."
+ je_bpm_split_patcons_reason:0 "Современные проблемы требуют современных решений. Быстрая индустриализация и урбанизация значительно повысили производительность, в то время как рабочий класс прозябает в ветхих трущобах. Если наши консерваторы хотят противостоять соблазну левых радикалов, они теперь тоже должны обратиться к бедам бедных.\n\n#lore \"Дайте трудящемуся право работать, пока он здоров, обеспечьте ему уход, когда он болен; обеспечьте ему содержание, когда он стар... Если Государство проявит немного больше христианской заботы о трудящемся, тогда я верю, что господа социал-демократической программы будут напрасно трубить в свои трубы, и стечение к ним прекратится, как только трудящиеся увидят, что Правительство и законодательные органы серьезно заботятся о их благополучии.\"\n\n— Отто фон Бисмарк, 1884"
+
+ je_bpm_split_patcons_special_tooltip:0 "Прогресс определяется следующим:\n#variable [Country.MakeScope.Var('bpm_je_split_patcons_progress_from_base').GetValue|+=]#! базовое значение\n#variable [Country.MakeScope.Var('bpm_je_split_patcons_progress_from_poverty').GetValue|+=]#! от населения, живущего ниже Минимального Ожидаемого Уровня Жизни\n#variable [Country.MakeScope.Var('bpm_je_split_patcons_progress_from_loyalists').GetValue|+=]#! от лоялистов в включенных штатах\n#variable [Country.MakeScope.Var('bpm_je_split_patcons_progress_from_radicals').GetValue|+=]#! от радикалов в включенных штатах\n#variable [Country.MakeScope.Var('bpm_je_split_patcons_progress_from_conservative_status').GetValue|+=]#! от подавления #bold Консервативных#! [Concept('concept_interest_group', 'Групп Интересов')]\n#variable [Country.MakeScope.Var('bpm_je_split_patcons_progress_from_left_wing_power').GetValue|+=]#! от значительных левых [Concept('concept_interest_group', 'Групп Интересов')]\n#variable [Country.MakeScope.Var('bpm_je_split_patcons_progress_from_left_wing_government').GetValue|+=]#! от радикальных левых [Concept('concept_interest_group', 'Групп Интересов')] в правительстве\n#variable [Country.MakeScope.Var('bpm_je_split_patcons_progress_from_communist_victory_coping').GetValue|+=]#! от принятого закона о Советской республике\n#variable [Country.MakeScope.Var('bpm_je_split_patcons_progress_from_corporatism').GetValue|+=]#! от изученного #bold Корпоратизма#!\n#variable [Country.MakeScope.Var('bpm_je_split_patcons_progress_from_marlibs').GetValue|+=]#! от существующего #bold Рыночного Либерального#! [Concept('concept_interest_group', 'Группы Интересов')]"
+
+ je_bpm_split_patcons_progress_bar: "Возникновение Патерналистского Консерватизма"
+ je_bpm_split_patcons_progress_bar_desc: "#v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100), меняется на #v [SCOPE.GetRootScope.GetCountry.MakeScope.ScriptValue('bpm_je_split_patcons_progress_rate')|+=]#! каждую неделю."
+ bpm_je_split_patcons_progress_from_base_desc: "базовое значение"
+ bpm_je_split_patcons_progress_from_poverty_desc: "Население, живущее ниже Минимального Ожидаемого Уровня Жизни"
+ bpm_je_split_patcons_progress_from_loyalists_desc: "Лоялисты в включенных штатах"
+ bpm_je_split_patcons_progress_from_radicals_desc: "Радикалы в включенных штатах"
+ bpm_je_split_patcons_progress_from_conservative_status_desc: "@ig_conservatives! #bold Консерваторы#! подавлены"
+ bpm_je_split_patcons_progress_from_left_wing_power_desc: "значительные левые [Concept('concept_interest_group', 'Группы Интересов')]"
+ bpm_je_split_patcons_progress_from_left_wing_government_desc: "Радикальные левые [Concept('concept_interest_group', 'Группы Интересов')] в правительстве"
+ bpm_je_split_patcons_progress_from_communist_victory_coping_desc: "принятый закон о Советской республике"
+ bpm_je_split_patcons_progress_from_marlibs_desc: "существующий #bold Рыночный Либеральный#! [Concept('concept_interest_group', 'Группы Интересов')]"
+ bpm_je_split_patcons_progress_from_corporatism_desc: "изученный #bold Корпоратизм#!"
+
+# SPRINGTIME OF THE PEOPLES
+ je_march_to_radicalism:0 "Призрак Революции"
+ je_march_to_radicalism_status:0 "Пороховой бочонок наполняется."
+ je_march_to_radicalism_awaiting_spark_status:0 "Ожидание революционной искры."
+ je_march_to_radicalism_reason:0 "Наследие Французской Революции продолжает отдаваться эхом спустя 50 лет после того, как она потрясла древние державы Европы. С возрождением либерализма и новым национальным сознанием, как буржуазия, так и пролетариат будут стремиться демонтировать гнилые системы прошлого.\n\n#v Это [Concept('concept_bpm_global_je', 'Глобальная Журнальная Запись')].#! Она #P набирает прогресс#! всякий раз, когда страна в Европе:\n#P +#! Исследует #YB Эгалитаризм#!, #YB Национализм#! или #YB Диалектику#!\n#P +#! Переживает [concept_civil_war], с учетом [concept_rank] страны\n\nКроме того, некоторый #P ежегодный прогресс#! добавляется за:\n#P +#! Каждый радикальный левый [concept_agitator] или [concept_politician] в Европейской [Concept('concept_great_power', 'Великой Державе')]\n#P +#! Население ниже [Concept('concept_expected_sol','Минимального Уровня Жизни')] в каждой Европейской [Concept('concept_great_power', 'Великой Державе')]\n\nПо мере прогресса этой записи, @ig_radicals! #YB Радикалы#! будут набирать популярность, а страны по всей Европе увидят массовую радикализацию своего населения. По завершении Европа столкнется с волной революционных движений за национализм и демократию. В странах, которые еще не исследовали #YB Эгалитаризм#!, эта технология также постепенно получит прогресс исследования.\n\n#lore Дело свободы отождествляется с судьбами человечества, и в какой бы части света оно ни набирало силу, оно будет общей выгодой для всех, кто его желает."\n\n— Лайош Кошут, 1849#!"
+ bpm_peoples_springtime_spark_happened:0 "В Европе вспыхнула #v Революционная Искра#!."
+
+ je_springtime_of_the_peoples_status:0 "Переждать бурю."
+ je_springtime_of_the_peoples_reason:0 "По всей Европе разные народы поднимают знамена и идут маршем за перемены. На их ослепительных знаменах начертаны запретные слова прошлого поколения: #gold Свобода, Равенство, Братство#!.\n\nВ конце этого периода #gold Революционеры#! одержат победу, если ваша страна:\n- Является #yellow Республикой#!, и\n- Имеет #yellow Имущественный Ценз#! или #v лучше#!\n\nС другой стороны, #purple Реакционеры#! одержат победу, если:\n- [GetInterestGroupVariant('ig_radicals',GetPlayer).GetName] и [GetInterestGroupVariant('ig_socialists',GetPlayer).GetName] [concept_marginalized].\n\nВ противном случае ваша страна сохранит реформированный статус-кво.\n\n#lore Что такое Третье сословие? Все.\n— Аббат Сийес, 1788#!#!"
+
+# FRANKFURT PARLIAMENT
+ je_frankfurt_parliament:0 "Франкфуртский Парламент"
+ je_frankfurt_parliament_status:0 "[SCOPE.GetRootScope.GetCountry.GetCustom('frankfurt_debate_stage')]"
+ je_frankfurt_parliament_reason:0 "С момента роспуска Священной Римской Империи Наполеоном и замены ее #yellow Германской Конфедерацией#!, движение за немецкую нацию росло параллельно с растущим желанием гражданских прав и конституционного правления в германских государствах. Теперь, когда революционный пыл охватил Европу, многие государства поддались растущему давлению и начали формировать #yellow Национальное Собрание#! в #yellow Франкфурте#!, где депутаты будут обсуждать вопрос новой немецкой конституции для централизации конфедерации.\n\nЗа каждые 10 единиц прогресса в этой журнальной записи Собрание будет голосовать по вопросу, касающемуся новой немецкой конституции. Некоторые решения могут привести к бойкоту собрания некоторыми делегациями.\n\nСобрание должно окончательно принять конституцию до того, как революция утихнет или #pink оно будет полностью распущено.#!\n\n#lore От Мааса до Мемеля, от Адидже до Бельта, Германия. Германия, превыше всего, превыше всего в мире!\n— Песня немцев, Август Генрих Гоффманн, 1841#!"
+ je_frankfurt_button:0 "Обзор Ассамблеи"
+ je_frankfurt_button_desc:0 "Открывает обзор делегаций."
+ je_frankfurt_boycott_button:0 "Бойкотировать Парламент"
+ je_frankfurt_boycott_button_desc:0 "Полностью отозвать признание Франкфуртского Парламента. #red Это вызовет гнев у либералов и левых#!"
+ frankfurt_fail_tt:0 "Ассамблея распускается или не успевает завершить работу над конституцией до конца Весны Народов."
+ frankfurt_win_tt:0 "Ассамблея завершает работу над конституцией вовремя и выбирает императора или другого главу государства."
+ frankfurt_dissolved_tt:0 "#red Отсутствие сплоченности и участия приведет к роспуску Ассамблеи!"
+
+ bpm_je_trigger_natlibs_germany:0 "Иметь [concept_rank] #variable Major Power#! или выше и иметь @ig_national_liberals! с влиянием выше 5%."
+
+# FIRST INTERNATIONALE
+ je_bpm_first_international:0 "Пролетарии всех стран, соединяйтесь!"
+ je_bpm_first_international_status:0 "Ожидать Первого Интернационала."
+ je_bpm_first_international_reason:0 "Индустриальная революция создает новый тип человека — пролетария, лишенного всего, кроме его рабочей силы, оторванного от древнего тепла его деревни и вынужденного продавать себя по частям на жестких фабричных полах. Там он вступает в контакт с миллионами таких же, как он, которые начали шептаться о чем-то великом. Там он вскоре может найти светлое будущее, превосходящее все замкнутые удобства прошлого. Там он найдет #pink Социализм#!.\n\nЭто [Concept('concept_bpm_global_je', 'Глобальная Журнальная Запись')]. Она набирает прогресс всякий раз, когда [Concept('concept_great_power', 'Великая Держава')] исследует #bold Социализм#!, #bold Анархизм#! или, в меньшей степени, #bold Рабочее Движение#!. Если [Concept('concept_great_power', 'Великая Держава')] пострадает от националистического отделения, эта Журнальная Запись наберет еще больше прогресса. Кроме того, каждый [Concept('concept_bpm_socialist_agitator', 'Социалистический Агитатор')] в [Concept('concept_great_power', 'Великой Державе')] будет приводить к медленному прогрессу этой Журнальной Записи каждый год.\n\nПо завершении @ig_socialists! #bold Социалисты#! и @ig_anarchists! #bold Анархисты#! претерпят непримиримый раскол, при этом оба эти идеологии станут более привлекательными для масс.\n\n#lore До сих пор никогда не было истинной политики народа, и под «народом» мы подразумеваем низшие классы, «чернь», беднейших рабочих, чей труд поддерживает мир. Была только политика привилегированных классов, тех, кто использовал физическую мощь народа, чтобы свергать и заменять друг друга в бесконечной борьбе за превосходство. Народ переходил от одной стороны к другой в тщетной надежде, что хотя бы при одном из этих политических изменений... их вековая бедность и рабство будут облегчены. Даже великая Французская революция по существу не изменила их статус. Она уничтожила дворянство только для того, чтобы заменить его буржуазией. Народ больше не называется крепостными. Их провозглашают свободными людьми, законно обладающими всеми правами свободнорожденных граждан; но фактически они остаются бедными крепостными."\n\n— Михаил Бакунин, 1869#!"
+
+# SECOND INTERNATIONALE
+ bpm_first_intl_happened:0 "Первый Интернационал уже был создан."
+ je_bpm_second_international:0 "Вторая Ассоциация"
+ je_bpm_second_international_status:0 "Ожидать Второй Интернационал."
+ je_bpm_second_international_reason:0 "Неудачи Первого Интернационала (как его стали называть после роспуска) затруднили сотрудничество между различными социалистическими движениями на глобальном уровне. Однако с момента его роспуска многое изменилось. В социалистическое движение вошло большее разнообразие идей, и все чаще разные группы предлагали снова работать вместе.\n\nЭто [Concept('concept_bpm_global_je', 'Глобальная Журнальная Запись')]. В текущих условиях прогресс журнала будет меняться на #tooltippable;tooltip:[Country.GetTooltipTag],je_bpm_second_international_tooltip [GetGlobalVariable('bpm_je_second_intl_progress_rate').GetValue|+=]#! каждый месяц. По завершении @ig_revolutionist_socialists! #bold Революционные Социалисты#! и @ig_reformist_socialists! #bold Реформистские Социалисты#! претерпят непримиримый раскол, при этом все существующие [Concept('concept_bpm_ig_is_socialist', 'Социалистические')] [Concept('concept_interest_group', 'Группы Интересов')] получат больше сторонников.\n\n#lore Подумайте вот о чем: что на самом деле составляет социалистический характер всего нашего движения? Практическая борьба делится на три категории: борьба профсоюзов, борьба за социальные реформы и борьба за демократизацию капиталистического государства. Являются ли эти три формы нашей борьбы на самом деле социализмом? Нисколько. Возьмите сначала профсоюзное движение! Посмотрите на Англию: оно там не только не социалистическое, но в некоторых отношениях является препятствием для социализма. Социальная реформа также подчеркивается академическими социалистами, национал-социалистами и тому подобными. А демократизация является специфически буржуазной. Буржуазия уже раньше нас начертала демократию на своем знамени."\n\n— Роза Люксембург, 1898#!"
+
+ je_bpm_second_international_tooltip:0 "Прогресс определяется следующим:\n#variable [GetGlobalVariable('bpm_je_second_intl_progress_from_base').GetValue|+=]#! базовое значение\n#variable [GetGlobalVariable('bpm_je_second_intl_progress_from_powerful_igs').GetValue|+=]#! от Влиятельных [Concept('concept_bpm_ig_is_socialist', 'Социалистических')] [Concept('concept_interest_group', 'Групп Интересов')] в каждой [Concept('concept_great_power', 'Великой Державе')]\n#variable [GetGlobalVariable('bpm_je_second_intl_progress_from_influential_igs').GetValue|+=]#! от Влиятельных [Concept('concept_bpm_ig_is_socialist', 'Социалистических')] [Concept('concept_interest_group', 'Групп Интересов')] в каждой [Concept('concept_great_power', 'Великой Державе')]\n#variable [GetGlobalVariable('bpm_je_second_intl_progress_from_agitators').GetValue|+=]#! от активных [Concept('concept_bpm_socialist_agitator', 'Социалистических Агитаторов')] в каждой [Concept('concept_great_power', 'Великой Державе')]\n#variable [GetGlobalVariable('bpm_je_second_intl_progress_from_socialist_movements').GetValue|+=]#! от активных [Concept('concept_political_movement', 'Социалистических Движений')] в каждой [Concept('concept_great_power', 'Великой Державе')]"
+
+# AGRARIAN SOCIALISM
+ je_bpm_agrarian_socialism:0 "Аграрный Социализм"
+ je_bpm_agrarian_socialism_status:0 "Мониторить развитие Аграрно-Социалистической мысли"
+ je_bpm_agrarian_socialism_status_1:0 "Социалисты изолированы от Крестьян."
+ je_bpm_agrarian_socialism_status_2:0 "Социалисты проявляют интерес к Крестьянству."
+ je_bpm_agrarian_socialism_status_3:0 "Социалисты адаптированы к сельским рабочим!"
+ je_bpm_agrarian_socialism_reason:0 "#v Темп Прогресса:#! #tooltippable;tooltip:[Country.GetTooltipTag],je_bpm_agrarian_socialism_rate_tooltip [Country.MakeScope.ScriptValue('bpm_je_agrarian_socialism_rate')|+]#!/месяц.\n\nНекоторые социалистические мыслители считают, что пролетариат - единственный класс, способный к революции. Для тех, кто больше склонен к сельскому населению, это убеждение кажется узколобым: в конце концов, разве крестьяне не угнетены в [Country.GetName] так же, как городские рабочие? По крайней мере, их количество обязывает социалистов включить их в свою революционную стратегию.\n\nЭта Журнальная Запись разделена на #v три части#!, определяемые прогрессом Журнала и [concept_technology]. Каждая часть добавляет новый эффект:\n (1) #v 0%#!: Нет требований.\n    @ig_socialists!@ig_anarchists! #yellow Социалисты#! и [GetInterestGroupVariant('ig_agrarian_populists', GetPlayer).GetName] получают поддержку среди @peasants!/@farmers!.\n (2) #v 33%#!: Требуется #gold Массовые Партии#!.\n    [GetInterestGroupVariant('ig_agrarian_populists', GetPlayer).GetName] получают #green Аграрно-Социалистического#! Лидера.\n (3) #v 66%#!: Требуется #gold Политическая Агитация#!.\n    [GetInterestGroupVariant('ig_agrarian_populists', GetPlayer).GetName] становятся #green Аграрно-Социалистами#! постоянно.\n\n @information! Если вы достигаете порога прогресса Журнала без изучения необходимой технологии, вы автоматически получаете прогресс исследования для этой технологии.\n\nЕсли эта страна является по крайней мере [Concept('concept_unrecognized_power','$concept_unrecognized_regional_power$')] по [concept_rank], это также ускорит прогресс Журнала #yellow Аграрного Социализма#! во всех странах.\n\n#lore \"Царь находится в состоянии постоянной нерешительности и потерял способность к какой-либо реальной мысли: он хочет эмансипации, но делает все возможное, чтобы ее предотвратить. Он пришел к пониманию, что эмансипация крестьян равносильна эмансипации земли: и что эмансипация земли, в свою очередь, приведет к социальной революции и сделает сельский коммунизм неприкосновенным... Какое благо для России, что сельская община никогда не была разрушена, что частная собственность никогда не заменила собственность общины.\"\n\n— Александр Герцен, 1851"
+
+ je_bpm_agrarian_socialism_rate_tooltip:0 "[Country.MakeScope.GetScriptValueDesc('bpm_je_agrarian_socialism_rate')]"
+ bpm_peasant_population_gt_30:0 "По крайней мере #v 30%#! нашего населения являются @peasants! #v Крестьянами#!"
+ bpm_peasant_population_lt_30:0 "Менее #v 30%#! нашего населения являются @peasants! #v Крестьянами#!"
+
+# SYNDICALISM
+ je_bpm_syndicalism:0 "Синдикализм"
+ je_bpm_syndicalism_status:0 "Мониторить развитие Синдикалистской мысли"
+ je_bpm_syndicalism_status_1:0 "Синдикалистская мысль находится в зачаточном состоянии."
+ je_bpm_syndicalism_status_2:0 "Синдикалистская мысль набирает обороты."
+ je_bpm_syndicalism_status_3:0 "Синдикалистская мысль восходит в рабочем движении!"
+ je_bpm_syndicalism_reason:0 "#v Темп Прогресса:#! #tooltippable;tooltip:[Country.GetTooltipTag],je_bpm_syndicalism_rate_tooltip [Country.MakeScope.ScriptValue('bpm_je_syndicalism_rate')|+]#!/месяц.\n\nСиндикалистская мысль рождается из разочарования рабочих в неэффективности их нынешнего положения. Они наблюдают, как социалисты-электоралисты спорят в парламентах, как анархисты безрезультатно бросают бомбы, и как профсоюзные боссы идут на компромисс за компромиссом. Хватит! Промышленные рабочие многочисленны, они сильны, и они открыли революционную новую тактику — #PB Всеобщая Забастовка#!. Синдикализм даст толчок к ее осуществлению.\n\nЭта Журнальная Запись разделена на #v три части#!, определяемые прогрессом Журнала и [concept_technology]. Каждая часть добавляет новый эффект:\n (1) #v 0%#!: Нет требований.\n    [GetInterestGroupVariant('ig_trade_unions', GetPlayer).GetName] набирают популярность.\n (2) #v 33%#!: Требуется #gold Федерации Профсоюзов#!.\n    [GetInterestGroupVariant('ig_trade_unions', GetPlayer).GetName] и [GetInterestGroupVariant('ig_anarchists', GetPlayer).GetName] получают #pink Синдикалистских#! Лидеров.\n (3) #v 66%#!: Требуется #gold Политическая Агитация#!.\n    [GetInterestGroupVariant('ig_trade_unions', GetPlayer).GetName] и [GetInterestGroupVariant('ig_anarchists', GetPlayer).GetName] становятся #pink Синдикалистами#! постоянно.\n\n @information! Если вы достигаете порога прогресса Журнала без изучения необходимой технологии, вы автоматически получаете прогресс исследования для этой технологии.\n\nЕсли Журнальная Запись достигнет своего пика, #pink Всеобщая Забастовка#! станет крайне вероятной!\n\n#lore \"Основное отличие Синдикализма от старых методов профсоюзов заключается в следующем: тогда как старые профсоюзы, без исключения, движутся в рамках системы заработной платы и капитализма, признавая последний неизбежным, Синдикализм отвергает и осуждает нынешнее промышленное устройство как несправедливое и преступное, и не дает рабочему надежды на прочные результаты от этой системы.\"\n\n— Эмма Гольдман, 1913"
+
+ je_bpm_syndicalism_rate_tooltip:0 "[Country.MakeScope.GetScriptValueDesc('bpm_je_syndicalism_rate')]"
+
+ bpm_syndicalism_legitimized_global:0 "#bold Синдикалистская Идеология#! станет легитимной во всем мире!"
+ bpm_syndicalism.1.t:0 "Синдикалистская Революция!"
+ bpm_syndicalism.1.d:0 "Свершилось! Силой Профсоюзов, угрозой Всеобщей Забастовки и в результате широкой революции синдикалисты победили в [Country.GetName]. Старые органы власти распущены — новая нация управляется через федеративную систему рабочих профсоюзов. Более того, сам факт того, что революция произошла в этой стране, доказал всему миру, что синдикализм — мощная, практическая идеология, способная на социальную революцию."
+ bpm_syndicalism.1.f:0 "Профсоюзы (сопротивление, солидарность, объединение) заслуживают нашего поощрения и сочувствия, ибо они являются естественными элементами социальной конструкции будущего; именно они могут легко стать производственными ассоциациями; именно они смогут управлять социальными инструментами и организовывать производство. Многие из их членов сначала часто неосознанно относятся к роли, которую эти общества призваны играть в будущем; сначала они думают только о сопротивлении эксплуатации капитала или о получении каких-либо поверхностных улучшений; но вскоре тяжелые усилия, которые им приходится прилагать для достижения недостаточных паллиативов или даже, иногда, отрицательных результатов, легко приводят их к поискам радикальных реформ, которые могут освободить их от капиталистического угнетения. Затем они изучают социальные вопросы и представляют себя на рабочих съездах. Необходимо, чтобы новые группы шли в ногу со старыми, ибо только через солидарность, широко понятую, через всемирное объединение рабочих всех профессий и всех стран мы несомненно достигнем уничтожения привилегий и равенства для всех.\n\n— Эжен Варлен, 1870"
+ bpm_syndicalism.1.a:0 "Солидарность навеки!"
+
+ bpm_syndicalism.2.t:0 "Синдикалистская Революция!"
+ bpm_syndicalism.2.d:0 "Свершилось! Силой Профсоюзов, угрозой Всеобщей Забастовки и в результате широкой революции синдикалисты победили в [Country.GetName]. Старые органы власти распущены — новая нация управляется через федеративную систему рабочих профсоюзов!"
+ bpm_syndicalism.2.f:0 "Профсоюзы (сопротивление, солидарность, объединение) заслуживают нашего поощрения и сочувствия, ибо они являются естественными элементами социальной конструкции будущего; именно они могут легко стать производственными ассоциациями; именно они смогут управлять социальными инструментами и организовывать производство. Многие из их членов сначала часто неосознанно относятся к роли, которую эти общества призваны играть в будущем; сначала они думают только о сопротивлении эксплуатации капитала или о получении каких-либо поверхностных улучшений; но вскоре тяжелые усилия, которые им приходится прилагать для достижения недостаточных паллиативов или даже, иногда, отрицательных результатов, легко приводят их к поискам радикальных реформ, которые могут освободить их от капиталистического угнетения. Затем они изучают социальные вопросы и представляют себя на рабочих съездах... Необходимо, чтобы новые группы шли в ногу со старыми, ибо только через солидарность, широко понятую, через всемирное объединение рабочих всех профессий и всех стран мы несомненно достигнем уничтожения привилегий и равенства для всех.\n\n— Эжен Варлен, 1870"
+ bpm_syndicalism.2.a:0 "Солидарность навеки!"
+
+# General Strike
+ je_bpm_general_strike_trigger:0 "Угроза Всеобщей Забастовки"
+ # je_bpm_general_strike_trigger_status:0 "Остерегайтесь Всеобщей Забастовки."
+ je_bpm_general_strike_trigger_reason:0 "Эта журнальная запись быстро приблизится к своей #yellow точке покоя#! в #v #tooltippable;tooltip:[Country.GetTooltipTag],je_bpm_general_strike_power_tooltip [Country.MakeScope.ScriptValue('bpm_je_general_strike_power')|.1]#!#!\n\nТе самые условия, которые вынудили разобщенные массы к регламентированной фабричной работе, привели их к революционной новой тактике. Хотя остановка работы здесь или там далеко не редкость, скоординированная забастовка по всей стране — #PB Всеобщая Забастовка#! — теперь стоит на повестке дня. В конце концов, если рабочие являются взаимозаменяемыми шестеренками в бесчисленных сборочных линиях, разве они не разделяют свои интересы? Если одна шестерня остановится, разве не остановятся все шестерни в унисон?\n\nРазличные факторы могут привести к изменению #yellow точки покоя#! этой Журнальной Записи — войны и радикализм будут поощрять потенциальных забастовщиков, в то время как щедрые права рабочих заставят их передумать.\n\nЕсли эта запись достигнет своего предела, #PB Всеобщая Забастовка#! начнется.\n\nУровень #blue Истощения#! рабочих составляет #variable [Country.MakeScope.Var('bpm_je_general_strike_exhaustion').GetValue|.1]#!, восстанавливаясь до #variable 0#! со скоростью #tooltippable;tooltip:[Country.GetTooltipTag],je_bpm_general_strike_exhaustion_tooltip [Country.MakeScope.ScriptValue('bpm_je_general_strike_exhaustion_rate')|-.1]#!/месяц.\n\n#lore \"Пусть рабочий попытается вернуть небольшую часть того, что было у него отнято, с помощью забастовки — этот рабочий нарушает священное право собственности, и правительство немедленно посылает свою армию против рабочего и на помощь землевладельцу, фабриканту или торговцу... Право, на котором богатые основывают свою собственность на земле, право взимать налоги и владеть продуктами труда других людей, не имеет ничего общего со справедливостью, и все это основано только на насилии, которое производится армией.\"\n\n— Лев Толстой, 1900"
+
+ je_bpm_general_strike_ongoing:0 "Всеобщая Забастовка!"
+ je_bpm_general_strike_ongoing_status:0 "Урегулировать Всеобщую Забастовку!"
+ je_bpm_general_strike_ongoing_reason:0 "@warning! #PB Всеобщая Забастовка#! продвигается со скоростью #tooltippable;tooltip:[Country.GetTooltipTag],je_bpm_general_strike_power_tooltip [Country.MakeScope.ScriptValue('bpm_je_general_strike_power')|-=]#!/неделя.\n@information! Уровень #blue Истощения#! забастовщиков (#variable [Country.MakeScope.Var('bpm_je_general_strike_exhaustion').GetValue|.1]#!) меняется на #tooltippable;tooltip:[Country.GetTooltipTag],je_bpm_general_strike_exhaustion_tooltip [Country.MakeScope.ScriptValue('bpm_je_general_strike_exhaustion_rate')|+=]#!/неделя.\n\nРабочим [Country.GetName] надоело. На данный момент #PB Всеобщая Забастовка#!, объявленная основными рабочими организациями страны, продолжается, серьезно угрожая всем функциям государства и общества.\n\nПока эта запись активна, мы будем нести следующие штрафы, масштабируемые в зависимости от прогресса Журнала:\n  #N - #!Штрафы к [concept_throughput] на всех рабочих местах, масштабируемые в зависимости от прогресса Журнала,\n  #N - #!Более суровые штрафы к [concept_throughput] на промышленных зданиях, и\n  #N - #!Дополнительное еженедельное [concept_war_exhaustion]\n\nУвеличение присутствия нашего [GetInstitutionType('institution_police').GetName], принятие более репрессивных законов о [GetLawGroup('lawgroup_policing').GetName] или [GetLawGroup('lawgroup_internal_security').GetName], или предоставление определенных уступок может помочь нам выйти из этого затруднительного положения.\n\n#lore \"Мы, в нашей борьбе за свободу, решаем объявить в полдень 4-го числа этого месяца всеобщую забастовку всех связанных профсоюзов на железной дороге Цзин-Хань. Исходя из практических соображений, Генеральный союз будет действовать из Цзянаня. Все операции в период всеобщей забастовки должны проводиться строго в соответствии с приказами Генерального союза. Мы боремся за свободу, мы боремся за права человека, и мы не отступим!\"\n\n— Генеральный союз железной дороги Цзин-Хань, 1923#!"
+ je_bpm_general_strike_ongoing_status_1:0 "Забастовщики решительны!"
+ je_bpm_general_strike_ongoing_status_2:0 "Забастовщики колеблются."
+ je_bpm_general_strike_ongoing_status_3:0 "Забастовщики устали и голодны."
+
+ bpm_je_general_strike_concessions_button:0 "Предоставить Уступки"
+ bpm_je_general_strike_concessions_button_desc:0 "Предоставление бастующим рабочим значительных уступок может снять напряженность.\n@information! #v Последующее использование даст все более щедрые уступки.#!"
+ bpm_je_general_strike_minor_concessions_button:0 "Сбалансированный Подход"
+ bpm_je_general_strike_minor_concessions_button_desc:0 "Сочетание незначительных, легко обратимых уступок с целенаправленными репрессиями может помочь нам справиться с этой ситуацией."
+ bpm_je_general_strike_crackdown_button:0 "Целенаправленные Репрессии"
+ bpm_je_general_strike_crackdown_button_desc:0 "Избавление от смутьянов - единственный выход из этой ситуации."
+ bpm_je_general_strike_white_terror_button:0 "Всеохватывающий Террор"
+ bpm_je_general_strike_white_terror_button_desc:0 "Мы мобилизуем все государство против этой угрозы.\n@warning! #v Последующее использование приведет к все более репрессивным законам.#!"
+
+
+ bpm_je_general_strike_remove_strike_progress_small:0 "Удаляет #v [GetPlayer.MakeScope.ScriptValue('bpm_je_general_strike_button_result_small')]#! #pink Прогресс Всеобщей Забастовки#! (масштабируется по [Concept('concept_institution', 'Инвестиции в Институт')] в [GetInstitutionType('institution_police').GetName])."
+ bpm_je_general_strike_remove_strike_progress_normal:0 "Удаляет #v [GetPlayer.MakeScope.ScriptValue('bpm_je_general_strike_button_result_normal')]#! #pink Прогресс Всеобщей Забастовки#! (масштабируется по уровню [GetInstitutionType('institution_police').GetName])."
+ bpm_je_general_strike_remove_strike_progress_large:0 "Удаляет #v [GetPlayer.MakeScope.ScriptValue('bpm_je_general_strike_button_result_large')]#! #pink Прогресс Всеобщей Забастовки#! (масштабируется по уровню [GetInstitutionType('institution_police').GetName])."
+ bpm_je_general_strike_add_strike_progress_small:0 "Добавляет #v [GetPlayer.MakeScope.ScriptValue('bpm_je_general_strike_button_result_small')]#! #pink Прогресс Всеобщей Забастовки#! (масштабируется по уровню [GetInstitutionType('institution_police').GetName])."
+ bpm_je_general_strike_add_strike_progress_normal:0 "Добавляет #v [GetPlayer.MakeScope.ScriptValue('bpm_je_general_strike_button_result_normal')]#! #pink Прогресс Всеобщей Забастовки#! (масштабируется по уровню [GetInstitutionType('institution_police').GetName])."
+ bpm_je_general_strike_add_strike_progress_large:0 "Добавляет #v [GetPlayer.MakeScope.ScriptValue('bpm_je_general_strike_button_result_large')]#! #pink Прогресс Всеобщей Забастовки#! (масштабируется по уровню [GetInstitutionType('institution_police').GetName])."
+ bpm_je_general_strike_add_strike_exhaustion_small:0 "Добавляет #v [GetPlayer.MakeScope.ScriptValue('bpm_je_general_strike_button_result_small')]#! #blue Истощение Забастовщиков#! (масштабируется по уровню [GetInstitutionType('institution_police').GetName])."
+ bpm_je_general_strike_add_strike_exhaustion_normal:0 "Добавляет #v [GetPlayer.MakeScope.ScriptValue('bpm_je_general_strike_button_result_normal')]#! #blue Истощение Забастовщиков#! (масштабируется по уровню [GetInstitutionType('institution_police').GetName])."
+ bpm_je_general_strike_add_strike_exhaustion_large:0 "Добавляет #v [GetPlayer.MakeScope.ScriptValue('bpm_je_general_strike_button_result_large')]#! #blue Истощение Забастовщиков#! (масштабируется по уровню [GetInstitutionType('institution_police').GetName])."
+
+ bpm_general_strike.1.t:0 "Триумф и Уступки"
+ bpm_general_strike.1.d:0 "Забастовка закончилась, и профсоюзы триумфально объявили, что им удалось добиться важных уступок, и в рамках их переговоров они теперь вернутся к работе. Хотя выгоды от забастовки кажутся достаточными, многие рабочие обеспокоены тем, как мало они смогли получить от такого грозного проявления силы."
+ bpm_general_strike.1.f:0 "TODO"
+ bpm_general_strike.1.a:0 "Незначительная победа."
+
+ bpm_general_strike.2.t:0 "Триумф и Мир"
+ bpm_general_strike.2.d:0 "Забастовка окончена, поскольку рабочее движение, истощенное и обескровленное бесполезной войной, которую им пришлось вести от имени [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullName], было принудительно завершено. Празднования по поводу с трудом завоеванного мира омрачены знанием, что для некоторых такой мир не является причиной для радости, а скорее поводом для войны против предателей."
+ bpm_general_strike.2.f:0 "TODO"
+ bpm_general_strike.2.a:0 "Победа мира!"
+
+ bpm_general_strike.3.t:0 "Триумф Труда"
+ bpm_general_strike.3.d:0 "Забастовка, начавшаяся в одной стране, наконец-то закончилась в совершенно другой. Когда правительство рухнуло вокруг революционных синдикалистов, воинствующие профсоюзы - некогда участники классовой войны - теперь заняты восстановлением разрушенной нации, заменяя реакционные и устаревшие институты силой солидарности и организованного труда. Только время покажет, выживет ли такой эксперимент, но только дурак отрицает, что в этот день творилась история."
+ bpm_general_strike.3.f:0 "TODO"
+ bpm_general_strike.3.a:0 "Триумф!"
+
+ je_bpm_general_strike_power_tooltip:0 "[Country.MakeScope.GetScriptValueDesc('bpm_je_general_strike_power')]"
+ je_bpm_general_strike_exhaustion_tooltip:0 "[Country.MakeScope.GetScriptValueDesc('bpm_je_general_strike_exhaustion_rate')]"
+
+ bpm_general_strike_exhaustion_above_50:0 "#blue Истощение#! #bold Всеобщей Забастовки#! выше #variable 50#!"
+ bpm_general_strike_syndicalist_failed:0 "#bold Синдикализм#! в этой стране понесет постоянную неудачу, ослабляя свой прогресс."
+
+ bpm_general_strike_will_start:0 "#bold Всеобщая Забастовка#! начнется!"
+ notification_bpm_general_strike_start_name:0 "#bold Всеобщая Забастовка#! наступила!"
+ notification_bpm_general_strike_start_desc:0 "Рабочие по всей стране сложили инструменты. Профсоюзы в унисон поднимают голос возмущения, подстрекая рабочих прекратить работу. С этим нужно что-то делать, иначе наша экономика пострадает!"
+ notification_bpm_general_strike_start_big_tooltip:1 "#header $notification_bpm_general_strike_start_name$#!\n$TOOLTIP_DELIMITER$\n$notification_bpm_general_strike_start_desc$"
+
+ bpm_general_strike_will_fail:0 "#bold Всеобщая Забастовка#! будет остановлена!"
+ notification_bpm_general_strike_fail_name:0 "#bold Всеобщая Забастовка#! окончена!"
+ notification_bpm_general_strike_fail_desc:0 "Забастовщики вернулись на свои рабочие места; либо в результате успешного подавления, умелых переговоров, либо истощения."
+ notification_bpm_general_strike_fail_big_tooltip:1 "#header $notification_bpm_general_strike_fail_name$#!\n$TOOLTIP_DELIMITER$\n$notification_bpm_general_strike_fail_desc$"
+
+ bpm_gave_into_demands:0 "Пошли на Уступки"
+ bpm_accepted_demands:0 "Выиграли Уступки"
+
+ bpm_right_wing_igs_angered:0 "[Concept('concept_bpm_ig_is_right_wing','Правые Группы Интересов')] #N разгневаны!#!"
+ bpm_upper_institutional_igs_angered:0 "[Concept('concept_bpm_ig_is_upper_institutional','Верхние Институциональные Группы Интересов')] #N разгневаны!#!"
+
+# Zapadniki vs Slavyanophiles
+ je_bpm_zapadniks_and_slavophiles:0 "Западники и Славянофилы"
+ je_bpm_zapadniks_and_slavophiles_status:0 "Мониторить дебаты этих двух философий."
+ je_bpm_zapadniks_and_slavophiles_zapadnik_prominence:0 "Мысль $bpm_je_all_zapadnik$ доминирует среди русских интеллектуалов"
+ je_bpm_zapadniks_and_slavophiles_no_prominence:0 "Мысль $bpm_je_all_slavophile$ и $bpm_je_all_zapadnik$ одинаково популярны среди русских интеллектуалов"
+ je_bpm_zapadniks_and_slavophiles_slavophile_prominence:0 "Мысль $bpm_je_all_slavophile$ доминирует среди русских интеллектуалов"
+ je_bpm_zapadniks_and_slavophiles_reason:0 "Кем был Петр Великий? Для одних он был великим человеком, невероятным реформатором, выведшим Россию из тьмы и упадка прошлого, использовавшим все лучшее с Запада, модернизировавшим ее для вызовов будущего. Для других он источник национальной трагедии, безумец, посмевший пересадить несовместимые ценности чужой цивилизации на суверенный дух России. Надо признать, что одна только его фигура не является единственным предметом разногласий для двух философских течений, которые доминировали в русской интеллигенции в ближайшие десятилетия — западников и славянофилов.\n\n$bpm_je_all_zapadniks$ — это течение в русской интеллигенции, которое желает подражать Западу и брать от него то, что они считают лучшими его нововведениями — либерализм, демократию, права человека и экономическую свободу — с целью спасения России от того отсталого состояния, в котором она оказалась, следуя по стопам своего великого национального героя — Петра Великого.\n\n$bpm_je_all_slavophiles$ — это оппозиционное течение к западникам — они считают, что русский национальный дух уже слишком попран западным влиянием, и что оно слишком эгоистично, секулярно и революционно, чтобы соответствовать коллективному, христианскому и лоялистскому русскому духу.\n\nЭта Журнальная Запись отражает влияние, которое эти две позиции имеют в умах русской академической среды относительно друг друга. Если одна из них возобладает, вы получите масштабированный модификатор к различным областям исследований — более сильные $bpm_je_all_slavophiles$ приведут к более быстрому исследованию #bold Военных#! и #bold Промышленных#! технологий, тогда как $bpm_je_all_zapadniks$ сместят внимание на #bold Распространение Технологий#! и #bold Социальные#! исследования. Популярность [Concept('concept_leader', 'Лидеров Групп Интересов')] и [Concept('concept_agitator', 'Агитаторов')] для $bpm_je_all_slavophiles$ и $bpm_je_all_zapadniks$ будет определять популярность каждой стороны, при этом их рвение неизбежно будет ослабевать со временем. В текущих условиях Журнальная Запись, как ожидается, будет продвигаться со скоростью #tooltippable;tooltip:[Country.GetTooltipTag],je_bpm_zapadniks_and_slavophiles_rate_tooltip [Country.MakeScope.ScriptValue('bpm_je_zapadniks_and_slavophiles_rate')|+]#! в неделю.\n\n#lore "Россия стремится слиться с Западом на протяжении последних трехсот лет; на протяжении последних трехсот лет она признавала свою неполноценность по отношению к Западу, черпала все свои идеи, все свои учения... с Запада. Величайший из наших царей... отрекся от старой России. Он уничтожил все наши древние институты и отверг наши древние традиции... Это было славно, надо признать, создание Петра Великого, эта идея гениального человека, который продиктовал путь, которым мы теперь следуем."\n\n— Петр Чаадаев, 1837#!"
+
+ bpm_je_all_zapadniks:0 "@ig_liberals! @ig_radicals! @ig_socialists! #bold Западники#!"
+ bpm_je_all_zapadnik:0 "@ig_liberals! @ig_radicals! @ig_socialists! #bold Западник#!"
+ bpm_je_all_slavophiles:0 "@ig_conservatives! @ig_reactionaries! #bold Славянофилы#!"
+ bpm_je_all_slavophile:0 "@ig_conservatives! @ig_reactionaries! #bold Славянофил#!"
+
+ bpm_journal_zapadniks_and_slavophiles_stagnant:0 "Прогресс этой Журнальной Записи застопорился на #bold 50#!, в то время как скорость ее изменения равна #bold 0#!"
+
+ bpm_je_zapadniks_and_slavophiles_start:0 "Дебаты между $bpm_je_all_zapadniks$ и $bpm_je_all_slavophiles$ начались!"
+ bpm_je_zapadniks_and_slavophiles_end:0 "Дебаты между $bpm_je_all_zapadniks$ и $bpm_je_all_slavophiles$ закончились."
+
+ bpm_zapadnik_buffs:0 "Влияние Западников"
+ bpm_zapadnik_win_buff:0 "Влияние Западников"
+ bpm_slavophile_buffs:0 "Влияние Славянофилов"
+
+ je_bpm_zapadniks_and_slavophiles_rate_tooltip:0 "[Country.MakeScope.GetScriptValueDesc('bpm_je_zapadniks_and_slavophiles_rate')]"
+
+ bpm_russia.1.t:0 "Философические письма"
+ bpm_russia.1.d:0 "Публикация писем, переведенных с французского [SCOPE.sCharacter('bpm_russia_chaadayev').GetFullName], воспламенила грамотное меньшинство России — слова, написанные в них, заставили [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullName] объявить его безумцем, в то время как интеллектуалы по всей стране осуждают или поддерживают его, развивая идеи, выраженные в письмах, посредством поляризованных дебатов. Невольно [SCOPE.sCharacter('bpm_russia_chaadayev').GetFullName] спровоцировал самый глубокий раскол в русской философии за ближайшие полвека — раскол между западниками и славянофилами."
+ bpm_russia.1.f:0 "Некогда Петр Великий хотел просветить нас, и чтобы вызвать в нас стремление к просвещению, бросил нам плащ цивилизации: мы подобрали плащ, но не коснулись цивилизации... В нашей крови есть нечто, что отгоняет всякий истинный прогресс. Сегодня... мы отмечаем пустоту в интеллектуальной сфере.\n\n— Петр Чаадаев, 1836#!"
+ bpm_russia.1.a:0 "Под домашний арест этого безумца, ради Христа!"
+ bpm_russia.1.b:0 "В его резких словах есть некоторая доля истины..."
+
+ bpm_russia.2.t:0 "Сломанные Копья"
+ bpm_russia.2.d:0 "Дебаты между западническим и славянофильским крыльями русской интеллигенции, столь пламенные и страстные всего несколько лет назад, наконец завершились. К лучшему или к худшему, русская политическая мысль двинулась дальше."
+ bpm_russia.2.f:0 "В конце концов, новые философии и новые вопросы привлекли внимание образованных людей. Дебаты не закончились оглушительной победой, а оглушительным молчанием."
+ bpm_russia.2.a:0 "И все же Россия выдерживает"
+
+ bpm_russia.3.t:0 "Те, Кто Мечтают"
+ bpm_russia.3.d:0 "Мечта западников реализовалась в России — мечта о свободном русском гражданине. Хотя будущее России еще не написано, похоже, что это будет будущее, написанное не древним и дряхлым дворянством и его тираническим царем — а скорее самим народом России. Россия догнала Запад в том, что важно — теперь мы увидим, сможет ли она пойти еще дальше!"
+ bpm_russia.3.f:0 "Мы не думали, что это возможно — чтобы страна, отстающая от цивилизованных наций, могла так быстро догнать. Но те, кто мечтают, воплотили эти мечты в реальность, и будущее России кажется чуточку светлее."
+ bpm_russia.3.a:0 "Вперед!"
+
+# FASCIST "SPLIT" (its more of a spawn really)
+ je_bpm_split_fascists:0 "Возникновение Фашизма"
+ je_bpm_split_fascists_status:0 "Отслеживать возникновение нового элемента справа."
+ je_bpm_split_fascists_reason:0 "Неудачи традиционной реакционной идеологии на фоне подъема массовой политики приводят к формированию новой коалиции революционных националистов. Получая поддержку от ветеранских организаций и правых профессионалов, фашисты стремятся создать сильное, централизованное государство, основанное на классовом сотрудничестве и вооруженном национальном мифе.\n\n#lore Кажется... что война настолько потрясла человека, что он забыл, как быть политическим животным. Это подозрение подтверждается распространением фашизма, который представляет собой безумное бегство в фантазию от необходимости политической мысли. Ничто так очевидно не говорит о послевоенной ситуации, как то, что она нова, проистекает из причин, которые еще не проанализированы, и не может быть облегчена до тех пор, пока этот анализ не будет завершен и не станет основой новой социальной формулы. Тем не менее, лица, поддерживающие фашизм, ведут себя так, будто человек уже обладает принципами, которые позволят ему решить все наши проблемы, и будто речь идет только о назначении диктатора для их применения."\n\n— Ребекка Уэст, 1935#!"
+
+ je_bpm_split_fascists_special_tooltip:0 "Прогресс определяется следующим:\n#variable [Country.MakeScope.Var('bpm_je_split_fascists_progress_from_base').GetValue|+=]#! базовое значение\n#variable [Country.MakeScope.Var('bpm_je_split_fascists_progress_from_conflicts').GetValue|+=]#! от участия в Войнах, Дипломатических Играх, Революциях или будучи лидером Национального Объединения\n#variable [Country.MakeScope.Var('bpm_je_split_fascists_progress_from_rightists_empowered').GetValue|+=]#! от #bold Реакционных#! и #bold Консервативных#! [Concept('concept_interest_group', 'Групп Интересов')] в правительстве или в поддержке\n#variable [Country.MakeScope.Var('bpm_je_split_fascists_progress_from_rightists_suppressed').GetValue|+=]#! от подавленных #bold Реакционных#! и #bold Консервативных#! [Concept('concept_interest_group', 'Групп Интересов')]\n#variable [Country.MakeScope.Var('bpm_je_split_fascists_progress_from_rightists_marginal').GetValue|+=]#! от маргинализированных #bold Реакционных#! и #bold Консервативных#! [Concept('concept_interest_group', 'Групп Интересов')]\n#variable [Country.MakeScope.Var('bpm_je_split_fascists_progress_from_radicals').GetValue|+=]#! от радикальных слоев среднего населения; это будет накапливаться только в том случае, если #bold Либеральные#! и #bold Консервативные#! [Concept('concept_interest_group', 'Группы Интересов')] не маргинализированы и не подавлены."
+
+ je_bpm_fascism:0 "Фашистская Инфильтрация"
+ je_bpm_fascism_status:0 "Фашисты набирают влияние в наших учреждениях."
+ je_bpm_fascism_reason:0 "Фашистское движение в нашей стране достигает пика, в него вовлекается множество высокопоставленных фигур. Особую тревогу вызывает их растущее влияние среди офицерского корпуса. Это опасное сочетание угрожает укоренить фашистов в наших самых фундаментальных институтах."
+
+ je_bpm_split_fascists_progress_bar: "Возникновение Фашизма"
+ je_bpm_split_fascists_progress_bar_desc: "#v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100), меняется на #v [SCOPE.GetRootScope.GetCountry.MakeScope.ScriptValue('bpm_je_split_fascists_progress_rate')|+=]#! каждую неделю."
+ bpm_je_split_fascists_progress_from_base_desc: "базовое значение"
+ bpm_je_split_fascists_progress_from_socialist_revolutions_desc: "от угрозы #bold Социалистической#! [Concept('concept_revolution', 'Революции')]"
+ bpm_je_split_fascists_progress_from_socialist_countries_desc: "от существующих #bold Советских Республик#! с [concept_rank] #variable Major Power#! или выше."
+ bpm_je_split_fascists_progress_from_conflicts_desc: "от участия в Войнах, Дипломатических Играх, Революциях или лидерство в Национальном Объединении"
+ bpm_je_split_fascists_progress_from_rightists_empowered_desc: "от #bold Реакционных#! и #bold Консервативных#! [Concept('concept_interest_group', 'Групп Интересов')] в правительстве или в поддержке"
+ bpm_je_split_fascists_progress_from_rightists_suppressed_desc: "от подавленных #bold Реакционных#! и #bold Консервативных#! [Concept('concept_interest_group', 'Групп Интересов')]"
+ bpm_je_split_fascists_progress_from_rightists_marginal_desc: "от маргинализированных #bold Реакционных#! и #bold Консервативных#! [Concept('concept_interest_group', 'Групп Интересов')]"
+ bpm_je_split_fascists_progress_from_radicals_desc: "от радикальных слоев среднего населения; это будет накапливаться только в том случае, если #bold Либеральные#! и #bold Консервативные#! [Concept('concept_interest_group', 'Группы Интересов')] не маргинализированы и не подавлены."
+
+# STATUS QUO CHANGES
+ je_bpm_status_quo_armed_neutrality:0 "Крепость Непоколебима"
+ je_bpm_status_quo_armed_neutrality_reason:0 "С принятием [GetLawType('law_armed_neutrality').GetName] [Concept('concept_law', 'Закона')] политика нашей страны начинает меняться. Если этот закон останется в силе в течение #variable 10#! лет, некоторые из наших [Concept('concept_interest_group', 'Групп Интересов')] изменят свои идеологические позиции в поддержку этого положения."
+
+# MISC REPLACEMENT
+ bpm_red_scare_unlock_tt: "В любой [concept_country] с [concept_rank] #variable Major Power#! или выше произошла #N рабочая революция#!."
+
+# AMERICAN CIVIL WAR
+ je_bpm_guilty_land:0 "Эта Виновная Земля"
+ je_bpm_guilty_land_reason:0 "Грех рабства вытравлен на душе американского проекта, слова \"все люди созданы равными\" - грех девятого круга. Наш народ знает это, и поэтому борется с лицемерием выборов и компромиссов. Когда эти методы терпят неудачу, это порождает теории заговора и сепаратистские настроения.\n\nНа #GBB Севере#! в продолжении преступления рабства обвиняют Власть Рабов. Хотя большинство равнодушно к этому вопросу, растущее напряжение в ближайшие годы может вызвать массовое сочувствие.\n\nНа #GB Юге#! шарлатаны рассказывают сказки о Правах Штатов самообманывающимся плантаторам и отчаявшимся мелким землевладельцам. Недавно выйдя из кризиса аннулирования, их страсти на время поутихли.\n\n#GBB Северная#! и #GB Южная#! радикализация усиливаются, соответственно:\n#N +#! Избирательными победами #GBB про-#!/#GB анти-#!рабовладельческих групп,\n#N +#! Смертью #GBB анти-#!/#GB про-#!рабовладельческих Президентов на посту,\n#N +#! Присоединением #GBB рабовладельческих#!/#GB свободных#! штатов к Союзу.\nВремя от времени будут предлагаться компромиссы, но они никогда не удовлетворят обе стороны.\n\nОстерегайтесь слишком быстрого расширения нации, ибо с новой землей приходят дебаты о том, кто должен иметь возможность возделывать эту землю. Когда #BB Национальная радикализация#! достигнет точки кипения, обе стороны начнут кампании юридической войны и полувоенного насилия.\n\n#N Марш на Харперс-Ферри нельзя остановить, только отложить.#!"
+ bpm_je_john_brown:0 "Джон Браун начал свой великий рейд, и начались последние выборы эпохи"
+ bpm_je_eradicate_slavery:0 "Рабство запрещено уже 5 лет"
+ bpm_je_guilty_one_civil_war:0 ""Преступления этой виновной земли...\""
+ bpm_je_guilty_two_civil_war:0 ""Преступления этой виновной земли никогда не будут очищены...\""
+ bpm_je_guilty_three_civil_war:0 ""Преступления этой виновной земли никогда не будут очищены, кроме как кровью...\""
+ bpm_je_guilty_four_civil_war:0 ""Преступления этой виновной земли никогда не будут очищены, кроме как кровью\" - Джон Браун\”"
+
+ je_bpm_gag_rule:0 "Правило Кляпа"
+ je_bpm_gag_rule_reason:0 "С момента тяжкого Паники 1819 года мы, уважаемые джентльмены #GB Юга#!, претерпели непрерывное издевательство со стороны Центрального Правительства. Миссурийский Компромисс 1820 года стремился связать наше драгоценное Особенное Учреждение, а затем их тарифы лишили нас необходимой техники, необходимой для нашего прогресса. Теперь этот Гаррисон начал кампанию с дерзкой целью отмены рабства!\n\nМы должны провести черту на песке: докучливые #GBB Северяне#! не продвинутся дальше в своих попытках вмешиваться в самые основы нашей благородной экономики. Пока какая-либо партия не готова залечить раны, нанесенные в результате кризиса аннулирования, не будет никаких дискуссий по вопросу рабства в этих священных стенах!\n\n@information! Чтобы завоевать #GB Юг#! для #brightyellow Вигов#!, мы должны начать масштабную кампанию Внутренних Улучшений, построив #yellow Порты#! и #yellow Строительные Секторы#! на #GB Юге#!.\n\n@information! Чтобы завоевать #GB Юг#! для #blue Демократов#!, мы должны обрушить Короля Хлопка на мировой рынок, приняв [GetLawType('law_free_trade').GetName] и расширив #yellow Хлопковые Плантации#!.\n\n@warning! Эти требования возмутительны; выполняйте их на свой страх и риск, ибо выгода от умиротворения рабовладельцев может не стоить хлопот.\n\nЕсли ни одна из двух основных партий не сможет залечить рану, созданную кризисом аннулирования, в течение 3 лет, #GB Юг#! закрепит Правило Кляпа, прекратив обсуждение рабства в ближайшем будущем.\n\n#lore \"Мы возделываем некоторые основные культуры для снабжения мирового рынка; и они производят почти исключительно для внутреннего рынка. Их цель в тарифе состоит в том, чтобы снизить иностранную конкуренцию, чтобы получить монополию на внутренний рынок.\"\n\n— Джон К. Калхун, 1837#!"
+ bpm_je_american_system:0 "Иметь #yellow 5 Строительных Секторов#! и #yellow 5 Портов#! в каждом из Луизианы, Миссисипи, Алабамы, Джорджии и Южной Каролины"
+ bpm_je_abomination_slayer:0 "Принять [GetLawType('law_free_trade').GetName] и иметь #yellow 15 Хлопковых Плантаций#! в каждом из Луизианы, Миссисипи, Алабамы, Джорджии и Южной Каролины"
+ bpm_je_gag_failure:0 "Прошло 3 года, а рана от аннулирования все еще кровоточит"
+ bpm_je_south_unites:0 "Элита #GB Юга#! объединяется либо за #brightyellow Вигов#!, либо за #blue Демократов#!"
+
+ je_bpm_csa_crossroads_of_our_being:0 "Перекресток Нашего Бытия"
+ je_bpm_csa_crossroads_of_our_being_reason:0 "Наступила Междоусобная Война, и с ней приходят трудности, невиданные со времен Революционной Войны. Поглотители Огня, так увлеченные своей ленью, навели Гражданскую Войну на наш город на холме. Ответственность Президента как главнокомандующего - вести эту борьбу и возглавить нашу нацию на перекрестке.\n\nПо мере того, как война затягивается, некоторые будут предлагать чрезвычайное законодательство, чтобы помочь быстрому завершению этого конфликта. Это законодательство будет полезно не только во время Гражданской Войны, но и в Восстановлении нашей Нации. Однако такое законодательство также усилит антивоенные настроения. Если эти настроения станут слишком высокими, мы проиграем следующие президентские выборы, и наш миролюбивый преемник наверняка позволит Конфедерации отделиться. Таким образом, мы должны сбалансировать военные и политические соображения, чтобы наша нация могла восстать из этого кризиса, как Феникс.\n\n#lore \"У вас не может быть конфликта, не будучи агрессорами сами. У вас нет клятвы, зарегистрированной на небесах, разрушить Правительство, в то время как у меня будет самая торжественная клятва "сохранить, защитить и отстоять его". Мне очень не хочется заканчивать. Мы не враги, а друзья.\"\n\n-Авраам Линкольн, 1861#!"
+ je_bpm_fsa_crossroads_of_our_being:0 "Перекресток Нашего Бытия"
+ je_bpm_fsa_crossroads_of_our_being_reason:0 "Наступила Междоусобная Война, и с ней приходят трудности, невиданные со времен Революционной Войны. Радикальные республиканцы, так увлеченные своей гордостью, навели Гражданскую Войну на наш город на холме. Ответственность Президента как главнокомандующего - вести эту борьбу и возглавить нашу нацию на перекрестке.\n\nПо мере того, как война затягивается, некоторые будут предлагать чрезвычайное законодательство, чтобы помочь быстрому завершению этого конфликта. Это законодательство будет полезно не только во время Гражданской Войны, но и в Восстановлении нашего Места под Солнцем. Однако такое законодательство также усилит антивоенные настроения. Если эти настроения станут слишком высокими, мы проиграем следующие президентские выборы, и наш миролюбивый преемник наверняка позволит нашей нации упустить свой шанс на величие. Таким образом, мы должны сбалансировать военные и политические соображения, чтобы наша нация смогла распространить свое богоданное просвещение на весь мир.\n\n#lore \"Наше новое правительство основано на прямо противоположной идее; его основы заложены, его краеугольный камень покоится на великой истине, что негр не равен белому человеку; что рабское подчинение высшей расе - его естественное и нормальное состояние.\"\n\n-Александр Г. Стефан, 1861#!"
+ bpm_je_crossroads_zero:0 "Нация объединена за победившим Президентом и его партией"
+ bpm_je_crossroads_one:0 "Промиротворческие сторонники громкие, но неэффективные"
+ bpm_je_crossroads_two:0 "Промиротворческие настроения быстро растут и представляют риск для военных усилий"
+ bpm_je_crossroads_three:0 "Промиротворческий саботаж представляет постоянную угрозу для наших военных и политических целей"
+ bpm_je_crossroads_four:0 "Промиротворческие крики распространены даже в собственной партии Президента."
+ bpm_je_civil_war_success:0 "Гражданская война завершилась победой, и мы выиграли внутреннюю политическую битву в законодательной и на избирательных участках."
+ bpm_je_civil_war_fail:0 "Гражданская война закончилась поражением, будь то военным или политическим."
+ bpm_je_civil_divide:0 "Мы проиграли войну, но, возможно, мы можем выиграть мир?"
+
+ je_bpm_second_revolution:0 "Вторая Американская Революция"
+ je_bpm_second_revolution_reason:0 "ВРЕМЕННОЕ ОПИСАНИЕ - принять Национальную Полицию, Национальную Гвардию, Поощрять Демократические Ценности, Сельскохозяйственные Инвестиции, Децентрализованную Власть, Назначенных Бюрократов, Запрет Рабства, Культурное Исключение и Чистку От Коррупции"
+ bpm_je_second_revolution_six:0 ""Старый Джон Браун лежит, гниет в могиле...\""
+ bpm_je_second_revolution_five:0 ""Старый Джон Браун лежит, гниет в могиле, Пока плачут сыны рабства...\""
+ bpm_je_second_revolution_four:0 ""Старый Джон Браун лежит, гниет в могиле, Пока плачут сыны рабства, которых он рискнул спасти всех; Но хотя он потерял свою жизнь...\""
+ bpm_je_second_revolution_three:0 ""Старый Джон Браун лежит, гниет в могиле, Пока плачут сыны рабства, которых он рискнул спасти всех; Но хотя он потерял свою жизнь, борясь за раба...\""
+ bpm_je_second_revolution_two:0 ""Старый Джон Браун лежит, гниет в могиле, Пока плачут сыны рабства, которых он рискнул спасти всех; Но хотя он потерял свою жизнь, борясь за раба...\""
+ bpm_je_second_revolution_one:0 ""Старый Джон Браун лежит, гниет в могиле, Пока плачут сыны рабства, которых он рискнул спасти всех; Но хотя он потерял свою жизнь, борясь за раба, Его душа идет дальше\""
+ bpm_je_rec_success:0 "Приняв все 9 необходимых реформ, мы успешно построили нацию, которая будет поддерживать расовое равенство"
+ bpm_je_rec_failure:0 "Когда истощение достигло точки кипения, даже умеренные республиканцы устали от наших реформ"
+
+ je_bpm_to_the_victor:0 "Победителю Достаются Трофеи"
+ je_bpm_to_the_victor_reason:0 "#v Темп Прогресса:#! #tooltippable;tooltip:[Country.GetTooltipTag],je_bpm_victor_rate_tooltip [Country.MakeScope.ScriptValue('bpm_je_victor_rate')|+]#!/месяц.\n\n"
+ je_bpm_victor_rate_tooltip:0 "[Country.MakeScope.GetScriptValueDesc('bpm_je_victor_rate')]"
+ bpm_je_victor_one:0 "Радикальные Идеалисты доминируют в Республиканской Партии"
+ bpm_je_victor_two:0 "Постепенные Идеалисты доминируют в Республиканской Партии"
+ bpm_je_victor_three:0 "Постепенные доминируют в Республиканской Партии"
+ bpm_je_victor_four:0 "Постепенные Прагматики доминируют в Республиканской Партии"
+ bpm_je_victor_five:0 "Радикальные Прагматики доминируют в Республиканской Партии"
+ bpm_je_victor_idealism:0 "Идеализм превышает 95"
+ bpm_je_victor_pragmatism:0 "Прагматизм превышает 95"
+ bpm_je_victor_incremental:0 "Прошло более двух лет без удовлетворительного завершения и идут выборы"
+
+ je_bpm_building_solidarity:0 "Построение Солидарности"
+ je_bpm_building_solidarity_reason:0 "ВРЕМЕННОЕ ОПИСАНИЕ - \nЧленство Северного Фермерского Альянса [Country.MakeScope.Var('bpm_north_membership_var').GetValue|D-] @population!\nЧленство Цветного Фермерского Альянса [Country.MakeScope.Var('bpm_colored_membership_var').GetValue|D-] @population!\nЧленство Рыцарей Труда [Country.MakeScope.Var('bpm_knights_membership_var').GetValue|D-] @population!\nПредставители Северного Конгресса [Country.MakeScope.Var('bpm_solidarity_north_var').GetValue|-=]\nПредставители Южного Конгресса [Country.MakeScope.Var('bpm_solidarity_south_var').GetValue|-=]\nСенаторы Приграничья [Country.MakeScope.Var('bpm_solidarity_west_var').GetValue|-=]\nСила Противников Уступок [Country.MakeScope.Var('bpm_solidarity_unity_var').GetValue|-=]\n"
+ bpm_je_solidarity_one:0 "Популистское Движение недостаточно угрожает существующей системе"
+ bpm_je_solidarity_two:0 "Концессионисты доминируют на всех уровнях Популистского Движения"
+ bpm_je_solidarity_three:0 "Концессионисты доминируют в руководстве Популистского Движения"
+ bpm_je_solidarity_four:0 "Хотя концессионисты потеряли власть, Популистское Движение все еще недостаточно уверено, чтобы сформировать третью партию"
+ bpm_je_solidarity_five:0 "Популистское Движение кристаллизовалось в Народную Партию, которая станет знаменосцем требований народа"
+ bpm_je_solidarity_limits:0 "Народная Партия разделена и вступает в новую предвыборную кампанию"
+
+ je_bpm_new_imperialism:0 "Новый Империализм"
+ je_bpm_new_imperialism_reason:0 "Когда нация наконец оправилась от последствий гражданской войны, вновь зазвучали вечные барабаны войны. Новая волна Явной Судьбы теперь скрылась за языком рынков и промышленности. Залечив раны, теперь Колумбия вновь должна вернуться к расширению границы.\n\nНаряду с новым стремлением к экспансии, также звучат призывы к проведению еще одной Международной Валютной Конференции. Часто организуемые после Американской гражданской войны, эти совещания пытались остановить падение стабильности биметаллизма на международном рынке. В конечном итоге, конкуренция великих держав за внешнюю торговлю означала, что соглашение так и не было достигнуто. Теперь, когда наша нация находится в уникальном положении с точки зрения безопасности, мы можем организовать новую Международную Валютную Конференцию, которая наконец-то решит Гордиев узел международной денежной политики.\n\nДля успешной организации Международной Валютной Конференции нам потребуется одобрение:\n\nВеликобритании\nФранции или Германии\nФранции или Испании\nГермании или России\nАвстрии или Италии\nАвстрии или Турции"
+
+ bpm_mexican_destiny:0 "Явная Судьба: Запад"
+ bpm_mexican_destiny_desc:0 "Нашей великой нации суждено распространиться по континенту. Пойдем на Тихий океан!"
+ bpm_canadian_destiny:0 "Явная Судьба: Север"
+ bpm_canadian_destiny_desc:0 "Нашей великой нации суждено распространиться по континенту. Освободим эту землю от британской тирании!"
+ bpm_caribbean_destiny:0 "Явная Судьба: Юг"
+ bpm_caribbean_destiny_desc:0 "Нашей великой нации суждено распространиться по континенту. Положим конец последним остаткам латинского империализма!"
+
+ bpm_rec_institutional_one:0 "Контроль над Исполнительной Властью"
+ bpm_rec_institutional_one_desc:0 "Исполнительная власть недостаточно решительно защищает афроамериканцев. Мы должны принять Закон о сроке полномочий, чтобы агенты исполнительной власти могли действовать без угрозы отстранения президентом"
+ bpm_rec_institutional_two:0 "Ограничение Судебной Юрисдикции"
+ bpm_rec_institutional_two_desc:0 "Судебная власть ставит под сомнение полномочия, с которыми мы осуществляем меры Реконструкции. Мы должны приостановить право Верховного Суда рассматривать дела Habeas Corpus в Южной оккупации, чтобы привести Суд в соответствие"
+ bpm_rec_institutional_three:0 "Конец Превосходства Исполнительной Власти"
+ bpm_rec_institutional_three_desc:0 "Исполнительная власть недостаточно решительно защищает афроамериканцев. Мы должны использовать наши полномочия по импичменту, как хлыст, обеспечивая подчинение президента воле законодательной власти"
+ bpm_rec_institutional_four:0 "Разрушить Судебный Брандмауэр"
+ bpm_rec_institutional_four_desc:0 "Судебная власть ставит под сомнение полномочия, с которыми мы осуществляем меры Реконструкции. Мы должны исправить ошибку Джефферсона и полностью подчинить Верховный Суд воле народа. Мы будем импичментовать их всех, если придется"
+
+ bpm_western_monroe:0 "Новый Империализм: Гегемония на Тихом океане"
+ bpm_western_monroe_desc:0 "Чтобы обеспечить доступ к китайским рынкам и безопасность для нашего тихоокеанского побережья, мы должны освободить Северную Мексику и Филиппинские острова для наших военно-морских баз!"
+ bpm_northern_monroe:0 "Новый Империализм: Северо-Западный проход"
+ bpm_northern_monroe_desc:0 "Чтобы обеспечить полушарную оборону от европейского вторжения и претендовать на предполагаемый Северо-Западный проход, мы должны завоевать Арктику для наших военно-морских баз!"
+ bpm_southern_monroe:0 "Новый Империализм: Межокеанский коридор Теуантепек"
+ bpm_southern_monroe_desc:0 "Чтобы обезопасить Центральную Америку от европейской колонизации и открыть более быстрые пути между Атлантическим и Тихим океанами, мы должны завоевать Теуантепекский перешеек для наших военно-морских баз! Кто знает, мы даже сможем построить канал!"
+ bpm_western_remanifest:0 "Возобновленный Манифест: Запад"
+ bpm_western_remanifest_desc:0 "Нашей великой нации суждено распространиться по континенту. Пойдем на Тихий океан!"
+ bpm_northern_remanifest:0 "Возобновленный Манифест: Север"
+ bpm_northern_remanifest_desc:0 "Нашей великой нации суждено распространиться по континенту. Освободим эту землю от британской тирании!"
+ bpm_southern_remanifest:0 "Возобновленный Манифест: Юг"
+ bpm_southern_remanifest_desc:0 "Нашей великой нации суждено распространиться по континенту. Положим конец последним остаткам латинского империализма!"
+
+
+# "Прогресс: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/360)"
+
+ bpm_slave_power_progress_bar: "Северная Радикализация"
+ bpm_slave_power_progress_bar_desc: "Прогресс Северной Радикализации: ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/40)"
+ bpm_states_rights_progress_bar: "Южная Радикализация"
+ bpm_states_rights_progress_bar_desc: "Прогресс Южной Радикализации: ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/40)"
+ bpm_secession_tension_progress_bar: "Национальная Радикализация"
+ bpm_secession_tension_progress_bar_desc: "Прогресс Национальной Радикализации: ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/40)"
+
+ bpm_csa_crossroads_momentum_progress_bar: "Сила Национального Единства"
+ bpm_csa_crossroads_momentum_progress_bar_desc: "Уровень Силы Национального Единства: ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/15)"
+ bpm_fsa_crossroads_momentum_progress_bar: "Сила Национального Слияния"
+ bpm_fsa_crossroads_momentum_progress_bar_desc: "Уровень Силы Национального Слияния: ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/15)"
+
+ bpm_reconstruction_exhaustion_progress_bar: "Истощение от Реконструкции"
+ bpm_reconstruction_exhaustion_progress_bar_desc: "Уровень Истощения от Реконструкции: ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/120)"
+ bpm_reconstruction_progress_progress_bar: "Прогресс Реконструкции"
+ bpm_reconstruction_progress_progress_bar_desc: "Уровень Прогресса Реконструкции: ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/9)"
+ bpm_reconstruction_overreach_progress_bar: "Перегиб в Реконструкции"
+ bpm_reconstruction_overreach_progress_bar_desc: "Уровень Перегиба в Реконструкции: ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/4)"
+
+ bpm_victor_progress_bar: "Идеализм против Прагматизма"
+ #bpm_victor_ideal_progress_bar_desc: "Уровень Идеализма: ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)"
+ #bpm_victor_prag_progress_bar_desc: "Уровень Прагматизма: ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)"
+ bpm_victor_progress_bar_desc: "Уровень Идеализма против Прагматизма: ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)"
+
+# BRAZIL
+ je_bpm_1834_additional_act:0 "Дополнительный акт 1834 года"
+ je_bpm_1834_additional_act_reason:0 "Через три года после отречения императора Д. Педру I, произошедшего в 1831 году, в бразильскую конституцию 1824 года так и не были внесены изменения. Страна разрывалась от борьбы, угрожавшей ее единству: революционные вспышки в Рио-де-Жанейро, Мараньяо и Пара. Самым недавним было военное мятеж в Ору-Прету в 1833 году. Сенат был консервативным, хотя и далеко не \"рабством Д. Педру I\", как его называла газета O Sete de Abril. Выборы 1833 года дали [SCOPE.gsInterestGroup('liberals_ig').GetName] большинство в Палате депутатов, и по закону от 12 октября 1833 года депутаты были наделены учредительными полномочиями. Дополнительный акт стал прямым результатом этого большинства, которое выступало за большую автономию провинций. Ратифицированный 12 августа 1834 года, он адаптировал федералистские принципы к монархии. Это вызвало конфликты между центральным правительством и провинциями за контроль. [SCOPE.gsInterestGroup('conservatives_ig').GetName] обвиняют акт в том, что он превратил страну в \"анархию\", и утверждают, что его необходимо пересмотреть. Будет ли сохранена либеральная мечта о федеративной монархии, или для наведения порядка потребуется \"консервативная реставрация\"?"
+
+ bpm_brz_provinces_turmoil:0 "Смута в провинциях"
+
+# GREECE
+ je_bpm_greece_early_parties:0 "Ранние Греческие Партии"
+ je_bpm_greece_early_parties_reason:0 "Ранние греческие партии организованы вокруг различных интересов и происхождения, но независимо от этих различных факторов, политические формирования были названы в честь одной из трех Великих Держав (Великобритании, Франции и России). Русская партия - это про-православная и социально-консервативная партия. Ей противостоит альянс двух либеральных партий, Английской партии и Французской партии, которые требуют письменной конституции."
+
+ bpm_gre_early_parties:0 "Ранние Греческие Партии"
+
+# MODERNIZERS (Zapandiki JE facelift)
+
+ je_bpm_modernizers:0 "Дебаты Модернизаторов"
+ je_bpm_modernizers_status:0 "Мониторить дебаты $bpm_je_all_modernizers$ и их оппонентов."
+ je_bpm_modernizers_status_no_dialectic:0 "Диалектика пока слишком слаба."
+ je_bpm_modernizers_status_modernizer_prominence_overwhelming:0 "$bpm_je_all_modernizer$ #bold подавляюще доминируют#! среди интеллектуалов."
+ je_bpm_modernizers_status_modernizer_prominence_strong:0 "$bpm_je_all_modernizer$ доминируют среди интеллектуалов."
+ je_bpm_modernizers_status_modernizer_prominence_weak:0 "$bpm_je_all_modernizer$ укореняются среди интеллектуалов."
+ je_bpm_modernizers_status_conservative_prominence_overwhelming:0 "$bpm_je_all_antimodernizer$ #bold подавляюще доминируют#! среди интеллектуалов."
+ je_bpm_modernizers_status_conservative_prominence_strong:0 "$bpm_je_all_antimodernizer$ доминируют среди интеллектуалов."
+ je_bpm_modernizers_status_conservative_prominence_weak:0 "$bpm_je_all_antimodernizer$ укореняются среди интеллектуалов."
+ je_bpm_modernizers_status_no_prominence:0 "$bpm_je_all_antimodernizer$ и $bpm_je_all_modernizer$ борются среди интеллектуалов."
+ je_bpm_modernizers_reason:0 "@information! #blue Открывает [GetLawType('law_repeatable_culture_invite_foreign_experts').GetName] [Concept('concept_bpm_repeatable_law', '$concept_bpm_repeatable_law$')] пока активно #!\n\nДиалектическая Сила $bpm_je_all_modernizers$: #tooltippable;tooltip:[Country.GetTooltipTag],je_bpm_modernizers_modernizer_strength_tooltip [Country.MakeScope.ScriptValue('bpm_je_modernizers_ideology_rate_modernizers')|2]#!\nДиалектическая Сила $bpm_je_all_antimodernizers$: #tooltippable;tooltip:[Country.GetTooltipTag],je_bpm_modernizers_conservative_strength_tooltip [Country.MakeScope.ScriptValue('bpm_je_modernizers_ideology_rate_conservatives')|2]#! \n\nГлядя на нации Европы и Америки, становится совершенно ясно, что наши институты становятся все более устаревшими и ненадежными. Первыми, кто признал этот недостаток, были наши интеллектуалы, среди которых возникли два крыла, предлагающие противоположные видения будущего: $bpm_je_all_modernizers_tt$ и $bpm_je_all_anti_modernizers_tt$.\n\nКогда #v Социальное Влияние#! дебатов #v > 25#!, мы получим модификаторы в зависимости от того, кто из двух более влиятелен.\n\nЕсли выигрывают $bpm_je_all_modernizers$:\n  @arrow_up!Скорость исследования и распространения [concept_technology] Общества\n  @arrow_down!Скорость исследования и распространения [concept_technology] Военной\n  @arrow_down!Цель [concept_bpm_political_stability]\n  @information! @intelligentsia_bpm! принимает радикальные позиции при высоком #v Социальном Влиянии#!\n\nЕсли выигрывают $bpm_je_all_antimodernizers$:\n  @arrow_down!Скорость исследования и распространения [concept_technology] Общества\n  @arrow_up!Скорость исследования и распространения [concept_technology] Военной\n  @arrow_up!Цель [concept_bpm_political_stability]\n\nОбе стороны предоставляют:\n  @arrow_up!Распространение [concept_technology] Производства\n  @arrow_up!Еженедельное [concept_innovation]\n\n@warning! Наши более традиционалистские элементы могут недоброжелательно относиться к воспринимаемому вторжению иностранного влияния, и если ситуация зайдет слишком далеко, они могут прибегнуть к грубому и жестокому #N Перевороту#!.\n\n#lore "Россия стремится слиться с Западом на протяжении последних трехсот лет; на протяжении последних трехсот лет она признавала свою неполноценность по отношению к Западу, черпала все свои идеи, все свои учения... с Запада. Величайший из наших царей... отрекся от старой России. Он уничтожил все наши древние институты и отверг наши древние традиции... Это было славно, надо признать, создание Петра Великого, эта идея гениального человека, который продиктовал путь, которым мы теперь следуем."\n\n— Петр Чаадаев, 1837#!"
+
+ bpm_je_modernizers_researched_all_techs_to_complete:0 "Исследовано #variable 20#! технологий с момента начала Журнальной Записи"
+
+ je_bpm_modernizers_modernizer_strength_tooltip:0 "[Country.MakeScope.GetScriptValueDesc('bpm_je_modernizers_ideology_rate_modernizers')]"
+ je_bpm_modernizers_conservative_strength_tooltip:0 "[Country.MakeScope.GetScriptValueDesc('bpm_je_modernizers_ideology_rate_conservatives')]"
+
+ bpm_je_modernizers_start:0 "Дебаты между $bpm_je_all_modernizers$ и $bpm_je_all_antimodernizers$ начались!"
+ bpm_je_modernizers_end:0 "Дебаты между $bpm_je_all_modernizers$ и $bpm_je_all_antimodernizers$ закончились."
+ bpm_je_modernizers_dialectic_bolstered:0 "Диалектика была Усилена!"
+ bpm_je_modernizers_renamed_into_modernizers:0 "Прозападное крыло дебатов также поддержит незападные признанные страны"
+
+ bpm_je_all_modernizers_tt:0 "@ig_liberals!@ig_radicals!@ig_socialists! #tooltippable;tooltip:[Country.GetTooltipTag],bpm_je_modernizers_desc_modernizers_tooltip [ROOT.GetCountry.GetCustom('bpm_je_modernizers_name_modernizers')]#!"
+ bpm_je_all_anti_modernizers_tt:0 "@ig_conservatives!@ig_reactionaries! #tooltippable;tooltip:[Country.GetTooltipTag],bpm_je_modernizers_desc_anti_modernizers_tooltip [ROOT.GetCountry.GetCustom('bpm_je_modernizers_name_anti_modernizers')]#!"
+ bpm_je_modernizers_desc_modernizers_tooltip:0 "$bpm_je_modernizers_desc_modernizer_effects$\n\n#lore [GetPlayer.GetCustom('bpm_je_modernizers_desc_modernizers')]#!"
+ bpm_je_modernizers_desc_anti_modernizers_tooltip:0 "$bpm_je_modernizers_desc_anti_modernizer_effects$\n\n#lore [GetPlayer.GetCustom('bpm_je_modernizers_desc_anti_modernizers')]#!"
+
+ bpm_je_all_modernizers:0 "@ig_liberals!@ig_radicals!@ig_socialists! #bold [GetPlayer.GetCustom('bpm_je_modernizers_name_modernizers')]#!"
+ bpm_je_all_modernizer:0 "@ig_liberals!@ig_radicals!@ig_socialists! #bold [GetPlayer.GetCustom('bpm_je_modernizers_name_modernizer')]#!"
+ bpm_je_all_antimodernizers:0 "@ig_conservatives!@ig_reactionaries! #bold [GetPlayer.GetCustom('bpm_je_modernizers_name_anti_modernizers')]#!"
+ bpm_je_all_antimodernizer:0 "@ig_conservatives!@ig_reactionaries! #bold [GetPlayer.GetCustom('bpm_je_modernizers_name_anti_modernizer')]#!"
+ bpm_je_modernizers_name_conservatives:0 "Консерваторы"
+ bpm_je_modernizers_name_conservative:0 "Консерватор"
+ bpm_je_modernizers_desc_conservative:0 "Консерваторы - оппозиционное течение к [GetPlayer.GetCustom('bpm_je_modernizers_name_modernizers')] - они считают, что иностранное влияние несет слишком много рисков и мало преимуществ. Они выступают за умеренное внедрение иностранных идей, в основном в промышленной и военной сферах, но решительно против любых социальных изменений, кроме самых необходимых."
+ bpm_je_modernizers_name_slavophiles:0 "Славянофилы"
+ bpm_je_modernizers_name_slavophile:0 "Славянофил"
+ bpm_je_modernizers_desc_slavophiles:0 "Славянофилы - оппозиционное течение к западникам - они считают, что русский национальный дух уже слишком попран западным влиянием, и что оно слишком эгоистично, секулярно и революционно, чтобы соответствовать коллективному, христианскому и лоялистскому русскому духу. Они выступают за умеренное внедрение иностранных идей, в основном в промышленной и военной сферах, но решительно против любых социальных изменений, кроме самых необходимых."
+ bpm_je_modernizers_name_zapadniks:0 "Западники"
+ bpm_je_modernizers_name_zapadnik:0 "Западник"
+ bpm_je_modernizers_desc_zapadniks:0 "Западники - это течение в русской интеллигенции, которое стремится подражать Западу и брать от него то, что они считают лучшими его инновациями - либерализм, демократию, права человека и экономическую свободу - чтобы спасти Россию от того отсталого состояния, в котором она оказалась, следуя по стопам своего великого национального героя - Петра Великого."
+ bpm_je_modernizers_name_westernizers:0 "Вестернизаторы"
+ bpm_je_modernizers_name_westernizer:0 "Вестернизатор"
+ bpm_je_modernizers_desc_westernizers:0 "Вестернизаторы - это течение в нашей интеллигенции, которое стремится подражать Западу и брать от него то, что они считают лучшими его инновациями - либерализм, демократию, права человека и экономическую свободу - чтобы спасти нашу страну от того отсталого состояния, в котором она оказалась."
+ bpm_je_modernizers_name_modernizers:0 "Модернизаторы"
+ bpm_je_modernizers_name_modernizer:0 "Модернизатор"
+ bpm_je_modernizers_desc_modernizers:0 "Модернизаторы стремятся обновить нашу нацию с помощью новейших инноваций в культуре и промышленности, беря за образец другие страны, считающиеся передовыми. С появлением незападных наций на политической арене в качестве уважаемых членов сложившегося порядка, идеи вестернизации уступили место более широкой модернизации, с более уникальными путями, по которым готовы идти модернизаторы."
+
+ bpm_je_modernizers_desc_modernizer_effects:0 "Если выигрывают $bpm_je_all_modernizers$, предоставляет следующие модификаторы, масштабируемые в зависимости от #v Социального Влияния#!:\n  @arrow_up!Скорость исследования и распространения [concept_technology] Общества\n  @arrow_down!Скорость исследования и распространения [concept_technology] Военной\n  @arrow_up!Распространение [concept_technology] Производства\n  @arrow_up!Еженедельное [concept_innovation]\n  @arrow_down!Цель [concept_bpm_political_stability]\n  @information! [GetInterestGroupVariant('ig_intelligentsia', GetPlayer).GetName] принимает радикальные позиции при высоком #v Социальном Влиянии#!"
+ bpm_je_modernizers_desc_anti_modernizer_effects:0 "Если выигрывают $bpm_je_all_antimodernizers$, предоставляет следующие модификаторы, масштабируемые в зависимости от #v Социального Влияния#!:\n  @arrow_down!Скорость исследования и распространения [concept_technology] Общества\n  @arrow_up!Скорость исследования и распространения [concept_technology] Военной\n  @arrow_up!Распространение [concept_technology] Производства\n  @arrow_up!Еженедельное [concept_innovation]\n  @arrow_up!Цель [concept_bpm_political_stability]"
+
+ je_bpm_modernizers_ideology_progress_bar:0 "Идеологическая Направленность"
+ je_bpm_modernizers_ideology_progress_bar_left:0 "$bpm_je_all_modernizers$"
+ je_bpm_modernizers_ideology_progress_bar_right:0 "$bpm_je_all_antimodernizers$"
+
+ je_bpm_modernizers_dialectic_progress_bar:0 "Диалектика"
+ je_bpm_modernizers_dialectic_progress_bar_desc:0 "Социальное Влияние: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#!"
+
+ bpm_je_modernizers_deafening_silence:0 "Оглушительное Молчание"
+ bpm_je_modernizers_overwhelming_modernizers:0 "Подавляющее Влияние Модернизаторов"
+ bpm_je_modernizers_strong_modernizers:0 "Сильное Влияние Модернизаторов"
+ bpm_je_modernizers_weak_modernizers:0 "Слабое Влияние Модернизаторов"
+ bpm_je_modernizers_overwhelming_conservatives:0 "Подавляющее Влияние Консерваторов"
+ bpm_je_modernizers_strong_conservatives:0 "Сильное Влияние Консерваторов"
+ bpm_je_modernizers_weak_conservatives:0 "Слабое Влияние Консерваторов"
+ bpm_je_modernizers_winner: "Победители Дебатов о Модернизации"
+ bpm_je_modernizers_winner_coup: "Победители Дебатов о Модернизации"
+
+ westernizer_victory_tt:0 "Вестернизаторы одержали победу"
+
+ bpm_je_modernizers_copy_production_button:0 "Исследовать Промышленность"
+ bpm_je_modernizers_copy_production_button_desc:0 "Промышленность - это сила современной нации. Мы должны изучить методы иностранцев, чтобы сравняться с ними и превзойти их."
+ bpm_je_modernizers_copy_military_button:0 "Обновить Армию"
+ bpm_je_modernizers_copy_military_button_desc:0 "Сосредоточение наших усилий на изучении иностранных современных армий поможет нам догнать любого противника!"
+ bpm_je_modernizers_copy_society_button:0 "Поощрять Новые Обычаи"
+ bpm_je_modernizers_copy_society_button_desc:0 "Изменение наших обычаев, чтобы лучше соответствовать более развитым обществам, может вызвать презрение у наших более традиционных элементов, но это, несомненно, поможет нам быстрее прогрессировать по всем фронтам."
+ bpm_je_modernizers_invite_production_button:0 "Пригласить Инвестиции"
+ bpm_je_modernizers_invite_production_button_desc:0 "Наши недавние исследования достижений промышленности дали нам знания, но не ресурсы, необходимые для использования этих знаний. Привлечение иностранных инвестиций может помочь нам дать толчок этим отраслям."
+
+ bpm_je_modernizers_button_on_cooldown_tt:0 "Это действие не на #variable годовой#! перезарядке!"
+ bpm_je_modernizers_button_stronger_with_dialectic_tt:0 "@information! #blue #bold Социальное Влияние#! улучшает эффект этого действия.#!"
+ bpm_je_modernizers_button_stronger_with_conservative_dialectic_tt:0 "@information! #blue #bold Социальное Влияние#! улучшает эффект этого действия, при доминировании $bpm_je_all_antimodernizers$ давая самые сильные улучшения.#!"
+ bpm_je_modernizers_button_stronger_with_modernizer_dialectic_tt:0 "@information! #blue #bold Социальное Влияние#! улучшает эффект этого действия, при доминировании $bpm_je_all_modernizers$ давая самые сильные улучшения.#!"
+
+ bpm_modernizers.1.t:0 "Дебаты о Модернизации"
+ bpm_modernizers.1.d:0 "По мере того, как в [ROOT.GetCountry.GetName] хлынул поток западных идей, стало все более ясно, что нам предстоит пройти большой путь, чтобы догнать индустриализованные западные страны. В результате дебаты среди интеллектуалов начали принимать интересный оборот - насколько сильно мы должны подражать Западу ради собственной модернизации?"
+ bpm_modernizers.1.f:0 "TODO"
+ bpm_modernizers.1.a:0 "Вестернизированная или нет, [ROOT.GetCountry.GetName] модернизируется!"
+
+ bpm_modernizers.2.t:0 "Вперед, к Модернизации!"
+ bpm_modernizers.2.d:0 "Дебаты о модернизации в нашей стране наконец завершились - $bpm_je_all_modernizers$ одержали явную идеологическую победу. Хотя остальная часть страны может не разделять их видение, интеллигенция в целом твердо верит в дело $bpm_je_all_modernizers$ и не изменит своего мнения в ближайшие годы."
+ bpm_modernizers.2.f:0 "TODO"
+ bpm_modernizers.2.a:0 "Посмотрим, станут ли их идеи реальностью"
+
+ bpm_modernizers.3.t:0 "Наш Собственный Путь"
+ bpm_modernizers.3.d:0 "По мере того, как дебаты о модернизации подходят к концу, центрированные на [ROOT.GetCountry.GetName] фракции нашей интеллигенции, похоже, одержали победу. С идеями их оппозиции, полностью дискредитированными в академических кругах, социальные структуры [ROOT.GetCountry.GetName], кажется, готовы остаться в основном неизменными в ближайшем будущем."
+ bpm_modernizers.3.f:0 "TODO"
+ bpm_modernizers.3.a:0 "Мы остались верны себе, верно?"
+
+ bpm_modernizers.4.t:0 "Пустые Котлы"
+ bpm_modernizers.4.d:0 "По мере того, как огненные дебаты о модернизации подходят к концу, когда дым рассеивается, литературные поля сражений остаются пустыми. Ни одна из сторон не одержала идеологической победы, и, похоже, ни одно видение не стало триумфальным среди интеллигенции нашей страны."
+ bpm_modernizers.4.f:0 "TODO"
+ bpm_modernizers.4.a:0 "По крайней мере, меньше академического шума"
+
+ bpm_modernizers.5.t:0 "Дверь Захлопнута"
+ bpm_modernizers.5.d:0 "Под давлением иностранного влияния с одной стороны и консервативной оппозиции с другой, [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullName] объявил радикальную изоляционистскую политику, чтобы защитить нацию от подрывных идей, проникающих из-за рубежа. С резким сокращением торговых связей, закрытием посольств и выселением иностранных интеллектуалов, будущее [ROOT.GetCountry.GetName] видится в самоизоляции."
+ bpm_modernizers.5.f:0 "TODO"
+ bpm_modernizers.5.a:0 "Остается только оглушительное молчание"
+
+ bpm_modernizers.6.t:0 "Великое Молчание"
+ bpm_modernizers.6.d:0 "Недовольные либеральными симпатиями правительства и его откровенным пренебрежением традициями, наши консерваторы объединились, чтобы свергнуть [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]. Теперь, стремясь задушить любые новые идеи, проникающие в страну, будущее нашей страны видится в самоизоляции."
+ bpm_modernizers.6.f:0 "TODO"
+ bpm_modernizers.6.a:0 "Остается только оглушительное молчание"
+
+ bpm_modernizers.7.t:0 "Пример Модернизации"
+ bpm_modernizers.7.d:0 "[SCOPE.gsInterestGroup('relevant_ig').GetName], вдохновленные прогрессом, достигнутым в [SCOPE.sCountry('relevant_country').GetName], стремятся улучшить наши взаимные отношения, следуя их союзу с $bpm_je_all_modernizers$ в Дебатах о Модернизации."
+ bpm_modernizers.7.f:0 "TODO"
+ bpm_modernizers.7.a:0 "Интересно"
+
+ bpm_modernizers.8.t:0 "Пример Упадка"
+ bpm_modernizers.8.d:0 "[SCOPE.gsInterestGroup('relevant_ig').GetName], возмущенные моральным упадком [SCOPE.sCountry('relevant_country').GetName], стремятся помешать более тесным связям между нами, следуя их союзу с $bpm_je_all_anti_modernizers_tt$ в Дебатах о Модернизации."
+ bpm_modernizers.8.f:0 "TODO"
+ bpm_modernizers.8.a:0 "Интересно"
+
+ bpm_modernizers.9.t:0 "Новый Пример"
+ bpm_modernizers.9.d:0 "С восхождением [SCOPE.sCountry('relevant_country').GetName] как равного участника международной политической арены, некоторые из тех, кто на стороне $bpm_je_all_modernizer$ Дебатов о Модернизации, стремятся расширить наши горизонты для подражания и отказаться от фокуса на вестернизации в пользу включения незападных методов модернизации."
+ bpm_modernizers.9.f:0 "TODO"
+ bpm_modernizers.9.a:0 "Выскочки, не более"
+ bpm_modernizers.9.b:0 "[SCOPE.sCountry('relevant_country').GetName] лучший пример, чем Запад!"
+
+ is_russia_tt:0 "Это Россия!"

@@ -1,0 +1,320 @@
+﻿l_russian:
+ concept_bpm_party_ban:0 "Запрет партий"
+ concept_bpm_party_ban_desc:0 "Некоторые [Concept('concept_law', 'законы')] могут привести к запрету различных [Concept('concept_party', 'партий')]. Когда партия запрещена, ни одна [Concept('concept_interest_group','$concept_interest_groups$')] не может вступить в [Concept('concept_party', 'партию')]. Ваши [Concept('concept_law', 'законы')] о свободе слова определяют, какие именно [Concept('concept_party', 'партии')] будут запрещены в результате запретов партий."
+
+ concept_bpm_bannable_reactionaries:0 "Запрещенные реакционные партии"
+ concept_bpm_bannable_reactionaries_desc:0 "Всегда запрещает фашистскую партию. Цензура (или более жесткие меры) также запрещает реакционную партию. Запрет инакомыслия также запрещает консервативную и религиозную партии."
+ concept_bpm_bannable_socialists:0 "Запрещенные социалистические партии"
+ concept_bpm_bannable_socialists_desc:0 "Всегда запрещает коммунистическую и анархистскую партии (и социал-демократическую партию до Второго Интернационала). Цензура (или более жесткие меры) также запрещает социал-демократическую партию (если после Второго Интернационала). Запрет инакомыслия также запрещает радикальную партию."
+ concept_bpm_bannable_reactionaries_plus:0 "Запрещенные антисоциалистические партии"
+ concept_bpm_bannable_reactionaries_plus_desc:0 "Всегда запрещает фашистскую, реакционную, религиозную и консервативную партии. Цензура (или более жесткие меры) также запрещает либеральную и аграрную партии. Запрет инакомыслия также запрещает радикальную партию."
+ concept_bpm_bannable_socialists_plus:0 "Запрещенные антитрадиционалистские партии"
+ concept_bpm_bannable_socialists_plus_desc:0 "Всегда запрещает коммунистическую, анархистскую, социал-демократическую и радикальную партии. Цензура (или более жесткие меры) также запрещает либеральную и аграрную партии. Запрет инакомыслия также запрещает консервативную партию."
+ # concept_bpm_bannable_liberals:0 "Запрещенные либеральные партии"
+ # concept_bpm_bannable_liberals_desc:0 "Всегда запрещает либеральную и радикальную партии. Цензура (или более жесткие меры) также запрещает аграрную партию. Запрет инакомыслия также запрещает консервативную партию."
+ concept_bpm_bannable_antiliberals:0 "Запрещенные антилиберальные партии"
+ concept_bpm_bannable_antiliberals_desc:0 "Всегда запрещает коммунистическую, анархистскую и фашистскую партии (и социал-демократическую партию до Второго Интернационала). Цензура (или более жесткие меры) также запрещает реакционную партию (и социал-демократическую партию после Второго Интернационала). Запрет инакомыслия также запрещает радикальную и религиозную партии."
+
+ concept_bpm_socialist_agitator:0 "Социалистический агитатор"
+ concept_bpm_socialist_agitator_desc:0 "Агитатор, чья [Concept('concept_ideology', 'идеология')] или [Concept('concept_interest_group', 'группа интересов')] поддерживает принятие [GetLawType('law_council_republic').GetName] [Concept('concept_law', 'закона')]."
+
+ concept_bpm_global_je:0 "Глобальный журнал событий"
+ concept_bpm_global_je_desc:0 "Запись в журнале, активная во всех странах одновременно. Прогресс разделяется между этими странами, а факторы, влияющие на прогресс, обычно являются международными."
+
+# Repeatable Law concepts
+ concept_bpm_repeatable_law:0 "Повторяющийся закон"
+ concept_bpm_repeatable_laws:0 "Повторяющиеся законы"
+ concept_bpm_repeatable_law_desc:0 "$concept_bpm_repeatable_laws$ — это [Concept('concept_law', 'законы')], которые [Concept('concept_country', 'страна')] может принимать многократно, так как каждое принятие такого закона сбрасывает его до значения по умолчанию.\n\n$concept_bpm_repeatable_laws$ дают немедленные эффекты и принимаются быстрее, чем обычные законы. После принятия $concept_bpm_repeatable_law$ переходит на перезарядку. Одновременно может быть принято несколько $concept_bpm_repeatable_laws$, что приводит к нарастающим эффектам.\n\n@information! #blue #v Полезный совет:#! Это необязательные законы, которые могут занимать ваш законодательный орган, когда более значимые реформы еще невозможны. Некоторые повторяющиеся законы сопряжены с компромиссами, которые могут быть рискованными, поэтому обязательно тщательно обдумайте их принятие.#!"
+
+# IG concepts
+
+ concept_bpm_ideological_ig:0 "Идеологическая группа интересов"
+ concept_bpm_ideological_ig_desc:0 "Идеологическая [Concept('concept_interest_group', 'группа интересов')] определяется своей сильной идеологической природой. У них большой выбор [Concept('concept_ideology', 'идеологий')], которые дают им твердые мнения по широкому спектру [Concept('concept_law', 'законов')]. Это также наиболее непостоянные [Concept('concept_interest_group', 'группы интересов')]; они часто получают сторонников от [Concept('concept_radical', 'радикалов')] или [Concept('concept_loyalist', 'лоялистов')] и в результате различных событий в вашей стране."
+ concept_bpm_institutional_ig:0 "Институциональная группа интересов"
+ concept_bpm_institutional_ig_desc:0 "Институциональная [Concept('concept_interest_group', 'группа интересов')] определяется своей относительно неидеологической природой. У них скромный выбор [Concept('concept_ideology', 'идеологий')], которые им важны, и которые наиболее непосредственно связаны с их материальными интересами. Эти [Concept('concept_interest_group', 'группы интересов')] склонны доминировать в [Concept('concept_bpm_politically_stagnant', 'политически застойных')] странах, исчезая в небытие во время [Concept('concept_bpm_politically_unstable', 'политической нестабильности')]."
+
+# VERY LONG STUFF BELOW
+# PROLETARIAN
+ tooltip_bpm_ig_is_revolutionary_socialist:0 "Является [Concept('concept_bpm_ig_is_revolutionary_socialist', '$concept_bpm_ig_is_revolutionary_socialist$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_revolutionary_socialist:0 "Революционный социалист"
+ concept_bpm_ig_is_revolutionary_socialist_desc:0 "[Concept('concept_interest_group', 'Группа интересов')] с [Concept('concept_ideology', 'идеологией')] [GetIdeology('ideology_gov_radical_proletarian').GetName] и без [Concept('concept_ideology', 'идеологии')] [GetIdeology('ideology_dop_anarchist').GetName]. Они считают партийную организацию необходимой для достижения социализма и отмирания государства."
+
+ tooltip_bpm_ig_is_anarchist:0 "Является [Concept('concept_bpm_ig_is_anarchist', '$concept_bpm_ig_is_anarchist$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_anarchist:0 "Анархист"
+ concept_bpm_ig_is_anarchist_desc:0 "[Concept('concept_interest_group', 'Группа интересов')] с [Concept('concept_ideology', 'идеологией')] [GetIdeology('ideology_dop_anarchist').GetName] или [GetIdeology('ideology_dop_anarcho_syndicalist').GetName]. Они считают отмену любых иерархий, в первую очередь государства, своей непосредственной целью."
+
+ tooltip_bpm_ig_is_radical_socialist:0 "Является [Concept('concept_bpm_ig_is_radical_socialist', '$concept_bpm_ig_is_radical_socialist$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_radical_socialist:0 "Радикальный социалист"
+ concept_bpm_ig_is_radical_socialist_desc:0 "@ig_socialists! #bold Социалисты#! [Concept('concept_interest_group', 'группа интересов')] или [Concept('concept_interest_group', 'группа интересов')], являющаяся либо [Concept('concept_bpm_ig_is_revolutionary_socialist', 'революционным социалистом')], либо [Concept('concept_bpm_ig_is_anarchist', 'анархистом')]. Они считают, что социализм достигается путем революции, а не реформ."
+
+ tooltip_bpm_ig_is_reformist_socialist:0 "Является [Concept('concept_bpm_ig_is_reformist_socialist', '$concept_bpm_ig_is_reformist_socialist$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_reformist_socialist:0 "Реформистский социалист"
+ concept_bpm_ig_is_reformist_socialist_desc:0 "@ig_reformist_socialists! #bold Реформистские социалисты#! [Concept('concept_interest_group', 'группа интересов')] или [Concept('concept_interest_group', 'группа интересов')] с [Concept('concept_ideology', 'идеологией')] [GetIdeology('ideology_gov_moderate_proletarian').GetName]. Они придерживаются убеждения в возможности достижения социализма путем реформ, а не революции."
+
+ tooltip_bpm_ig_is_syndicalist:0 "Является [Concept('concept_bpm_ig_is_syndicalist', '$concept_bpm_ig_is_syndicalist$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_syndicalist:0 "Синдикалист"
+ concept_bpm_ig_is_syndicalist_desc:0 "[Concept('concept_interest_group', 'Группа интересов')] с [Concept('concept_ideology', 'идеологией')] [GetIdeology('ideology_dop_syndicalist').GetName], [GetIdeology('ideology_dop_anarcho_syndicalist').GetName] или [GetIdeology('ideology_dop_syndical_unionist').GetName]. Они считают, что профсоюзы должны быть строительными блоками общества при социализме."
+
+ tooltip_bpm_ig_is_party_socialist:0 "Является [Concept('concept_bpm_ig_is_party_socialist', '$concept_bpm_ig_is_party_socialist$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_party_socialist:0 "Партийный социалист"
+ concept_bpm_ig_is_party_socialist_desc:0 "[Concept('concept_interest_group', 'Группа интересов')], являющаяся либо [Concept('concept_bpm_ig_is_revolutionary_socialist', 'революционным социалистом')], либо [Concept('concept_bpm_ig_is_reformist_socialist', 'реформистским социалистом')]. Они считают, что дисциплинированная партийная структура — необходимый шаг к социализму."
+
+ tooltip_bpm_ig_is_authoritarian_socialist:0 "Является [Concept('concept_bpm_ig_is_authoritarian_socialist', '$concept_bpm_ig_is_authoritarian_socialist$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_authoritarian_socialist:0 "Авторитарный социалист"
+ concept_bpm_ig_is_authoritarian_socialist_desc:0 "[Concept('concept_interest_group', 'Группа интересов')], являющаяся [Concept('concept_bpm_ig_is_socialist', 'революционным социалистом')], и имеющая [Concept('concept_ideology', 'идеологию')] [GetIdeology('ideology_dop_party_socialist').GetName] или [GetIdeology('ideology_dop_party_state').GetName]. Они считают, что социалистическое государство необходимо для защиты завоеваний революции."
+
+ tooltip_bpm_ig_is_moderate_socialist:0 "Является [Concept('concept_bpm_ig_is_moderate_socialist', '$concept_bpm_ig_is_moderate_socialist$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_moderate_socialist:0 "Умеренный социалист"
+ concept_bpm_ig_is_moderate_socialist_desc:0 "[Concept('concept_interest_group', 'Группа интересов')], являющаяся либо [Concept('concept_bpm_ig_is_party_socialist', 'партийным социалистом')] и не имеющая [Concept('concept_ideology', 'идеологии')] [GetIdeology('ideology_gov_radical_proletarian').GetName] или [GetIdeology('ideology_gov_moderate_proletarian').GetName], либо имеющая [Concept('concept_ideology', 'идеологию')] [GetIdeology('ideology_eco_agrarian_socialist').GetName]. Они считают, что полное социалистическое хозяйство и государство сейчас зашли слишком далеко, но все еще верят в некоторые прогрессивные реформы."
+
+ tooltip_bpm_ig_is_proletarian_socialist:0 "Является [Concept('tooltip_bpm_ig_is_proletarian_socialist', '$tooltip_bpm_ig_is_proletarian_socialist$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_proletarian_socialist:0 "Пролетарский социалист"
+ concept_bpm_ig_is_proletarian_socialist_desc:0 "[Concept('concept_interest_group', 'Группа интересов')], являющаяся либо [Concept('concept_bpm_ig_is_party_socialist', 'партийным социалистом')], [Concept('concept_bpm_ig_is_anarchist', 'анархистом')], либо [Concept('concept_bpm_ig_is_syndicalist', 'синдикалистом')]. Они считают, что промышленный рабочий класс, пролетариат, является основной классовой силой, которая приведет к социализму."
+
+ tooltip_bpm_ig_is_socialist:0 "Является [Concept('concept_bpm_ig_is_socialist', '$concept_bpm_ig_is_socialist$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_socialist:0 "Социалист"
+ concept_bpm_ig_is_socialist_desc:0 "[Concept('concept_interest_group', 'Группа интересов')], являющаяся либо [Concept('concept_bpm_ig_is_proletarian_socialist', 'пролетарским социалистом')], либо имеющая [Concept('concept_ideology', 'идеологию')] [GetIdeology('ideology_eco_agrarian_socialist').GetName]. Они считают, что обеспечение непосредственного контроля над средствами производства и управлением со стороны народа, то есть социализм, является желаемой конечной целью."
+
+ tooltip_bpm_ig_is_proletarian:0 "Является [Concept('concept_bpm_ig_is_proletarian', '$concept_bpm_ig_is_proletarian$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_proletarian:0 "Пролетариат"
+ concept_bpm_ig_is_proletarian_desc:0 "#bold Профсоюзы#! [Concept('concept_interest_group', 'группа интересов')], если не находятся под [GetLawType(law_corporatized_unions').GetName] или [Concept('concept_bpm_ig_is_proletarian_socialist', 'пролетарский социалист')] [Concept('concept_interest_group', 'группа интересов')]. Они представляют желания промышленных рабочих в эту эпоху перемен."
+
+ tooltip_bpm_ig_is_labor:0 "Является [Concept('concept_bpm_ig_is_labor', '$concept_bpm_ig_is_labor$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_labor:0 "Трудовая"
+ concept_bpm_ig_is_labor_desc:0 "[Concept('concept_interest_group', 'Группа интересов')], являющаяся либо [Concept('concept_bpm_ig_is_socialist', 'социалистом')], либо [Concept('concept_bpm_ig_is_proletarian', 'пролетариатом')]. Они верят в поддержку желаний трудящихся."
+
+ tooltip_bpm_ig_is_actually_desiring_socialism:0 "Является [Concept('concept_bpm_ig_is_actually_desiring_socialism', '$concept_bpm_ig_is_actually_desiring_socialism$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_actually_desiring_socialism:0 "Правильно социалистический"
+ concept_bpm_ig_is_actually_desiring_socialism_desc:0 "[Concept('concept_interest_group', 'Группа интересов')], которая одновременно является [Concept('concept_bpm_ig_is_socialist', 'социалистом')] и #bold не#! является [Concept('concept_bpm_ig_is_moderate_socialist', 'умеренным социалистом')]. Они считают, что социализм может и должен быть построен в относительно ближайшем будущем."
+
+# AGRARIAN
+
+ tooltip_bpm_ig_is_agrarian:0 "Является [Concept('concept_bpm_ig_is_agrarian', '$concept_bpm_ig_is_agrarian$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_agrarian:0 "Аграрий"
+ concept_bpm_ig_is_agrarian_desc:0 "[Concept('concept_interest_group', 'Группа интересов')] с [Concept('concept_ideology', 'идеологией')] [GetIdeology('ideology_eco_agrarian_socialist').GetName], [GetIdeology('ideology_eco_modern_agrarian').GetName], [GetIdeology('ideology_eco_traditional_agrarian').GetName], [GetIdeology('ideology_eco_slave_economy').GetName], [GetIdeology('ideology_eco_serf_economy').GetName], [GetIdeology('ideology_eco_trad_isolationist').GetName] или [GetIdeology('ideology_eco_agrarian_autarky').GetName]. Они поддерживают приоритет потребностей сельского хозяйства и считают его центром экономики."
+
+ tooltip_bpm_ig_wants_small_government:0 "Является [Concept('concept_bpm_ig_wants_small_government', '$concept_bpm_ig_wants_small_government$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_wants_small_government:0 "Малое правительство"
+ concept_bpm_ig_wants_small_government_desc:0 "[Concept('concept_interest_group', 'Группа интересов')] с [Concept('concept_ideology', 'идеологией')] [GetIdeology('ideology_sta_minimal_state').GetName], [GetIdeology('ideology_sta_decentralized_state').GetName], [GetIdeology('ideology_sta_subjugated_state').GetName] или [GetIdeology('ideology_sta_weak_state').GetName]. Они считают, что малое правительство, не вмешивающееся в жизнь своих граждан (или, по крайней мере, сторонников их группы), необходимо для блага общества."
+
+ tooltip_bpm_ig_is_pro_serfdom:0 "Является [Concept('concept_bpm_ig_is_pro_serfdom', '$concept_bpm_ig_is_pro_serfdom$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_pro_serfdom:0 "За крепостное право"
+ concept_bpm_ig_is_pro_serfdom_desc:0 "[Concept('concept_interest_group', 'Группа интересов')] с [Concept('concept_ideology', 'идеологией')] [GetIdeology('ideology_eco_serf_economy').GetName], [GetIdeology('ideology_eco_trad_isolationist').GetName] или [GetIdeology('ideology_eco_debt_serf_economy').GetName]. Они стремятся сохранить традиционную структуру крепостных крестьян, прикрепленных к крупным аграрным поместьям."
+
+# LIBERAL IGS
+
+ tooltip_bpm_ig_is_democrat:0 "Является [Concept('concept_bpm_ig_is_democrat', '$concept_bpm_ig_is_democrat$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_democrat:0 "Демократ"
+ concept_bpm_ig_is_democrat_desc:0 "[Concept('concept_interest_group', 'Группа интересов')] с [Concept('concept_ideology', 'идеологией')] [GetIdeology('ideology_dop_radical_democrat').GetName], [GetIdeology('ideology_dop_moderate_democrat').GetName] или [GetIdeology('ideology_dop_authoritarian_democrat').GetName]. Они считают, что хотя бы некоторая форма избирательного права необходима любому государству, которое хочет выжить в современную эпоху."
+
+ tooltip_bpm_ig_is_republican:0 "Является [Concept('concept_bpm_ig_is_republican', '$concept_bpm_ig_is_republican$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_republican:0 "Республиканец"
+ concept_bpm_ig_is_republican_desc:0 "[Concept('concept_interest_group', 'Группа интересов')] с [Concept('concept_ideology', 'идеологией')] [GetIdeology('ideology_gov_liberal_republican').GetName] или [GetIdeology('ideology_gov_radical_republican').GetName]. Они считают, что идея монархии — пережиток ушедшей эпохи, от которого лучше избавиться, и ее следует заменить либеральной республикой."
+
+ tooltip_bpm_ig_is_radical_liberal:0 "Является [Concept('concept_bpm_ig_is_radical_liberal', '$concept_bpm_ig_is_radical_liberal$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_radical_liberal:0 "Радикальный либерал"
+ concept_bpm_ig_is_radical_liberal_desc:0 "@ig_radicals! #bold Радикалы#! [Concept('concept_interest_group', 'группа интересов')] или [Concept('concept_interest_group', 'группа интересов')] с [Concept('concept_ideology', 'идеологией')] [GetIdeology('ideology_dop_radical_democrat').GetName], которая #bold не#! является [Concept('concept_bpm_ig_is_actually_desiring_socialism', '$concept_bpm_ig_is_actually_desiring_socialism$')] [Concept('concept_interest_group', 'группой интересов')]. Они считают, что у людей есть неотъемлемые права, которые правительство должно уважать, и борются за воплощение эгалитарной и индивидуалистической мечты либерализма."
+
+ tooltip_bpm_ig_is_moderate_liberal:0 "Является [Concept('concept_bpm_ig_is_moderate_liberal', '$concept_bpm_ig_is_moderate_liberal$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_moderate_liberal:0 "Умеренный либерал"
+ concept_bpm_ig_is_moderate_liberal_desc:0 "@ig_liberals! #bold Либералы#! [Concept('concept_interest_group', 'группа интересов')] или [Concept('concept_interest_group', 'группа интересов')] с [Concept('concept_ideology', 'идеологией')] [GetIdeology('ideology_dop_moderate_democrat').GetName]. Они верят в продвижение демократии, но считают, что для предотвращения революционного хаоса необходим умеренный темп."
+
+ tooltip_bpm_ig_is_non_religious:0 "Является [Concept('concept_bpm_ig_is_non_religious', '$concept_bpm_ig_is_non_religious$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_non_religious:0 "Секулярист"
+ concept_bpm_ig_is_non_religious_desc:0 "[Concept('concept_interest_group', 'Группа интересов')] с [Concept('concept_ideology', 'идеологией')] [GetIdeology('ideology_rel_radical_secularist').GetName] или [GetIdeology('ideology_rel_atheist').GetName]. Они придерживаются убеждения, что религия должна быть отделена от правительства, особенно его институтов и законов."
+
+ tooltip_bpm_ig_is_liberal:0 "Является [Concept('concept_bpm_ig_is_liberal', '$concept_bpm_ig_is_liberal$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_liberal:0 "Либерал"
+ concept_bpm_ig_is_liberal_desc:0 "[Concept('concept_bpm_ig_is_radical_liberal', 'Радикальный либерал')], [Concept('concept_bpm_ig_is_moderate_liberal', 'умеренный либерал')], @ig_national_liberals! #bold Национальные либералы#! и @ig_market_liberals! #bold Рыночные либералы#! [Concept('concept_interest_group', 'группа интересов')]. Они верят в идеал обеспечения жизни, свободы и собственности для всех."
+
+ tooltip_bpm_ig_is_radical_left:0 "Является [Concept('concept_bpm_ig_is_radical_left', '$concept_bpm_ig_is_radical_left$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_radical_left:0 "Радикальные левые"
+ concept_bpm_ig_is_radical_left_desc:0 "[Concept('concept_bpm_ig_is_radical_liberal', 'Радикальный либерал')] или [Concept('concept_bpm_ig_is_socialist', 'социалист')] [Concept('concept_interest_group', 'группа интересов')]. Они верят в продвижение гражданских и политических свобод до такой степени, которую более умеренные группы считают воинственной."
+
+ tooltip_bpm_ig_is_abolitionist:0 "Является [Concept('concept_bpm_ig_is_abolitionist', '$concept_bpm_ig_is_abolitionist$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_abolitionist:0 "Аболиционист"
+ concept_bpm_ig_is_abolitionist_desc:0 "[Concept('bpm_ig_is_radical_left', 'Радикальный либерал')] [Concept('concept_interest_group', 'группа интересов')] или [Concept('concept_interest_group', 'группа интересов')] с [Concept('concept_ideology', 'идеологией')] [GetIdeology('ideology_eco_modern_agrarian').GetName] или [GetIdeology('ideology_eco_modernizer').GetName]. Они считают, что принудительный труд, такой как крепостное право и рабство, является отсталой и жестокой практикой, которую необходимо отменить."
+
+ tooltip_bpm_ig_is_left_wing:0 "Является [Concept('concept_bpm_ig_is_left_wing', '$concept_bpm_ig_is_left_wing$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_left_wing:0 "Левое крыло"
+ concept_bpm_ig_is_left_wing_desc:0 "[Concept('concept_bpm_ig_is_liberal', 'Либерал')] или [Concept('concept_bpm_ig_is_labor', 'трудовая')] [Concept('concept_interest_group', 'группа интересов')]. Они представляют широкую категорию, которая в целом верит в продвижение свободы и равенства."
+
+ tooltip_bpm_ig_is_pro_public_welfare:0 "Является [Concept('concept_bpm_ig_is_pro_public_welfare', '$concept_bpm_ig_is_pro_public_welfare$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_pro_public_welfare:0 "За благосостояние"
+ concept_bpm_ig_is_pro_public_welfare_desc:0 "[Concept('concept_interest_group', 'Группа интересов')] с [Concept('concept_ideology', 'идеологией')] [GetIdeology('ideology_wel_public_welfare').GetName] или [GetIdeology('ideology_wel_expanded_public_welfare').GetName]. Они считают, что любое справедливое общество должно иметь общественное благосостояние для своих граждан."
+
+ tooltip_bpm_ig_is_market_liberal:0 "Является [Concept('concept_bpm_ig_is_market_liberal', '$concept_bpm_ig_is_market_liberal$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_market_liberal:0 "Рыночный либерал"
+ concept_bpm_ig_is_market_liberal_desc:0 "[Concept('concept_interest_group', 'Группа интересов')] с [Concept('concept_ideology', 'идеологией')] [GetIdeology('ideology_eco_laissez_faire').GetName]. Они придерживаются убеждения, что надлежащая свободная рыночная экономика необходима для действительно процветающей современной нации."
+
+ tooltip_bpm_ig_is_feminist:0 "Is a [Concept('concept_bpm_ig_is_feminist', '$concept_bpm_ig_is_feminist$')] [Concept('concept_interest_group', 'Interest Group')]"
+ concept_bpm_ig_is_feminist:0 "Feminist"
+ concept_bpm_ig_is_feminist_desc:0 "An [Concept('concept_interest_group', 'Interest Group')] that has the [GetIdeology('ideology_fem_gender_egalitarian').GetName] [Concept('concept_ideology', 'Ideology')]. They hold the belief that women should have the same rights as men."
+
+# CONSERVATIVE
+
+ tooltip_bpm_ig_is_religious:0 "Является [Concept('concept_bpm_ig_is_religious', '$concept_bpm_ig_is_religious$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_religious:0 "Моралист"
+ concept_bpm_ig_is_religious_desc:0 "[Concept('concept_interest_group', 'Группа интересов')] с [Concept('concept_ideology', 'идеологией')] [GetIdeology('ideology_rel_moralist').GetName] или [GetIdeology('ideology_rel_radical_moralist').GetName]. Они верят в важность религиозных ценностей и испытывают отвращение к секуляризму."
+
+ tooltip_bpm_ig_is_anti_welfare:0 "Является [Concept('concept_bpm_ig_is_anti_welfare', '$concept_bpm_ig_is_anti_welfare$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_anti_welfare:0 "Против благосостояния"
+ concept_bpm_ig_is_anti_welfare_desc:0 "[Concept('concept_interest_group', 'Группа интересов')] с [Concept('concept_ideology', 'идеологией')] [GetIdeology('ideology_eco_laissez_faire').GetName], [GetIdeology('ideology_wel_market_welfare').GetName] или [GetIdeology('ideology_wel_no_welfare').GetName]. Они считают любую форму общественного благосостояния ненужной тратой, которая разрушает рабочую сущность бедных."
+
+ tooltip_bpm_ig_is_mainstream_conservative:0 "Является [Concept('concept_bpm_ig_is_mainstream_conservative', '$concept_bpm_ig_is_mainstream_conservative$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_mainstream_conservative:0 "Магистральный консерватор"
+ concept_bpm_ig_is_mainstream_conservative_desc:0 "@ig_conservatives! #bold Консерваторы#! [Concept('concept_interest_group', 'группа интересов')]. Они представляют наиболее распространенную форму умеренной правой идеологии."
+
+ tooltip_bpm_ig_is_liberal_conservative:0 "Является [Concept('concept_bpm_ig_is_liberal_conservative', '$concept_bpm_ig_is_liberal_conservative$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_liberal_conservative:0 "Либеральный консерватор"
+ concept_bpm_ig_is_liberal_conservative_desc:0 "@ig_conservatives! #bold Консерваторы#! [Concept('concept_interest_group', 'группа интересов')] после того, как они становятся патерналистами, наряду с @ig_national_liberals! #bold Национальными либералами#! и @ig_market_liberals! #bold Рыночными либералами#! [Concept('concept_interest_group', 'группа интересов')]. Они считают, что сочетание как умеренного либерализма, так и умеренного консерватизма обеспечивает наилучшие результаты для их нации."
+ 
+tooltip_bpm_ig_is_non_paternal_conserative:0 "Является [Concept('concept_bpm_ig_is_non_paternal_conserative', '$concept_bpm_ig_is_non_paternal_conserative$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_non_paternal_conserative:0 "Непатерналистский консерватор"
+ concept_bpm_ig_is_non_paternal_conserative_desc:0 "@ig_conservatives! #bold Консерваторы#! [Concept('concept_interest_group', 'группа интересов')], которые не придерживаются патерналистских идеалов."
+
+ tooltip_bpm_ig_is_moderate_conservative:0 "Является [Concept('concept_bpm_ig_is_moderate_conservative', '$concept_bpm_ig_is_moderate_conservative$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_moderate_conservative:0 "Умеренный консерватор"
+ concept_bpm_ig_is_moderate_conservative_desc:0 "[Concept('concept_interest_group', 'Группа интересов')] с [Concept('concept_ideology', 'идеологией')] [GetIdeology('ideology_dop_authoritarian_democrat').GetName]. Они считают, что хотя некоторая форма народного представительства необходима для современной эпохи, государство нуждается в сильных механизмах контроля, чтобы предотвратить слишком радикальные действия."
+
+ tooltip_bpm_ig_is_militaristic:0 "Является [Concept('concept_bpm_ig_is_militaristic', '$concept_bpm_ig_is_militaristic$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_militaristic:0 "Милитаристский"
+ concept_bpm_ig_is_militaristic_desc:0 "An [Concept('concept_interest_group', 'Interest Group')] that has the [GetIdeology('ideology_jingoist').GetName], [GetIdeology('ideology_mil_aristocratic_militarist').GetName], [GetIdeology('ideology_mil_mass_army').GetName], [GetIdeology('ideology_mil_institutional_militarist').GetName], [GetIdeology('ideology_mil_emergency').GetName], [GetIdeology('ideology_mil_plutocratic_militarist
+ ').GetName], or the  [GetIdeology('ideology_mil_institutional_militarist').GetName] [Concept('concept_ideology', 'Ideology')]. They believe that a large and powerful military is needed for the sake of security, whether it be defensive or offensive."
+
+ tooltip_bpm_ig_is_patriotic:0 "Является [Concept('concept_bpm_ig_is_patriotic', '$concept_bpm_ig_is_patriotic$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_patriotic:0 "Патриотический"
+ concept_bpm_ig_is_patriotic_desc:0 "[Concept('concept_interest_group', 'Группа интересов')], являющаяся [Concept('concept_bpm_ig_is_militaristic', '$concept_bpm_ig_is_militaristic$')] или имеющая [Concept('concept_ideology', 'идеологию')] [GetIdeology('ideology_mil_frontier_expansion').GetName], [GetIdeology('ideology_mil_patriotic').GetName], [GetIdeology('ideology_mil_patriotic_liberal').GetName] или [GetIdeology('ideology_mil_defensive_patriot').GetName]. Они считают, что армия является как необходимым, так и желательным институтом для нации."
+
+ tooltip_bpm_ig_is_sexist:0 "Является [Concept('concept_bpm_ig_is_sexist', '$concept_bpm_ig_is_sexist$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_sexist:0 "Сексист"
+ concept_bpm_ig_is_sexist_desc:0 "[Concept('concept_interest_group', 'Группа интересов')], являющаяся [Concept('bpm_ig_is_very_sexist', '$bpm_ig_is_very_sexist$')] или имеющая [Concept('concept_ideology', 'идеологию')] [GetIdeology('ideology_fem_benevolent_sexism').GetName]. Они придерживаются убеждения, что женщины либо не могут, либо не должны иметь тех же прав, что и мужчины."
+
+ tooltip_bpm_ig_is_very_sexist:0 "Является [Concept('concept_bpm_ig_is_very_sexist', '$concept_bpm_ig_is_very_sexist$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_very_sexist:0 "Очень сексистский"
+ concept_bpm_ig_is_very_sexist_desc:0 "[Concept('concept_interest_group', 'Группа интересов')] с [Concept('concept_ideology', 'идеологией')] [GetIdeology('ideology_fem_patriarchal').GetName] или [GetIdeology('ideology_fem_moderate_patriarchal').GetName]. Они считают, что женщины фундаментально ниже мужчин, так что любая форма равного обращения становится невозможной."
+
+ tooltip_bpm_ig_is_monarchist:0 "Является [Concept('concept_bpm_ig_is_monarchist', '$concept_bpm_ig_is_monarchist$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_monarchist:0 "Монархист"
+ concept_bpm_ig_is_monarchist_desc:0 "[Concept('concept_interest_group', 'Группа интересов')] с [Concept('concept_ideology', 'идеологией')] [GetIdeology('ideology_gov_radical_monarchist').GetName] или [GetIdeology('ideology_gov_moderate_monarchist').GetName]. Они считают, что институт монархии необходим, будь то сила социальной стабильности или божественное предписание."
+
+ tooltip_bpm_ig_is_anti_democratic:0 "Является [Concept('concept_bpm_ig_is_anti_democratic', '$concept_bpm_ig_is_anti_democratic$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_anti_democratic:0 "Антидемократический"
+ concept_bpm_ig_is_anti_democratic_desc:0 "[Concept('concept_interest_group', 'Группа интересов')] с [Concept('concept_ideology', 'идеологией')] [GetIdeology('ideology_dop_technocrat').GetName], [GetIdeology('ideology_dop_meritocratic_autocrat').GetName], [GetIdeology('ideology_dop_meritocratic_autocrat').GetName], [GetIdeology('ideology_dop_party_state').GetName], [GetIdeology('ideology_dop_party_socialist').GetName], [GetIdeology('ideology_dop_dissent').GetName], [GetIdeology('ideology_dop_traditional_power').GetName], [GetIdeology('ideology_dop_oligarch').GetName] или [GetIdeology('ideology_dop_autocrat').GetName]. Они охватывают широкую группу, которая определяется оппозицией либеральной демократии."
+# TRADITIONALIST
+
+ tooltip_bpm_ig_is_theocratic:0 "Является [Concept('concept_bpm_ig_is_theocratic', '$concept_bpm_ig_is_theocratic$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_theocratic:0 "Теократический"
+ concept_bpm_ig_is_theocratic_desc:0 "[Concept('concept_interest_group', 'Группа интересов')] с [Concept('concept_ideology', 'идеологией')] [GetIdeology('ideology_gov_theocrat').GetName]. Они считают, что обществом должны управлять религиозные деятели в соответствии с законами их веры."
+
+ tooltip_bpm_ig_is_traditionalist:0 "Является [Concept('concept_bpm_ig_is_traditionalist', '$concept_bpm_ig_is_traditionalist$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_traditionalist:0 "Традиционалист"
+ concept_bpm_ig_is_traditionalist_desc:0 "Либо @ig_reactionaries! #bold Реакционеры#! [Concept('concept_interest_group', 'группа интересов')], [Concept('concept_interest_group', 'группа интересов')] с [Concept('concept_ideology', 'идеологией')] [GetIdeology('ideology_dop_autocrat').GetName], [GetIdeology('ideology_dop_traditional_power').GetName] или [GetIdeology('ideology_dop_oligarch').GetName], либо [Concept('concept_bpm_ig_is_theocratic', '$concept_bpm_ig_is_theocratic$')] [Concept('concept_interest_group', 'группа интересов')]. Они считают, что миру лучше следовать традициям и законам, которые, по их мнению, всегда существовали, и что любые новые идеи опасны для души общества."
+
+# FASCIST IGS
+
+ tooltip_bpm_ig_is_fascist:0 "Является [Concept('concept_bpm_ig_is_fascist', '$concept_bpm_ig_is_fascist$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_fascist:0 "Фашист"
+ concept_bpm_ig_is_fascist_desc:0 "@ig_fascists! #bold Фашисты#! [Concept('concept_interest_group', 'группа интересов')]. Они считают, что единственный способ спасти нацию от разрушения — это полное подчинение государству, возглавляемому тоталитарным лидером, пропагандирующим милитаризм и ультранационализм."
+
+ tooltip_bpm_ig_is_radical_right:0 "Является [Concept('concept_bpm_ig_is_radical_right', '$concept_bpm_ig_is_radical_right$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_radical_right:0 "Радикальные правые"
+ concept_bpm_ig_is_radical_right_desc:0 "[Concept('concept_bpm_ig_is_fascist', '$concept_bpm_ig_is_fascist$')] или [Concept('concept_bpm_ig_is_traditionalist', '$concept_bpm_ig_is_traditionalist$')] [Concept('concept_interest_group', 'группа интересов')]. Они верят в продвижение создания и поддержания иерархий до такой степени, которую более умеренные группы считают воинственной."
+
+ tooltip_bpm_ig_is_right_wing:0 "Является [Concept('concept_bpm_ig_is_right_wing', '$concept_bpm_ig_is_right_wing$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_right_wing:0 "Правое крыло"
+ concept_bpm_ig_is_right_wing_desc:0 "[Concept('concept_bpm_ig_is_radical_right', '$concept_bpm_ig_is_radical_right$')] или [Concept('concept_bpm_ig_is_moderate_conservative', '$concept_bpm_ig_is_moderate_conservative$')] [Concept('concept_interest_group', 'группа интересов')]. Они представляют широкую категорию, которая в целом верит в продвижение жесткой иерархии и авторитета."
+
+# INSTITUTIONAL
+
+ tooltip_bpm_ig_is_ideological:0 "Является [Concept('concept_bpm_ig_is_ideological', '$concept_bpm_ig_is_ideological$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_ideological:0 "Идеологический"
+ concept_bpm_ig_is_ideological_desc:0 "Не [Concept('concept_bpm_ig_is_institutional', '$concept_bpm_ig_is_institutional$')] [Concept('concept_interest_group', 'группа интересов')]. Они придерживаются взглядов на общество, которые определяются комплексной идеологией, а не непосредственными материальными интересами."
+
+ tooltip_bpm_ig_is_institutional:0 "Является [Concept('concept_bpm_ig_is_institutional', '$concept_bpm_ig_is_institutional$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_institutional:0 "Институциональный"
+ concept_bpm_ig_is_institutional_desc:0 "[GetInterestGroupVariant('ig_armed_forces', GetPlayer).GetName], [GetInterestGroupVariant('ig_devout', GetPlayer).GetName], [GetInterestGroupVariant('ig_industrialists', GetPlayer).GetName], [GetInterestGroupVariant('ig_intelligentsia', GetPlayer).GetName], [GetInterestGroupVariant('ig_landowners', GetPlayer).GetName], [GetInterestGroupVariant('ig_petty_bourgeoisie', GetPlayer).GetName], [GetInterestGroupVariant('ig_rural_folk', GetPlayer).GetName] или [GetInterestGroupVariant('ig_trade_unions', GetPlayer).GetName] [Concept('concept_interest_group', 'группа интересов')]. Они являются основными социальными группами, которые обычно добиваются только непосредственных материальных интересов."
+
+ tooltip_bpm_ig_is_urban_institutional:0 "Является [Concept('concept_bpm_ig_is_urban_institutional', '$concept_bpm_ig_is_urban_institutional$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_urban_institutional:0 "Городской институциональный"
+ concept_bpm_ig_is_urban_institutional_desc:0 "[GetInterestGroupVariant('ig_industrialists', GetPlayer).GetName], [GetInterestGroupVariant('ig_intelligentsia', GetPlayer).GetName], [GetInterestGroupVariant('ig_petty_bourgeoisie', GetPlayer).GetName] или [GetInterestGroupVariant('ig_trade_unions', GetPlayer).GetName] [Concept('concept_interest_group', 'группа интересов')]. Это институты, которые держат власть в городских центрах."
+
+ tooltip_bpm_ig_is_rural_institutional:0 "Является [Concept('concept_bpm_ig_is_rural_institutional', '$concept_bpm_ig_is_rural_institutional$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_rural_institutional:0 "Сельский институциональный"
+ concept_bpm_ig_is_rural_institutional_desc:0 "[GetInterestGroupVariant('ig_devout', GetPlayer).GetName], [GetInterestGroupVariant('ig_landowners', GetPlayer).GetName] или [GetInterestGroupVariant('ig_rural_folk', GetPlayer).GetName] [Concept('concept_interest_group', 'группа интересов')]. Это институты, которые держат власть в сельских районах."
+
+ tooltip_bpm_ig_is_state_institutional:0 "Является [Concept('concept_bpm_ig_is_state_institutional', '$concept_bpm_ig_is_state_institutional$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_state_institutional:0 "Государственный институциональный"
+ concept_bpm_ig_is_state_institutional_desc:0 "[GetInterestGroupVariant('ig_armed_forces', GetPlayer).GetName] или [GetInterestGroupVariant('ig_petty_bourgeoisie', GetPlayer).GetName] [Concept('concept_interest_group', 'группа интересов')], или [GetInterestGroupVariant('ig_devout', GetPlayer).GetName] [Concept('concept_interest_group', 'группа интересов')] при [GetLawType(law_theocracy').GetName], или [GetInterestGroupVariant('ig_trade_unions', GetPlayer).GetName] [Concept('concept_interest_group', 'группа интересов')] при [GetLawType(law_corporatized_unions').GetName]. Это институты, которые либо являются частью государства, либо непосредственно им управляются."
+
+ tooltip_bpm_ig_is_upper_institutional:0 "Является [Concept('concept_bpm_ig_is_upper_institutional', '$concept_bpm_ig_is_upper_institutional$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_upper_institutional:0 "Верхний институциональный"
+ concept_bpm_ig_is_upper_institutional_desc:0 "[GetInterestGroupVariant('ig_industrialists', GetPlayer).GetName] или [GetInterestGroupVariant('ig_landowners', GetPlayer).GetName] [Concept('concept_interest_group', 'группа интересов')]. Это институты высших классов."
+
+ tooltip_bpm_ig_is_middle_institutional:0 "Является [Concept('concept_bpm_ig_is_middle_institutional', '$concept_bpm_ig_is_middle_institutional$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_middle_institutional:0 "Средний институциональный"
+ concept_bpm_ig_is_middle_institutional_desc:0 "[GetInterestGroupVariant('ig_armed_forces', GetPlayer).GetName], [GetInterestGroupVariant('ig_devout', GetPlayer).GetName], [GetInterestGroupVariant('ig_intelligentsia', GetPlayer).GetName] или [GetInterestGroupVariant('ig_petty_bourgeoisie', GetPlayer).GetName] [Concept('concept_interest_group', 'группа интересов')]. Это институты средних классов."
+
+ tooltip_bpm_ig_is_lower_institutional:0 "Является [Concept('concept_bpm_ig_is_lower_institutional', '$concept_bpm_ig_is_lower_institutional$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_lower_institutional:0 "Нижний институциональный"
+ concept_bpm_ig_is_lower_institutional_desc:0 "[GetInterestGroupVariant('ig_rural_folk', GetPlayer).GetName] или [GetInterestGroupVariant('ig_trade_unions', GetPlayer).GetName] [Concept('concept_interest_group', 'группа интересов')]. Это институты низших классов."
+
+# Other IG types
+ tooltip_bpm_ig_is_isolationist:0 "Является [Concept('concept_bpm_ig_is_isolationist', '$concept_bpm_ig_is_isolationist$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_isolationist:0 "Изоляционист"
+ concept_bpm_ig_is_isolationist_desc:0 "[Concept('concept_interest_group', 'Группа интересов')] с [Concept('concept_ideology', 'идеологией')] [GetIdeology('ideology_eco_autarky').GetName], [GetIdeology('ideology_eco_trad_isolationist').GetName], [GetIdeology('ideology_eco_socialist_autarky').GetName] или [GetIdeology('ideology_eco_agrarian_autarky').GetName]. Они считают, что фокус на изоляционизме и самодостаточности является правильным путем развития их экономики и нации в целом."
+
+ tooltip_bpm_ig_is_hawkish:0 "Является [Concept('concept_bpm_ig_is_tooltip_bpm_ig_is_hawkish', '$concept_bpm_ig_is_tooltip_bpm_ig_is_hawkish$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_tooltip_bpm_ig_is_hawkish:0 "Ястреб"
+ concept_bpm_ig_is_tooltip_bpm_ig_is_hawkish_desc:0 "[Concept('concept_interest_group', 'Группа интересов')], являющаяся либо [Concept('concept_bpm_ig_is_tooltip_bpm_ig_is_very_hawkish', '$concept_bpm_ig_is_tooltip_bpm_ig_is_very_hawkish$')], либо имеющая [Concept('concept_ideology', 'идеологию')] [GetIdeology('ideology_mil_patriotic').GetName], [GetIdeology('ideology_mil_mass_army').GetName] или [GetIdeology('ideology_mil_institutional_militarist').GetName]. Они верят в воинственную внешнюю политику, предпочитая военные решения дипломатическим вопросам."
+
+ tooltip_bpm_ig_is_very_hawkish:0 "Является [Concept('concept_bpm_ig_is_very_hawkish', '$concept_bpm_ig_is_very_hawkish$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_very_hawkish:0 "Очень ястребиный"
+ concept_bpm_ig_is_very_hawkish_desc:0 "[Concept('concept_interest_group', 'Группа интересов')] с [Concept('concept_ideology', 'идеологией')] [GetIdeology('ideology_jingoist').GetName] или [GetIdeology('ideology_mil_ultramilitarist').GetName]. Они считают, что все дипломатические вопросы должны решаться в первую очередь силой оружия."
+
+ tooltip_bpm_ig_is_doveish:0 "Является [Concept('concept_bpm_ig_is_doveish', '$concept_bpm_ig_is_doveish$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_doveish:0 "Голубь"
+ concept_bpm_ig_is_doveish_desc:0 "[Concept('concept_interest_group', 'Группа интересов')] с [Concept('concept_ideology', 'идеологией')] [GetIdeology('ideology_mil_patriotic_liberal').GetName], [GetIdeology('ideology_mil_defensive_patriot').GetName], [GetIdeology('ideology_mil_popular_army').GetName] или [GetIdeology('ideology_mil_antimilitarist').GetName]. Они считают, что дипломатические вопросы должны решаться, прежде всего, дипломатическим путем."
+
+# IG Popularity
+ tooltip_bpm_ig_is_unpopular:0 "Является [Concept('concept_bpm_ig_is_unpopular', '$concept_bpm_ig_is_unpopular$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_unpopular:0 "Непопулярный"
+ concept_bpm_ig_is_unpopular_desc:0 "[Concept('concept_interest_group', 'Группа интересов')] считается #bold непопулярной#!, если она не является ни [Concept('concept_bpm_ig_is_popular', '$concept_bpm_ig_is_popular$')], ни [Concept('concept_bpm_ig_is_prominent', '$concept_bpm_ig_is_prominent$')]"
+
+ tooltip_bpm_ig_is_popular:0 "Является [Concept('concept_bpm_ig_is_popular', '$concept_bpm_ig_is_popular$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_popular:0 "Популярный"
+ concept_bpm_ig_is_popular_desc:0 "[Concept('concept_interest_group', 'Группа интересов')] считается #bold популярной#!, если ее поддерживают >1% всего населения."
+
+ tooltip_bpm_ig_is_prominent:0 "Является [Concept('concept_bpm_ig_is_prominent', '$concept_bpm_ig_is_prominent$')] [Concept('concept_interest_group', 'группой интересов')]"
+ concept_bpm_ig_is_prominent:0 "Видный"
+ concept_bpm_ig_is_prominent_desc:0 "[Concept('concept_interest_group', 'Группа интересов')] считается #bold видной#!, если ее поддерживают >10% всего населения."
+
+ tooltip_bpm_country_proletarian_are_popular:0 ">5% всего населения в [Concept('concept_bpm_ig_is_proletarian','Пролетарских группах интересов')] (в настоящее время [GetPlayer.MakeScope.ScriptValue('bpm_proletarian_popularity')|%])"
+ concept_bpm_country_proletarian_are_popular:0 "Пролетарские организации популярны"
+ concept_bpm_country_proletarian_are_popular_desc:0 "Пролетарские организации считаются популярными, если >5% всего населения входит в [Concept('concept_bpm_ig_is_socialist','Социалистические группы интересов')]."
+
+ concept_extremist:0 "Антиистеблишмент"
+ concept_extremist_desc:0 "[Concept('concept_interest_group', 'Группа интересов')], которая противостоит нынешнему режиму в нашей [concept_country]."
+ concept_super_extremist:0 "Экстремист"
+ concept_super_extremist_desc:0 "[Concept('concept_interest_group', 'Группа интересов')], которая действует далеко за пределами рамок респектабельной политики в нашей [concept_country]."
+
+ concept_bpm_law_support:0 "Поддержка закона"
+ concept_bpm_law_support_desc:0 "Уровень поддержки [Concept('concept_law', 'законов')] при их принятии в законодательном органе. От этого зависит, будет ли [Concept('concept_interest_group', 'группа интересов')] поддерживать или противостоять закону."
+
+ concept_bpm_cabinet:0 "Кабинет"
+ concept_bpm_cabinet_desc:0 "Кабинет — это орган высокопоставленных членов правительства, представляющий исполнительную ветвь власти. Он состоит из глав различных правительственных ведомств и отвечает за повседневное управление правительством."
+
+ concept_bpm_ministerial_appointment:0 "Назначение министра"
+ concept_bpm_ministerial_appointment_desc:0 "Назначение на должность в [concept_bpm_cabinet] в качестве [Concept('concept_bpm_minister', 'министра')]."
+
+ concept_bpm_minister:0 "Министр"
+ concept_bpm_minister_desc:0 "Министры — это персонажи, назначаемые в [concept_bpm_cabinet] для надзора за деятельностью [Concept('concept_institution', 'института')]. Они предоставляют уникальные преимущества и недостатки в зависимости от их [Concept('concept_interest_group', 'группы интересов')] и уровня инвестиций в институт."
+
+ concept_bpm_mandate:0 "Мандат"
+ concept_bpm_mandate_desc:0 "Получая от [Concept('concept_in_government','правительственного')] [concept_clout] и взвешивая по #yellow принципам исполнительной власти#! законов, Мандат распределяется между вашими [Concept('concept_interest_group', 'группами интересов')] и может быть потрачен на [Concept('concept_bpm_ministerial_appointment','назначение министров')]. Определенные [Concept('concept_interest_group', 'группы интересов')] больше подходят для определенных [Concept('concept_institution', 'министерств')] и требуют меньше Мандата для назначения."
+
+ concept_bpm_minister_skill:0 "Уровень мастерства министра"
+ concept_bpm_minister_skill_desc:0 "Уровень мастерства [concept_bpm_minister] определяется их [Concept('concept_character_trait','чертами характера')], что влияет на максимальный уровень инвестиций их [Concept('concept_institution', 'министерства')]:\n @arrow_up! #yellow Опытные#! [Concept('concept_bpm_minister','министры')] #P увеличивают#! максимальный уровень инвестиций их [Concept('concept_institution', 'министерства')] на #v 1#!.\n @arrow_down! #yellow Некомпетентные#! [Concept('concept_bpm_minister','министры')] #N уменьшают#! максимальный уровень инвестиций их [Concept('concept_institution', 'министерства')] на #v 1#!.\n\n#v При назначении министра будет выбран #yellow самый опытный#! доступный кандидат.#!\nВ открытых, демократических странах кандидаты имеют более широкий диапазон уровней мастерства, тогда как в авторитарных или традиционалистских странах могут возникнуть трудности с поиском полезных талантов."
+
+ concept_bpm_head_of_government:0 "Глава правительства"
+ concept_bpm_head_of_government_desc:0 "Глава правительства является самым влиятельным должностным лицом в исполнительной ветви власти и главным среди ваших [Concept('concept_bpm_minister','министров')]. В некоторых странах это премьер-министр, назначаемый королем или президентом, тогда как в других случаях глава правительства совпадает с главой государства."

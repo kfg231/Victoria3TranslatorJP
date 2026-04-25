@@ -1,0 +1,10 @@
+﻿l_simp_chinese:
+ bpm_make_into_agitator:0 "鼓励骚动"
+
+
+
+
+ bpm_add_to_cabinet:0 "Add to Cabinet"
+ bpm_remove_from_cabinet:0 "Is in the Cabinet"
+ bpm_add_to_cabinet_tt:0 "Is in the Pool of Candidates for the Cabinet"
+ bpm_remove_from_cabinet_tt:0 "Is in the Cabinet"

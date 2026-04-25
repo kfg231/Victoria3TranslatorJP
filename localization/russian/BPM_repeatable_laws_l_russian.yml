@@ -1,0 +1,211 @@
+﻿l_russian:
+# Misc
+ bpm_repeatable_law_cooldown:0 "[Concept('concept_bpm_repeatable_law', '$concept_bpm_repeatable_law$')] находится на перезарядке в #v [GetPlayer.MakeScope.ScriptValue('bpm_repeatable_law_cooldown')]#! лет."
+
+ law_repeatable_none:0 "Повторяемый закон не выбран"
+ law_repeatable_none_desc:0 "В данный момент [Concept('concept_bpm_repeatable_law', '$concept_bpm_repeatable_law$')] не рассматривается."
+
+ bpm_decorative_repeatable_effect_no_permanent:0 "Не имеет постоянного эффекта"
+ bpm_decorative_repeatable_effect_no_permanent_desc:0 "$concept_bpm_repeatable_law_desc$"
+ bpm_decorative_repeatable_effect_temporary:0 "Применяет временный эффект"
+ 
+ bpm_decorative_repeatable_effect_temporary_desc:0 "$concept_bpm_repeatable_law_desc$"
+ bpm_last_enacted_repeatable_label:0 "Последний раз принят:"
+
+ bpm_last_enacted_repeatable_countdown:0 "@clock! #v [Law.MakeScope.ScriptValue('bpm_repeatable_law_countdown_value')]#! дней осталось"
+
+ bpm_law_effect_tt_repeatable_stronger_from_institution:0 "#blue @information! Следующие эффекты увеличиваются на каждый [Concept('concept_investment_level','уровень')]#!"
+ bpm_law_effect_tt_repeatable_stronger_from_home_affairs:0 "$bpm_law_effect_tt_repeatable_stronger_from_institution$ [GetInstitutionType('institution_home_affairs').GetName]."
+ bpm_decorative_repeatable_stronger_from_home_affairs:0 "Улучшено с помощью #O [GetInstitutionType('institution_home_affairs').GetName]#!"
+ bpm_decorative_repeatable_stronger_from_home_affairs_desc:0 "$bpm_law_effect_tt_repeatable_stronger_from_home_affairs$"
+ bpm_law_effect_tt_repeatable_stronger_from_centralization:0 "$bpm_law_effect_tt_repeatable_stronger_from_institution$ [GetInstitutionType('institution_centralization').GetName]."
+ bpm_decorative_repeatable_stronger_from_centralization:0 "Улучшено с помощью #O [GetInstitutionType('institution_centralization').GetName]#!"
+ bpm_decorative_repeatable_stronger_from_centralization_desc:0 "$bpm_law_effect_tt_repeatable_stronger_from_centralization$"
+ bpm_law_effect_tt_repeatable_stronger_from_culture:0 "$bpm_law_effect_tt_repeatable_stronger_from_institution$ [GetInstitutionType('institution_culture').GetName]."
+ bpm_decorative_repeatable_stronger_from_culture:0 "Улучшено с помощью #O [GetInstitutionType('institution_culture').GetName]#!"
+ bpm_decorative_repeatable_stronger_from_culture_desc:0 "$bpm_law_effect_tt_repeatable_stronger_from_culture$"
+
+ bpm_law_effect_tt_repeatable_stronger_from_professional_officers:0 "@information! #blue Следующие эффекты увеличиваются при действии [GetLawType('law_professional_officers').GetName].#!"
+ bpm_decorative_repeatable_stronger_from_professional_officers:0 "Улучшено с помощью #O [GetLawType('law_professional_officers').GetName]#!"
+ bpm_decorative_repeatable_stronger_from_professional_officers_desc:0 "$bpm_law_effect_tt_repeatable_stronger_from_professional_officers$"
+
+ bpm_law_effect_tt_repeatable_stronger_from_non_religious_igs:0 "@information! #blue Следующие эффекты увеличиваются на каждую [Concept('concept_bpm_ig_is_non_religious', '$concept_bpm_ig_is_non_religious$')] [Concept('concept_interest_group', 'группу интересов')], находящуюся в [Concept('concept_in_government', 'Правительстве')] или [Concept('concept_powerful', 'Влиятельную')]."
+ bpm_law_effect_tt_repeatable_stronger_from_religious_igs:0 "@information! #blue Следующие эффекты увеличиваются на каждую [Concept('concept_bpm_ig_is_religious', '$concept_bpm_ig_is_religious$')] [Concept('concept_interest_group', 'группу интересов')], находящуюся в [Concept('concept_in_government', 'Правительстве')] или [Concept('concept_powerful', 'Влиятельную')]."
+
+ bpm_law_effect_tt_repeatable_strength_influenced_by_ig_support:0 "@information! #blue Следующие эффекты масштабируются в зависимости от мнения каждой [concept_in_government] или [Concept('concept_powerful', 'Влиятельной')] [Concept('concept_interest_group', 'группы интересов')] по закону.#!"
+
+ bpm_repeatable_law_ig_happy:0 "Доволен $concept_bpm_repeatable_law$"
+ bpm_repeatable_law_ig_unhappy:0 "Недоволен $concept_bpm_repeatable_law$"
+
+ bpm_law_effect_tt_repeatable_different_in_cooperative_ownership:0 "@information! #blue Следующие эффекты различны при действии [GetLawType('law_cooperative_ownership').GetName].#!"
+ bpm_law_effect_tt_repeatable_different_in_collectivized_agriculture:0 "@information! #blue Следующие эффекты различны при действии [GetLawType('law_collectivized_agriculture').GetName]."
+ 
+# Repeatable Political
+ lawgroup_repeatable_politics:0 "[Concept('concept_bpm_repeatable_law', '$concept_bpm_repeatable_law$')] - Политика"
+ lawgroup_repeatable_politics_desc:0 "[Concept('concept_bpm_repeatable_law', '$concept_bpm_repeatable_laws$')] касающиеся непосредственно политического устройства страны."
+
+ law_repeatable_politics_none:0 "$law_repeatable_none$"
+ law_repeatable_politics_none_desc:0 "$law_repeatable_none_desc$"
+
+ law_repeatable_politics_modernize_bureaucracy:0 "Бюрократическая модернизация"
+ law_repeatable_politics_modernize_bureaucracy_desc:0 "Создание кадастровых карт, введение единых систем мер и весов, унификация государственного языка; попытка хотя бы части этих мер позволит нашему бюрократическому аппарату функционировать должным образом в современную эпоху."
+ bpm_law_effect_tt_repeatable_politics_modernize_bureaucracy:0 "@information! #blue Даст до двух самых ранних бюрократических технологий, которые у вас еще не исследованы. Не будет доступно после исследования Централизации и Международных отношений. #!"
+
+ law_repeatable_politics_military_purge:0 "Чистка в армии"
+ law_repeatable_politics_military_purge_desc:0 "Проведите масштабные и насильственные чистки в рядах [GetInterestGroupVariant('ig_armed_forces', GetPlayer).GetName], чтобы обеспечить их политическую лояльность."
+ bpm_repeatable_law_military_purge_result:0 "Последствия чистки в армии"
+ bpm_law_effect_tt_repeatable_politics_military_purge:0 "#N У каждого [concept_commander] есть шанс #v 25%#! быть подвергнутым чистке!#!"
+
+ law_repeatable_politics_bureaucratic_purge:0 "Бюрократическая чистка"
+ law_repeatable_politics_bureaucratic_purge_desc:0 "Проведите масштабные чистки среди [GetInterestGroupVariant('ig_petty_bourgeoisie', GetPlayer).GetName], чтобы обеспечить лояльность административного аппарата."
+ bpm_repeatable_law_bureaucratic_purge_result:0 "Последствия бюрократической чистки"
+ bpm_repeatable_law_bureaucratic_purge_result_ig:0 "Набитый подпевалами"
+
+ law_repeatable_politics_popular_concessions:0 "Незначительные уступки"
+ law_repeatable_politics_popular_concessions_desc:0 "Расследовать и решать некоторые тривиальные, но досадные проблемы, беспокоящие наше население, которые можно решить без масштабных реформ."
+ bpm_repeatable_law_popular_concessions_result_permanent:0 "Незначительные уступки"
+
+ law_repeatable_politics_anti_corruption_drive:0 "Кампания по борьбе с коррупцией"
+ bpm_repeatable_law_anti_corruption_drive_result_ig:0 "Результаты борьбы с коррупцией"
+ bpm_law_effect_tt_politics_anti_corruption_drive:0 "@information! #blue Направлена на [Concept('concept_bpm_ig_is_institutional', 'институциональную')] [Concept('concept_interest_group', 'группу интересов')] с наибольшим [Concept('concept_clout', 'влиянием')].#!"
+ bpm_law_effect_tt_repeatable_different_in_reconstruction:0 "@information! #blue Пока мы проходим Реконструкцию, проявляются следующие эффекты."
+ law_repeatable_politics_anti_corruption_drive_desc:0 "Провести зачистку среди укоренившихся интересов страны, чтобы искоренить коррупцию из тела нации."
+
+ law_repeatable_politics_great_terror:0 "[GetPlayer.GetCustom('bpm_repeatable_politics_terror_name')]"
+ law_repeatable_politics_great_terror_desc:0 "Провести масштабную кампанию насилия и репрессий против [GetPlayer.GetCustom('bpm_repeatable_politics_terror_target')]."
+ bpm_law_effect_tt_politics_great_terror:0 "@information! #blue Снижает [Concept('concept_clout', 'влияние')], [Concept('concept_interest_group_attraction', 'привлекательность')] и [Concept('concept_approval', 'одобрение')] для всех [Concept('concept_bpm_ig_is_ideological', 'идеологических')] [Concept('concept_interest_group', 'групп интересов')], находящихся в [Concept('concept_in_opposition', 'оппозиции')]."
+ bpm_repeatable_law_great_terror_result:0 "Большой террор"
+ bpm_repeatable_law_great_terror_result_ig:0 "Жертвы террора"
+ bpm_repeatable_politics_terror_name_liberal:0 "Якобинский террор"
+ bpm_repeatable_politics_terror_target_liberal:0 "враги народа"
+ bpm_repeatable_politics_terror_name_white:0 "Белый террор"
+ bpm_repeatable_politics_terror_target_white:0 "враги [GetPlayer.GetName]"
+ bpm_repeatable_politics_terror_name_red:0 "Красный террор"
+ bpm_repeatable_politics_terror_target_red:0 "враги революции"
+ bpm_repeatable_politics_terror_name_great:0 "Большой террор"
+ bpm_repeatable_politics_terror_target_great:0 "враги [GetPlayer.GetName]"
+
+# Repeatable Religious
+ lawgroup_repeatable_religion:0 "[Concept('concept_bpm_repeatable_law', '$concept_bpm_repeatable_law$')] - Религия"
+ lawgroup_repeatable_religion_desc:0 "[Concept('concept_bpm_repeatable_law', '$concept_bpm_repeatable_laws$')] касающиеся различных религиозных вопросов."
+
+ law_repeatable_religion_none:0 "$law_repeatable_none$"
+ law_repeatable_religion_none_desc:0 "$law_repeatable_none_desc$"
+
+ law_repeatable_religion_anti_secular_reaction:0 "Антисветская реакция"
+ law_repeatable_religion_anti_secular_reaction_desc:0 "Подавить светскую мысль в научных кругах, чтобы предотвратить распространение современных идей."
+ bpm_repeatable_law_anti_secular_reaction_result:0 "Результаты антисветской реакции"
+
+ law_repeatable_religion_promote_state_religion:0 "Продвижение государственной религии"
+ law_repeatable_religion_promote_state_religion_desc:0 "Принять меры для более активного продвижения нашей религии среди населения."
+ bpm_law_effect_tt_repeatable_promote_state_religion_conversion:0 "Преобразует #v [GetPlayer.MakeScope.ScriptValue('bpm_repeatable_law_promote_state_religion_conversion_percent')]%#! [Concept('concept_pop', 'населения')] в [Concept('concept_incorporated_state', 'инкорпорированных штатах')] в направлении [GetPlayer.GetStateReligion.GetName]"
+ bpm_repeatable_law_promote_state_religion_result:0 "Государственная религия продвигается"
+
+ law_repeatable_religion_promote_secular_values:0 "Продвижение светских ценностей"
+ law_repeatable_religion_promote_secular_values_desc:0 "Принять меры для поощрения более светских взглядов у нашего населения."
+ bpm_law_effect_tt_repeatable_promote_secular_values_conversion:0 "Преобразует #v [GetPlayer.MakeScope.ScriptValue('bpm_repeatable_law_promote_secular_values_conversion_percent')]%#! [Concept('concept_pop', 'населения')] в [Concept('concept_incorporated_state', 'инкорпорированных штатах')] в направлении [GetReligion('atheist').GetName]"
+ bpm_repeatable_law_promote_secular_values_result:0 "Продвижение светских ценностей"
+
+ law_repeatable_religion_anti_religious_violence:0 "Антирелигиозное насилие"
+ law_repeatable_religion_anti_religious_violence_desc:0 "Усилить давление на религиозные пережитки через целенаправленное насилие над открыто верующими и духовенством, а также разрушение религиозных символов и собственности."
+ bpm_law_effect_tt_repeatable_anti_religious_violence_conversion:0 "Преобразует #v [GetPlayer.MakeScope.ScriptValue('bpm_repeatable_law_anti_religious_violence_conversion_percent')]%#! [Concept('concept_pop', 'населения')] в [Concept('concept_incorporated_state', 'инкорпорированных штатах')] в направлении [GetReligion('atheist').GetName]"
+ bpm_repeatable_law_anti_religious_violence_result:0 "Репрессии против духовенства"
+
+# Repeatable Nationality
+ lawgroup_repeatable_nationality:0 "[Concept('concept_bpm_repeatable_law', '$concept_bpm_repeatable_law$')] - Национальные"
+ lawgroup_repeatable_nationality_desc:0 "[Concept('concept_bpm_repeatable_law', '$concept_bpm_repeatable_laws$')] касающиеся национальностей и культур нашей страны."
+
+# Repeatable Military
+ lawgroup_repeatable_military:0 "[Concept('concept_bpm_repeatable_law', '$concept_bpm_repeatable_law$')] - Военные"
+ lawgroup_repeatable_military_desc:0 "[Concept('concept_bpm_repeatable_law', '$concept_bpm_repeatable_laws$')] касающиеся военных реформ."
+
+ law_repeatable_military_none:0 "$law_repeatable_none$"
+ law_repeatable_military_none_desc:0 "$law_repeatable_none_desc$"
+
+ law_repeatable_military_military_reform:0 "Военная реформа"
+ law_repeatable_military_military_reform_desc:0 "Организовать широкую кампанию по улучшению состояния [GetInterestGroupVariant('ig_armed_forces', GetPlayer).GetName], заменяя некомпетентных или отсталых командиров и внедряя более современное видение в армию."
+ bpm_repeatable_law_military_reform_result:0 "Военные реформы"
+ bpm_repeatable_law_military_reform_result_better:0 "Профессиональные военные реформы"
+
+ law_repeatable_military_parades_and_drills:0 "Внедрение воинской дисциплины"
+ law_repeatable_military_parades_and_drills_desc:0 "Ужесточить воинские уставы, наказывать за нерадивость, проводить постоянные парады и обеспечивать воинскую единообразие."
+ bpm_repeatable_law_parades_and_drills_result:0 "Парады и учения"
+
+ law_repeatable_military_improve_soldier_conditions:0 "Улучшение условий для солдат"
+ law_repeatable_military_improve_soldier_conditions_desc:0 "Принять некоторые положения, направленные на улучшение условий жизни наших низших чинов."
+ bpm_repeatable_law_improve_soldier_conditions_result:0 "Улучшенные условия в армии"
+ bpm_repeatable_law_improve_soldier_conditions_result_permanent:0 "Улучшенные условия в армии (постоянно)"
+
+ law_repeatable_military_army_defunding:0 "Демилитаризация"
+ law_repeatable_military_army_defunding_desc:0 "Сократить нашу армию во имя мира."
+ bpm_repeatable_law_army_defunding_result:0 "Армия разфинансирована"
+ bpm_repeatable_law_army_defunding_result_permanent:0 "Политика голубя"
+ bpm_decorative_will_be_removed_on_aggressive_war:0 "Модификатор снимается при участии в агрессивных войнах"
+ bpm_decorative_will_be_removed_on_aggressive_war_desc:0 "Начало или участие в войне в качестве агрессора снимает этот модификатор. Это не включает гражданские войны, отделения или восстания туземцев."
+
+ law_repeatable_military_war_propaganda:0 "Военная пропаганда"
+ law_repeatable_military_war_propaganda_desc:0 "Распространять и продвигать патриотическую пропаганду для улучшения восприятия наших войн населением."
+ bpm_law_effect_tt_repeatable_war_propaganda_result:0 "Наше [Concept('concept_war_exhaustion', 'Истощение войны')] во всех [Concept('concept_war', 'войнах')] будет снижено на #v 25#!"
+
+# Repeatable Culture
+ lawgroup_repeatable_culture:0 "[Concept('concept_bpm_repeatable_law', '$concept_bpm_repeatable_law$')] - Культура"
+ lawgroup_repeatable_culture_desc:0 "[Concept('concept_bpm_repeatable_law', '$concept_bpm_repeatable_laws$')] касающиеся продвижения различных культурных идей в нашей стране."
+ bpm_law_effect_tt_culture_generic_result:0 "Этот [Concept('concept_bpm_repeatable_law', '$concept_bpm_repeatable_law$')] будет нацелен на все [Concept('concept_bpm_ig_is_ideological', 'идеологические')] [Concept('concept_interest_group', 'группы интересов')], которые имеют позицию по этому [Concept('concept_law', 'закону')]; это приведет к изменениям в [Concept('concept_interest_group_attraction', 'привлекательности')] и [Concept('concept_approval', 'одобрении')] для этих групп, в зависимости от того, одобряют ли они его. Этот эффект сильнее для [Concept('concept_interest_group', 'групп интересов')], которые решительно поддерживают или решительно противостоят закону."
+ bpm_repeatable_law_culture_generic_result_ig_positive:0 "Утвержденные ценности"
+ bpm_repeatable_law_culture_generic_result_ig_negative:0 "Отвергнутые ценности"
+
+ law_repeatable_culture_none:0 "$law_repeatable_none$"
+ law_repeatable_culture_none_desc:0 "$law_repeatable_none_desc$"
+
+ law_repeatable_culture_invite_foreign_experts:0 "Пригласить иностранных специалистов"
+ law_repeatable_culture_invite_foreign_experts_desc:0 "Пригласить иностранных академиков, философов, инженеров и других для помощи в наших исследованиях и разработках."
+ bpm_repeatable_law_invite_foreign_experts_result:0 "Приглашены иностранные специалисты"
+
+ law_repeatable_culture_promote_democratic_values:0 "Продвижение демократических ценностей"
+ law_repeatable_culture_promote_democratic_values_desc:0 "Принять меры и финансировать кампании по поощрению законного демократического участия наших граждан."
+ bpm_repeatable_law_promote_democratic_values_result:0 "Продвинуты демократические ценности"
+
+ law_repeatable_culture_promote_absolutist_values:0 "Продвижение абсолютистских ценностей"
+ law_repeatable_culture_promote_absolutist_values_desc:0 "Укрепить нашу приверженность сильному, традиционному автократическому правлению на благо нашей страны."
+ bpm_repeatable_law_promote_absolutist_values_result:0 "Продвинуты абсолютистские ценности"
+
+ law_repeatable_culture_promote_patriotic_values:0 "Продвижение патриотических ценностей"
+ law_repeatable_culture_promote_patriotic_values_desc:0 "Принять меры по укреплению нашей национальной идентичности и привитию чувства патриотизма нашему населению."
+ bpm_law_effect_tt_repeatable_promote_patriotic_values_assimilation:0 "Ассимилирует #v [GetPlayer.MakeScope.ScriptValue('bpm_repeatable_law_promote_patriotic_values_assimilation_percent')]%#! $concept_discriminated$ [Concept('concept_pop', 'населения')] в [Concept('concept_incorporated_state', 'инкорпорированных штатах')] в направлении [GetPlayer.GetPrimaryCulturesDesc], если [ROOT.GetCountry.GetName] имеет [GetLawType('law_cultural_exclusion').GetName]"
+ bpm_repeatable_law_promote_patriotic_values_result:0 "Продвинуты патриотические ценности"
+
+ law_repeatable_culture_promote_socialist_values:0 "Продвижение социалистических ценностей"
+ law_repeatable_culture_promote_socialist_values_desc:0 "Утвердить нашу приверженность миру свободы и равенства для всех."
+ bpm_repeatable_law_promote_socialist_values_result:0 "Продвинуты социалистические ценности"
+
+ law_repeatable_culture_promote_ultranationalist_values:0 "Продвижение ультранационалистических ценностей"
+ law_repeatable_culture_promote_ultranationalist_values_desc:0 "Провозгласить нашу приверженность шовинистическому, ультранационалистическому и бескомпромиссному взгляду на наше место в мире."
+ bpm_repeatable_law_promote_ultranationalist_values_result:0 "Продвинуты ультранационалистические ценности"
+# Repeatable Economic
+ lawgroup_repeatable_economy:0 "[Concept('concept_bpm_repeatable_law', '$concept_bpm_repeatable_law$')] - Экономика"
+ lawgroup_repeatable_economy_desc:0 "[Concept('concept_bpm_repeatable_law', '$concept_bpm_repeatable_laws$')] касающиеся экономических вопросов нашей нации."
+
+ law_repeatable_economy_none:0 "$law_repeatable_none$"
+ law_repeatable_economy_none_desc:0 "$law_repeatable_none_desc$"
+
+ law_repeatable_economy_liberalization:0 "Экономическая либерализация"
+ law_repeatable_economy_liberalization_desc:0 "Ввести ряд различных экономически либеральных реформ для поощрения частной промышленности к расширению"
+ bpm_repeatable_law_liberalization_result:0 "Проходит экономическая либерализация"
+ bpm_repeatable_law_liberalization_socialist_result:0 "Проходит экономическая либерализация"
+
+ law_repeatable_economy_agricultural_investment:0 "Сельскохозяйственные инвестиции"
+ law_repeatable_economy_agricultural_investment_desc:0 "Стимулировать сельскохозяйственный сектор путем инвестиций и полезного законодательства"
+ bpm_repeatable_law_agricultural_investment_result:0 "Сельскохозяйственные инвестиции"
+ bpm_repeatable_law_agricultural_investment_socialist_result:0 "Сельскохозяйственные инвестиции"
+
+ law_repeatable_economy_peasant_corvee:0 "Крестьянская повинность"
+ law_repeatable_economy_peasant_corvee_desc:0 "Привлекать арендованных или государственных крестьян к строительной службе для дешевого ускорения национальной индустриализации."
+ bpm_repeatable_law_peasant_corvee_result:0 "Крестьянское строительство"
+
+ law_repeatable_economy_public_works:0 "Общественные работы"
+ law_repeatable_economy_public_works_desc:0 "Поощрять промышленное развитие путем масштабных общественных строительных проектов"
+ bpm_repeatable_law_public_works_result:0 "Программы общественных работ"
+
+ law_repeatable_economy_forced_industrialization:0 "Принудительная индустриализация"
+ law_repeatable_economy_forced_industrialization_desc:0 "Повышать квоты, использовать принудительный труд и ослаблять требования промышленной безопасности для очень быстрого промышленного развития"
+ bpm_repeatable_law_forced_industrialization_result:0 "Принудительное промышленное развитие"

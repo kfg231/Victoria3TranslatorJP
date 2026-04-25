@@ -1,0 +1,30 @@
+﻿l_japanese:
+
+ ################## ORGANIC DEMOCRACY
+ 
+ law_organic_democracy: "有機的民主主義"
+ law_organic_democracy_desc: "家族、職場、自治体、共同体など様々な伝統的な「器官」が自らの問題を統治し、立法機関への代表を選出する。政党やイデオロギー組織は存在しない。"
+
+ ideology_dop_organic_democrat: "有機的民主主義者"
+ ideology_dop_organic_democrat_desc: "#lore このグループは、社会的断片に基づく有機的で自治的な民主主義を信じており、移動と組織化の完全な自由を有する。#!"
+
+
+ ig_national_conservatives_catholic: "国民保守主義者"
+ ig_national_conservatives_catholic_desc: "カトリック国民保守主義者は、様々な名称と見解を持つ非一貫的な集団だが、一般的にはカトリック思想の右翼に位置する。彼らは自由主義的諸制度を解体し、有機的民主主義と国家、そしてコーポラティズムを支持する。歴史的には広範な概念であり、ポルトガルの国家コーポラティズム的サラザリストから、フランスの王党派アクシオン・フランセーズやイタリアのプロレタリア的ANI、オーストリアのユートピア的社会ロマン主義者、ポーランドの分配主義的ムウォージ・エンデツィにまで及ぶ。"
+
+ je_bpm_clay_forming_an_organism: "有機体を形成する粘土"
+ je_bpm_clay_forming_an_organism_reason: ""
+ je_bpm_clay_forming_an_organism_status_consolidating_power: "権力の強化"
+
+ tooltip_bpm_country_secularists_are_popular: "[concept_bpm_ig_is_organicist] [Concept('concept_interest_group', '関心集団')]の総影響力の>=20% (現在 [GetPlayer.MakeScope.ScriptValue('bpm_secularist_popularity')|%])"
+
+ concept_bpm_ig_is_organicist: "有機主義者"
+ concept_bpm_ig_is_organicist_desc: "@ig_christian_democrats! #bold キリスト教民主主義者#!、@ig_reactionaries! #bold 反動主義者#!、@ig_fascists! #bold ファシスト#!の[Concept('concept_interest_group', '関心集団')]。彼らは人間社会を有機体のようであり、個々の人間は有機体の細胞のようなものだと信じている——国家内でそれらの細胞に権限を与えようとし、あるいはそれらを国家の一部にしようとする。"
+
+ 
+ party_professionals_administration_urban: "都市専門職と行政"
+ party_trade_union_syndicates: "労働組合シンジケート"
+ party_rural_communes: "農村共同体と村落"
+ party_national_organization: "国民組織"
+
+ root_has_enacted_no_parties_allowed: "[ROOT.GetCountry.GetName]は[GetLawType('law_no_parties_allowed').GetName]を制定した"

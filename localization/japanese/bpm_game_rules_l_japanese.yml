@@ -1,0 +1,10 @@
+﻿l_japanese:
+  rule_bpm_frankfurt_parliament: "フランクフルト国民議会"
+  setting_bpm_frankfurt_parliament_active: "有効"
+  setting_bpm_frankfurt_parliament_active_desc: "諸国民の春の時代にドイツ諸邦で発生する歴史的イベント「フランクフルト国民議会」を有効にします。"
+  setting_bpm_frankfurt_parliament_disabled: "無効"
+  setting_bpm_frankfurt_parliament_disabled_desc: "フランクフルト国民議会イベントを無効にし、ゲーム内での発生を防止します。"
+#rule_<key> will be used as the key for game rule names  
+#setting_<key> will be used as the key for game rule setting names  
+#setting_<key>_desc will be used as the key for game rule setting descs
+

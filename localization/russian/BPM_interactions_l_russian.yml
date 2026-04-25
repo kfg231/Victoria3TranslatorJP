@@ -1,0 +1,6 @@
+﻿l_russian:
+ bpm_make_into_agitator:0 "Поощрять агитацию"
+ bpm_add_to_cabinet:0 "Добавить в кабинет"
+ bpm_remove_from_cabinet:0 "Удалить из кабинета"
+ bpm_add_to_cabinet_tt:0 "Находится в списке кандидатов в кабинет"
+ bpm_remove_from_cabinet_tt:0 "Находится в кабинете"
