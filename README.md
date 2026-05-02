@@ -1,4 +1,4 @@
-# Victoria 3 Translator (DeepSeek V4 Pro)
+# Victoria 3 Translator (DeepSeek V4)
 
 DeepSeek V4 Pro を使って Victoria 3 MOD の `.yml` ローカライズファイル群を
 任意の言語ペア間で翻訳するシンプルな Tkinter GUI ツール。
